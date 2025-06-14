@@ -7,3 +7,5 @@ export const SITE_CONFIG = {
     acronym: "CVFC",
   },
 };
+
+export const USE_LANDING = process.env.USE_LANDING_PAGE;

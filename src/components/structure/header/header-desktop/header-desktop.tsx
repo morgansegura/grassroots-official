@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils/cn";
 import { Container } from "@/components/structure/container/container";
 import { Navbar } from "@/components/structure/navbar/navbar";
 import { Logo } from "@/components/structure/logo/logo";
-import { ButtonProps } from "@/components/ui/button/button.types";
 
 import "./header-desktop.css";
 

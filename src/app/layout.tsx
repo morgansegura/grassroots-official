@@ -4,6 +4,7 @@ import { sans } from "@/fonts";
 import { Layout } from "@/components/structure/layout/layout";
 
 import "@/styles/globals.css";
+import { USE_LANDING } from "@/constants";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${sans.variable}  antialiased`}>
-        <Layout>{children}</Layout>
+        {!USE_LANDING ? <Layout>{children}</Layout> : children}
       </body>
     </html>
   );
