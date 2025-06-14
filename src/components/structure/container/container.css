@@ -1,0 +1,17 @@
+@reference "tailwindcss";
+
+.contain {
+  @apply mx-auto w-full;
+}
+
+.contain[data-container-variant="prose"] {
+  @apply max-w-5xl px-4 lg:px-3 xl:px-0;
+}
+
+.contain[data-container-variant="narrow"] {
+  @apply max-w-6xl px-4 lg:px-3 xl:px-0;
+}
+
+.contain[data-container-variant="wide"] {
+  @apply max-w-7xl px-4 lg:px-3 xl:px-0;
+}

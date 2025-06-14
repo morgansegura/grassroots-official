@@ -1,0 +1,17 @@
+@reference 'tailwindcss';
+
+.header-mobile {
+  @apply py-2;
+}
+
+.header-mobile-container {
+  @apply flex;
+
+  .logo-block {
+    @apply flex-1 flex justify-center bg-red-200;
+  }
+
+  .menu-selector {
+    @apply justify-self-end;
+  }
+}

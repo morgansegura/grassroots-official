@@ -1,0 +1,5 @@
+@reference 'tailwindcss';
+
+.header-desktop {
+  @apply bg-pink-200;
+}

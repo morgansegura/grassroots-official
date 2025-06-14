@@ -1,0 +1,32 @@
+@reference "tailwindcss";
+
+.header-container {
+  @apply flex gap-2 justify-between;
+}
+
+.header-navigation {
+  @apply flex gap-4 items-center;
+}
+
+.header-main-navigation {
+  @apply flex-1 py-1.5 justify-center;
+}
+
+.header-admin-navigation {
+  @apply flex-1 py-1 justify-end;
+}
+
+.header-logo {
+}
+
+.header[data-header-variant="scroll"] {
+  @apply fixed inset-x-0;
+
+  &[data-header-scrolled="false"] {
+    @apply bg-yellow-200;
+  }
+
+  &[data-header-scrolled="true"] {
+    @apply bg-green-200;
+  }
+}

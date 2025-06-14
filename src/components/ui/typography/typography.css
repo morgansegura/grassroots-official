@@ -1,0 +1,105 @@
+@reference "tailwindcss";
+
+.typography[data-typography-type="heading"] {
+  &[data-typography-size="xs"] {
+    @apply text-lg lg:text-xl font-medium;
+  }
+
+  &[data-typography-size="sm"] {
+    @apply text-xl lg:text-2xl font-medium;
+  }
+
+  &[data-typography-size="base"] {
+    @apply text-2xl lg:text-3xl font-medium;
+  }
+
+  &[data-typography-size="lg"] {
+    @apply text-4xl lg:text-5xl font-semibold;
+  }
+
+  &[data-typography-size="xl"] {
+    @apply text-6xl lg:text-7xl font-bold;
+  }
+}
+
+.typography[data-typography-type="body"] {
+  &[data-typography-size="sm"] {
+    @apply text-xs lg:text-sm;
+  }
+
+  &[data-typography-size="base"] {
+    @apply text-sm lg:text-base;
+  }
+
+  &[data-typography-size="lg"] {
+    @apply text-base lg:text-lg;
+  }
+}
+
+.typography[data-typography-type="label"] {
+  @apply font-semibold;
+
+  &[data-typography-size="sm"] {
+    @apply text-xs lg:text-sm;
+  }
+
+  &[data-typography-size="base"] {
+    @apply text-sm lg:text-base;
+  }
+
+  &[data-typography-size="lg"] {
+    @apply text-base lg:text-lg;
+  }
+}
+
+.typography[data-typography-type="caption"] {
+  @apply font-medium text-inherit/75;
+
+  &[data-typography-size="sm"] {
+    @apply text-[10px] lg:text-xs;
+  }
+
+  &[data-typography-size="base"] {
+    @apply text-xs lg:text-sm;
+  }
+
+  &[data-typography-size="lg"] {
+    @apply text-sm lg:text-base;
+  }
+}
+
+.typography[data-typography-type="button"] {
+  @apply font-medium;
+
+  &[data-typography-size="xs"] {
+    @apply text-xs lg:text-sm;
+  }
+
+  &[data-typography-size="sm"] {
+    @apply text-sm lg:text-base;
+  }
+
+  &[data-typography-size="base"] {
+    @apply text-base lg:text-lg;
+  }
+}
+
+.typography[data-typography-transform="lowercase"] {
+  @apply lowercase;
+}
+
+.typography[data-typography-transform="uppercase"] {
+  @apply uppercase;
+}
+
+.typography[data-typography-transform="capitalize"] {
+  @apply capitalize;
+}
+
+.typography[data-typography-align="center"] {
+  @apply text-center;
+}
+
+.typography[data-typography-align="right"] {
+  @apply text-right;
+}

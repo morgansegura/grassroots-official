@@ -1,0 +1,17 @@
+@reference 'tailwindcss';
+
+.footer-mobile {
+  @apply grid pt-12 pb-24;
+
+  .slogan-block {
+    @apply grid;
+  }
+
+  .slogan-block-logo {
+    @apply mx-auto;
+  }
+
+  .navigation-main {
+    @apply grid;
+  }
+}

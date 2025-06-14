@@ -1,0 +1,31 @@
+@reference 'tailwindcss';
+
+.logo {
+  @apply relative;
+}
+
+.logo[data-logo-size="sm"] svg {
+  @apply w-10 h-10;
+}
+
+.logo[data-logo-size="base"] svg {
+  @apply w-10 h-10;
+}
+
+.logo[data-logo-size="lg"] svg {
+  @apply w-10 h-10;
+}
+
+/* Specific Styling */
+
+.logo .logo-icon {
+  @apply fill-(--color-primary);
+}
+
+.logo .logo-text {
+  @apply fill-(--color-primary);
+}
+
+.logo .logo-default {
+  @apply fill-(--color-primary);
+}

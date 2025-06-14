@@ -1,0 +1,136 @@
+@reference "tailwindcss";
+
+.button-container:not([data-button-width="full"]) .button {
+  @apply inline-flex;
+}
+
+.button-container[data-button-width="full"] .button {
+  @apply w-full flex items-center;
+}
+
+.button {
+  --button-bgcolor: var(--color-black);
+  --button-color: var(--color-white);
+
+  @apply cursor-pointer items-center justify-center transition-all duration-300 ease-out;
+
+  .button-label {
+    @apply mx-2 flex-1;
+  }
+}
+
+.button[aria-busy="true"],
+.button[data-button-disabled="true"] {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+/* Size */
+.button[data-button-unstyled="true"] {
+  &[data-button-size="sm"] {
+    @apply text-xs lg:text-sm font-medium;
+  }
+
+  &[data-button-size="base"] {
+    @apply text-sm lg:text-base font-medium;
+  }
+
+  &[data-button-size="lg"] {
+    @apply text-base lg:text-lg font-medium;
+  }
+}
+
+/* Appearance Link */
+
+.button[data-button-variant="link"][data-button-underline="true"] {
+  @apply relative after:content-[''] after:absolute after:h-0.5 after:-bottom-0.5 after:inset-x-1.5 after:transition-all after:duration-300 after:ease-out;
+}
+
+.button[data-button-variant="link"][data-button-invert="false"] {
+  @apply text-(--button-bgcolor) after:bg-(--button-bgcolor) hover:text-(--button-bgcolor)/60 hover:after:bg-(--button-bgcolor)/40;
+}
+
+/*  Link Inverted */
+.button[data-button-variant="link"][data-button-invert="true"] {
+  @apply text-(--button-color) after:bg-(--button-color) hover:text-(--button-color)/60 hover:after:bg-(--button-color)/40;
+}
+
+/* Appearance Button */
+.button[data-button-variant="button"][data-button-invert="false"]:not(
+    [data-button-unstyled="true"]
+  ) {
+  &[data-button-appearance="primary"] {
+    @apply bg-(--button-bgcolor) text-(--button-color) border-[2px] border-transparent hover:bg-(--button-bgcolor)/60 active:bg-(--button-bgcolor)/40;
+  }
+  &[data-button-appearance="secondary"] {
+    @apply bg-(--button-color) text-(--button-bgcolor) border-[2px] border-(--button-color) hover:bg-(--button-color)/60 active:bg-(--button-color)/40;
+  }
+}
+
+/* Button Invert */
+.button[data-button-variant="button"][data-button-invert="true"]:not(
+    [data-button-unstyled="true"]
+  ) {
+  @apply border-[2px];
+
+  &[data-button-appearance="primary"] {
+    @apply bg-(--button-transparent) text-(--button-bgcolor) border-[2px] border-(--button-bgcolor) hover:bg-(--button-bgcolor)/20 active:hover:bg-(--button-bgcolor)/10;
+  }
+
+  &[data-button-appearance="secondary"] {
+    @apply bg-(--button-transparent) text-(--button-color) border-[2px] border-(--button-color) hover:bg-(--button-color)/40 active:hover:bg-(--button-color)/25;
+  }
+}
+
+.button[data-button-variant="button"] {
+  /* Size */
+  &[data-button-size="sm"]:not(
+      [data-button-shape="square"],
+      [data-button-shape="circle"]
+    ) {
+    @apply py-0.5 px-1.5;
+  }
+
+  &[data-button-size="base"]:not(
+      [data-button-shape="square"],
+      [data-button-shape="circle"]
+    ) {
+    @apply py-1 px-2.5;
+  }
+
+  &[data-button-size="lg"]:not(
+      [data-button-shape="square"],
+      [data-button-shape="circle"]
+    ) {
+    @apply py-1.5 px-3.5;
+  }
+
+  /* Shape */
+  &[data-button-shape="rounded"] {
+    @apply rounded-lg;
+  }
+
+  &[data-button-shape="pill"] {
+    @apply rounded-full;
+  }
+
+  &[data-button-shape="circle"] {
+    @apply rounded-full;
+  }
+
+  &[data-button-shape="square"],
+  &[data-button-shape="circle"] {
+    @apply aspect-square p-1;
+
+    &[data-button-size="sm"] {
+      @apply w-7 h-7;
+    }
+
+    &[data-button-size="base"] {
+      @apply w-9 h-9;
+    }
+
+    &[data-button-size="lg"] {
+      @apply w-11 h-11;
+    }
+  }
+}

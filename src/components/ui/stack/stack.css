@@ -1,0 +1,123 @@
+@reference "tailwindcss";
+
+.stack[data-stack-type="flex"] {
+  @apply flex w-full;
+}
+
+.stack[data-stack-type="grid"] {
+  @apply grid w-full;
+
+  &[data-stack-cols="2"] {
+    @apply grid-cols-2;
+  }
+
+  &[data-stack-cols="3"] {
+    @apply grid-cols-3;
+  }
+
+  &[data-stack-cols="4"] {
+    @apply grid-cols-4;
+  }
+
+  &[data-stack-cols="5"] {
+    @apply grid-cols-5;
+  }
+
+  &[data-stack-cols="6"] {
+    @apply grid-cols-6;
+  }
+
+  &[data-stack-cols="3/1"] {
+    @apply grid-cols-3;
+
+    :first-child {
+      @apply col-span-2;
+    }
+  }
+
+  &[data-stack-cols="1/3"] {
+    @apply grid-cols-3;
+
+    :last-child {
+      @apply col-span-2;
+    }
+  }
+}
+
+.stack[data-stack-gap="sm"] {
+  @apply gap-4;
+}
+
+.stack[data-stack-gap="base"] {
+  @apply gap-8;
+}
+
+.stack[data-stack-gap="lg"] {
+  @apply gap-16;
+}
+
+.stack[data-stack-direction="row"] {
+  &[data-align="start"] {
+    @apply items-start;
+  }
+
+  &[data-stack-align="center"] {
+    @apply items-center;
+  }
+
+  &[data-stack-align="end"] {
+    @apply items-end;
+  }
+
+  &[data-stack-justify="start"] {
+    @apply justify-start;
+  }
+
+  &[data-stack-justify="center"] {
+    @apply justify-center;
+  }
+
+  &[data-stack-justify="end"] {
+    @apply justify-end;
+  }
+
+  &[data-stack-justify="between"] {
+    @apply justify-between;
+  }
+
+  &[data-stack-justify="evenly"] {
+    @apply justify-evenly;
+  }
+
+  &[data-stack-justify="around"] {
+    @apply justify-around;
+  }
+}
+
+.stack[data-stack-direction="column"] {
+  @apply flex-col;
+
+  &[data-stack-align="start"] {
+    @apply justify-start;
+  }
+
+  &[data-stack-align="center"] {
+    @apply justify-center;
+  }
+
+  &[data-stack-align="end"] {
+    @apply justify-end;
+  }
+
+  &[data-stack-justify="start"] {
+    @apply items-start;
+  }
+
+  &[data-stack-justify="center"] {
+    @apply items-center;
+  }
+
+  &[data-stack-justify="end"] {
+    @apply items-end;
+  }
+}

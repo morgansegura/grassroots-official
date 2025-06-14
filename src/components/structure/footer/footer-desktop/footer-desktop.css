@@ -1,0 +1,5 @@
+@reference 'tailwindcss';
+
+.footer-desktop {
+  @apply bg-pink-200;
+}
