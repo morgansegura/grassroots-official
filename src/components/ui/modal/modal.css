@@ -32,7 +32,7 @@
 }
 
 .modal-content[data-modal-appearance="unstyled"] {
-  @apply relative z-0 mx-auto w-full max-w-[440px];
+  @apply relative z-0 mx-auto w-full bg-white max-w-[440px];
 
   &:first-child {
     @apply absolute top-0 inset-x-0;
