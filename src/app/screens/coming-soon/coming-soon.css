@@ -1,5 +1,5 @@
 @reference "tailwindcss";
 
 .coming-soon-screen {
-  @apply py-12 bg-repeat bg-fixed bg-[url(https://grassrootsfdn.org/wp-content/uploads/bg_body.jpg)];
+  @apply py-12 bg-repeat bg-fixed bg-[url(https://cms.grassrootsfdn.org/assets/bg_body.jpg)];
 }

@@ -5,9 +5,9 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "grassrootsfdn.org",
+        hostname: "cms.grassrootsfdn.org",
         port: "",
-        pathname: "/wp-content/uploads/**",
+        pathname: "/acssets/**",
         search: "",
       },
     ],
