@@ -8,4 +8,5 @@ export const SITE_CONFIG = {
   },
 };
 
-export const USE_LANDING = process.env.USE_LANDING_PAGE;
+export const USE_LANDING =
+  process.env.USE_LANDING_PAGE === "false" ? false : true;

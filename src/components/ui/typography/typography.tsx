@@ -6,23 +6,24 @@ import type { TypographyProps } from "./typography.types";
 
 export function Typography({
   as = "div",
-  align = "left",
+  align,
   children,
   className,
-  size,
-  type,
+  size = "base",
+  variant = "body",
   transform,
 }: TypographyProps) {
   const Element = as;
 
+  const baseProps = {
+    "data-typography-align": align,
+    "data-typography-size": size,
+    "data-typography-variant": variant,
+    "data-typography-transform": transform,
+  };
+
   return (
-    <Element
-      className={cn("typography", className)}
-      data-typography-align={align}
-      data-typography-size={size}
-      data-typography-type={type}
-      data-typography-transform={transform}
-    >
+    <Element className={cn("typography", className)} {...baseProps}>
       {children}
     </Element>
   );

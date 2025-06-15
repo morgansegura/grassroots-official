@@ -1,17 +1,19 @@
 import React from "react";
 import { cn } from "@/lib/utils/cn";
 
-import { LogoIcon } from "./logo-icon";
 import { When } from "@/components/helpers/when/when";
+import { LogoIcon } from "./logo-icon";
+import { LogoAcronym } from "./logo-acronym";
+import type { LogoProps } from "./logo.types";
+import { LogoTextStack } from "./logo-text-stack";
+import { LogoText } from "./logo-text";
 
 import "./logo.css";
-
-import type { LogoProps } from "./logo.types";
 
 export function Logo({
   className,
   size = "base",
-  variant = "default",
+  variant = "text",
 }: LogoProps) {
   return (
     <div className={cn("logo", className)} data-logo-size={size}>
@@ -19,10 +21,13 @@ export function Logo({
         <LogoIcon />
       </When>
       <When condition={variant === "text"}>
-        <LogoIcon />
+        <LogoText />
       </When>
-      <When condition={variant === "default"}>
-        <LogoIcon />
+      <When condition={variant === "text-stack"}>
+        <LogoTextStack />
+      </When>
+      <When condition={variant === "acronym"}>
+        <LogoAcronym />
       </When>
     </div>
   );

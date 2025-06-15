@@ -1,0 +1,62 @@
+@reference 'tailwindcss';
+
+.modal-overlay {
+  @apply fixed 
+  inset-0 
+  z-50 
+  flex 
+  items-center 
+  justify-center;
+}
+
+.modal-backdrop {
+  @apply absolute 
+  inset-0 
+  bg-black/75 
+  backdrop-blur-xs;
+}
+
+.modal-content {
+  @apply relative 
+  w-full 
+  max-w-xl 
+  mx-auto 
+  rounded-2xl 
+  shadow-xl;
+}
+
+.modal-content:not([data-modal-appearance="unstyled"]) {
+  @apply relative 
+  bg-white 
+  p-6;
+}
+
+.modal-content[data-modal-appearance="unstyled"] {
+  @apply relative z-0 mx-auto w-full max-w-[440px];
+
+  &:first-child {
+    @apply absolute top-0 inset-x-0;
+  }
+}
+
+.modal-close-button {
+  @apply absolute 
+  rounded-full
+  z-1000
+  top-6 
+  right-6
+  p-1
+  text-(--color-secondary)
+  bg-transparent
+  hover:bg-(--color-secondary)/5
+  hover:text-(--color-secondary)/60
+  cursor-pointer
+  transition-colors
+  duration-300
+  ease-out;
+}
+
+.modal-body {
+  @apply relative 
+  z-10;
+}

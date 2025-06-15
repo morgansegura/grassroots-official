@@ -1,0 +1,9 @@
+@reference 'tailwindcss';
+
+.donation-widget {
+  @apply w-full flex flex-col gap-y-3;
+
+  givebutter-giving-form {
+    @apply bg-red-200;
+  }
+}

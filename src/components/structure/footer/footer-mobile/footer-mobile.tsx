@@ -15,13 +15,13 @@ export function FooterMobile({ className }: FooterMobileProps) {
       <Container>
         <Stack direction="column" className="slogan-block">
           <div className="slogan-block-logo">Logo</div>
-          <Typography type="heading" size="sm" transform="uppercase">
+          <Typography variant="heading" size="sm" transform="uppercase">
             A classy Slogan
           </Typography>
         </Stack>
         <Stack direction="column" className="slogan-block">
           <div className="slogan-block-logo">Logo</div>
-          <Typography type="heading" size="sm" transform="uppercase">
+          <Typography variant="heading" size="sm" transform="uppercase">
             A classy Slogan
           </Typography>
         </Stack>

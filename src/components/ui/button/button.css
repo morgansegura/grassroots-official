@@ -55,7 +55,8 @@
 }
 
 /* Appearance Button */
-.button[data-button-variant="button"][data-button-invert="false"]:not(
+.button[data-button-variant="button"]:not(
+    [data-button-invert="true"],
     [data-button-unstyled="true"]
   ) {
   &[data-button-appearance="primary"] {

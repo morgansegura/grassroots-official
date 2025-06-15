@@ -26,6 +26,7 @@ export interface BaseProps extends CommonProps {
   shape?: "square" | "rounded" | "pill" | "circle";
   size?: "sm" | "base" | "lg";
   title?: string;
+  target?: string;
   type?: "button" | "submit" | "reset" | "link";
   underline?: boolean;
   unstyled?: boolean;

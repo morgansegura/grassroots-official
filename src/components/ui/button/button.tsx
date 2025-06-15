@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { cn } from "@/lib/utils/cn";
 
@@ -19,9 +21,10 @@ export function Button({
   isLoading,
   shape = "rounded",
   size = "base",
+  target,
   title,
   onClick,
-  underline = false,
+  underline,
   unstyled,
   width = "inline",
   variant = "button",
@@ -63,7 +66,13 @@ export function Button({
   if (href) {
     return (
       <div className="button-container" data-button-width={width}>
-        <Link href={href} passHref role="link" {...defaultProps}>
+        <Link
+          href={href}
+          passHref
+          role="link"
+          target={target}
+          {...defaultProps}
+        >
           {content}
         </Link>
       </div>

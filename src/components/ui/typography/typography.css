@@ -1,6 +1,6 @@
 @reference "tailwindcss";
 
-.typography[data-typography-type="heading"] {
+.typography[data-typography-variant="heading"] {
   &[data-typography-size="xs"] {
     @apply text-lg lg:text-xl font-medium;
   }
@@ -22,21 +22,29 @@
   }
 }
 
-.typography[data-typography-type="body"] {
-  &[data-typography-size="sm"] {
+.typography[data-typography-variant="body"] {
+  &[data-typography-size="xs"] {
     @apply text-xs lg:text-sm;
   }
 
-  &[data-typography-size="base"] {
+  &[data-typography-size="sm"] {
     @apply text-sm lg:text-base;
   }
 
-  &[data-typography-size="lg"] {
+  &[data-typography-size="base"] {
     @apply text-base lg:text-lg;
+  }
+
+  &[data-typography-size="lg"] {
+    @apply text-lg lg:text-xl;
+  }
+
+  &[data-typography-size="xl"] {
+    @apply text-xl lg:text-2xl;
   }
 }
 
-.typography[data-typography-type="label"] {
+.typography[data-typography-variant="label"] {
   @apply font-semibold;
 
   &[data-typography-size="sm"] {
@@ -52,7 +60,7 @@
   }
 }
 
-.typography[data-typography-type="caption"] {
+.typography[data-typography-variant="caption"] {
   @apply font-medium text-inherit/75;
 
   &[data-typography-size="sm"] {
@@ -68,7 +76,7 @@
   }
 }
 
-.typography[data-typography-type="button"] {
+.typography[data-typography-variant="button"] {
   @apply font-medium;
 
   &[data-typography-size="xs"] {
@@ -102,4 +110,8 @@
 
 .typography[data-typography-align="right"] {
   @apply text-right;
+}
+
+.typography[data-typography-align="justify"] {
+  @apply text-justify;
 }

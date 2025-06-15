@@ -1,31 +1,75 @@
 @reference 'tailwindcss';
 
-.logo {
-  @apply relative;
+.logo[data-logo-size="sm"] {
+  .logo-text {
+    @apply h-8;
+  }
+
+  .logo-acronym {
+    @apply h-7;
+  }
+
+  .logo-icon {
+    @apply h-8;
+  }
+
+  .logo-text-stack {
+    @apply w-28;
+  }
 }
 
-.logo[data-logo-size="sm"] svg {
-  @apply w-10 h-10;
+.logo[data-logo-size="base"] {
+  .logo-text {
+    @apply h-12;
+  }
+
+  .logo-acronym {
+    @apply h-10;
+  }
+
+  .logo-icon {
+    @apply h-12;
+  }
+
+  .logo-text-stack {
+    @apply w-30;
+  }
 }
 
-.logo[data-logo-size="base"] svg {
-  @apply w-10 h-10;
+.logo[data-logo-size="lg"] {
+  .logo-text {
+    @apply h-20;
+  }
+
+  .logo-acronym {
+    @apply h-16;
+  }
+
+  .logo-icon {
+    @apply h-20;
+  }
+
+  .logo-text-stack {
+    @apply w-64;
+  }
 }
 
-.logo[data-logo-size="lg"] svg {
-  @apply w-10 h-10;
+.logo-icon {
+  @apply rotate-90;
 }
 
-/* Specific Styling */
-
-.logo .logo-icon {
+.logo-color-primary {
   @apply fill-(--color-primary);
 }
 
-.logo .logo-text {
-  @apply fill-(--color-primary);
+.logo-color-primary-light {
+  @apply fill-(--color-primary-light);
 }
 
-.logo .logo-default {
-  @apply fill-(--color-primary);
+.logo-color-primary-dark {
+  @apply fill-(--color-primary-dark);
+}
+
+.logo-color-secondary {
+  @apply fill-(--color-secondary);
 }

@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils/cn";
 import { Container } from "@/components/structure/container/container";
 
-import "./homescreen.css";
+import "./home-screen.css";
 
 export function HomeScreen() {
   return (

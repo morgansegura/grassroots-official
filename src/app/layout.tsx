@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { sans } from "@/fonts";
+import { heading, sans } from "@/fonts";
 
 import { Layout } from "@/components/structure/layout/layout";
 
@@ -18,7 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sans.variable}  antialiased`}>
+      <head>
+        <script
+          async
+          src={`https://widgets.givebutter.com/latest.umd.cjs?acct=fNIAQ0zJdp5wTemi&p=other`}
+          id="givebutter-widget-script"
+        />
+      </head>
+      <body className={`${sans.variable} ${heading.variable}  antialiased`}>
         {!USE_LANDING ? <Layout>{children}</Layout> : children}
       </body>
     </html>
