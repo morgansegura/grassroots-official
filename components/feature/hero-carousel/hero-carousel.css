@@ -35,7 +35,7 @@
     color-mix(in oklch, var(--color-touchline) 55%, transparent) 70%,
     color-mix(in oklch, var(--color-touchline) 95%, transparent) 100%
   ); */
-  @apply bg-linear-to-r from-(--color-touchline) via-(--color-touchline)/10 to-(--color-touchline);
+  @apply bg-linear-to-br from-(--color-touchline) via-60% via-(--color-touchline)/30 md:via-(--color-touchline)/10 to-(--color-touchline);
 }
 
 .hero-carousel-slide-content {
