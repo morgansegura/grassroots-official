@@ -72,14 +72,16 @@ export function MediaSection({
 
       <figure
         className="media-section-figure"
-        style={{ backgroundImage: `url(${media.src})}` }}
+        style={media.src ? { backgroundImage: `url(${media.src})` } : undefined}
       >
-        {parallax ? (
-          <ParallaxImage src={media.src} alt={media.alt} />
-        ) : (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={media.src} alt={media.alt} />
-        )}
+        {media.src ? (
+          parallax ? (
+            <ParallaxImage src={media.src} alt={media.alt} />
+          ) : (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={media.src} alt={media.alt} />
+          )
+        ) : null}
         {mediaCaption ? (
           <figcaption className="media-section-figure-caption">
             {mediaCaption}

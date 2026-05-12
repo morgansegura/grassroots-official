@@ -6,7 +6,6 @@ import {
   Landmark,
   MapPin,
   MessageSquareQuote,
-  Newspaper,
   ShieldCheck,
   TrendingDown,
 } from "lucide-react";
@@ -218,38 +217,39 @@ export const STORIES_SCREEN_MOCK: StoriesScreenSection[] = [
     },
   },
 
-  // ─── From the founder ───
-  {
-    ariaLabel: "From the founder",
-    "media-section": {
-      eyebrow: "From the founder",
-      heading: "Why this exists.",
-      mediaPosition: "left",
-      body: (
-        <>
-          <p>
-            I&apos;ve been inside San Diego club soccer for years. My kids have
-            played at every level — rec, NPL, top-tier club. Year after year,
-            I&apos;ve watched families step away because the cost wall hit them
-            at U13 or U14. Some had real talent. Some just loved the game. None
-            of them should have had to choose between playing and paying rent.
-          </p>
-          <p>
-            Grassroots Foundation exists to close that gap. I want to live in a
-            place where a kid&apos;s family finances don&apos;t decide who
-            develops in U.S. soccer.
-          </p>
-          <p className="founder-signoff">— Founder, Grassroots Foundation</p>
-        </>
-      ),
-      media: {
-        src: "",
-        alt: "Founder portrait — to be added",
-        aspect: "1/1",
-      },
-      cta: { label: "Read our mission", href: "/mission" },
-    },
-  },
+  // ─── From the founders (hidden pre-launch — needs joint copy + portrait) ───
+  // {
+  //   ariaLabel: "From the founders",
+  //   "media-section": {
+  //     eyebrow: "From the founders",
+  //     heading: "Why this exists.",
+  //     mediaPosition: "left",
+  //     body: (
+  //       <>
+  //         <p>
+  //           We&apos;ve been inside San Diego club soccer for years. Our own kids
+  //           have played MLS Next Homegrown and GA Aspire. Doing this work has
+  //           put us alongside families across every league — top training groups,
+  //           coaches, trainers, and club directors at clubs of every size.
+  //         </p>
+  //         <p>
+  //           Year after year, we&apos;ve watched families step away because the
+  //           cost wall hit them at U13 or U14. Some had real talent. Some just
+  //           loved the game. None of them should have had to choose between
+  //           playing and paying rent.
+  //         </p>
+  //         <p>
+  //           Grassroots Foundation exists to close that gap. We want to live in a
+  //           place where a kid&apos;s family finances don&apos;t decide who
+  //           develops in U.S. soccer.
+  //         </p>
+  //         <p className="founder-signoff">— The founders, Grassroots Foundation</p>
+  //       </>
+  //     ),
+  //     media: { src: "", alt: "", aspect: "1/1" },
+  //     cta: { label: "Read our mission", href: "/mission" },
+  //   },
+  // },
 
   // ─── Class of '26 first stories ───
   {
@@ -283,24 +283,24 @@ export const STORIES_SCREEN_MOCK: StoriesScreenSection[] = [
     },
   },
 
-  // ─── In the news (reserved) ───
-  {
-    ariaLabel: "In the news",
-    tone: "neutral",
-    "card-grid": {
-      eyebrow: "In the news",
-      heading: "When we make news, it'll appear here.",
-      cards: [
-        {
-          id: "press-coming",
-          icon: Newspaper,
-          title: "Press coverage — coming soon",
-          description:
-            "We'll list every interview, article, and mention here as they happen, with a link and a short note on what was discussed. Same posture as the rest of the page: honest, specific, verifiable.",
-        },
-      ],
-    },
-  },
+  // ─── In the news (hidden pre-launch — re-enable when there is real press) ───
+  // {
+  //   ariaLabel: "In the news",
+  //   tone: "neutral",
+  //   "card-grid": {
+  //     eyebrow: "In the news",
+  //     heading: "When we make news, it'll appear here.",
+  //     cards: [
+  //       {
+  //         id: "press-coming",
+  //         icon: Newspaper,
+  //         title: "Press coverage — coming soon",
+  //         description:
+  //           "We'll list every interview, article, and mention here as they happen, with a link and a short note on what was discussed. Same posture as the rest of the page: honest, specific, verifiable.",
+  //       },
+  //     ],
+  //   },
+  // },
 
   // ─── Closing CTA ───
   {

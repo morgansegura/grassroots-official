@@ -23,11 +23,12 @@
 /* ─── Cards ─── */
 
 .card-grid-cards {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6;
+  @apply flex flex-wrap justify-center gap-5 md:gap-6;
   @apply list-none m-0 p-0 pb-7;
 }
 
 .card-grid-card {
+  @apply w-full md:w-[calc((100%-1.5rem)/2)] lg:w-[calc((100%-3rem)/3)];
   @apply relative flex flex-col gap-4 bg-white rounded-3xl p-7 md:p-8;
   @apply shadow-[0_12px_32px_-14px_color-mix(in_oklch,var(--color-cleat)_25%,transparent)];
   @apply transition-all duration-300 ease-out;

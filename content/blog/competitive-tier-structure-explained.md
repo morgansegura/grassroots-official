@@ -15,7 +15,7 @@ faq:
   - question: "Which tier costs more — ECNL or MLS Next / Girls Academy?"
     answer: "Tuition is comparable across both top tiers — typically $3,500–$5,500 per season in San Diego County, with all-in annual costs landing between $8,000 and $20,000 depending on travel, ID camps, and showcase event attendance. Cost differences between specific clubs within each tier are usually larger than cost differences between the tiers themselves."
   - question: "Where does Grassroots Foundation fund kids — ECNL, MLS Next, or Girls Academy?"
-    answer: "Where the partner-club placement lands. Grassroots Foundation does not operate its own competitive program. Need-qualified kids are placed at partner clubs in San Diego County across whatever competitive tier the partner club operates — which may be ECNL, MLS Next, Girls Academy, or one of the strong tiers below them (NPL, DPL, regional leagues). The scholarship covers the cost regardless of which tier the kid plays in."
+    answer: "Where the partner-club placement lands. Grassroots Foundation does not operate its own competitive program. Need-qualified kids are placed at partner clubs in San Diego County across whatever competitive tier the partner club operates — the top tiers (ECNL, MLS Next, Girls Academy), the secondary tiers (ECRL, GA Aspire), or developmental leagues (NPL, DPL, Elite Academy, SoCal Flight System). The scholarship covers the cost regardless of which tier the kid plays in."
 ---
 
 If you spend any time researching competitive youth soccer in the United States, you'll encounter three names in heavy rotation: **ECNL**, **MLS Next**, and **Girls Academy**. They get listed together so often that it's easy to assume they're three separate competitive tiers — top, middle, and lower, or some other rank order.
@@ -30,14 +30,14 @@ At the top of competitive U.S. youth soccer, two ecosystems run side by side:
 
 **Tier 1: MLS Next + Girls Academy.** This is the gender-paired ecosystem.
 
-- **MLS Next** is the **boys'** competitive pathway, operated by Major League Soccer. Roughly 150 boys' clubs participate, with strict operating standards — minimum training hours, minimum coaching credentials, performance-based promotion and relegation between divisions.
-- **Girls Academy (GA)** is the **girls'** competitive pathway, formed in 2020 by U.S. Soccer-sanctioned clubs after the U.S. Soccer Development Academy (USSDA) shut down. Roughly 70–80 girls' clubs participate. Showcase format and recruiting visibility mirror MLS Next.
+- **MLS Next** is the **boys'** competitive pathway, operated by Major League Soccer. Roughly 150 boys' clubs participate, with strict operating standards — minimum training hours, minimum coaching credentials, performance-based promotion and relegation between divisions. Within MLS Next, **MLS Next Academy** programs are run by MLS-affiliated professional club academies, and the **Homegrown** designation marks players signed from those academies into MLS first-team or reserve contracts.
+- **Girls Academy (GA)** is the **girls'** competitive pathway, formed in 2020 by U.S. Soccer-sanctioned clubs after the U.S. Soccer Development Academy (USSDA) shut down. Roughly 70–80 girls' clubs participate. Showcase format and recruiting visibility mirror MLS Next. GA's secondary tier, **GA Aspire**, operates as a developmental layer beneath the top GA flight.
 
 Boys play MLS Next. Girls play Girls Academy. They are the gender-paired halves of the same competitive tier.
 
 **Tier 2: ECNL.** This is the single-league ecosystem that runs both boys' and girls' divisions under one structure.
 
-- **ECNL (Elite Clubs National League)** operates **both boys' and girls'** competitive programs under one league framework. Roughly 150+ clubs on the girls' side, fewer on the boys' side. Clubs are independent member organizations — ECNL is owned and run by its member clubs, not by a senior professional league.
+- **ECNL (Elite Clubs National League)** operates **both boys' and girls'** competitive programs under one league framework. Roughly 150+ clubs on the girls' side, fewer on the boys' side. Clubs are independent member organizations — ECNL is owned and run by its member clubs, not by a senior professional league. **ECRL (ECNL Regional League)** runs as ECNL's secondary tier on both the boys' and girls' sides — same competitive structure, lower travel intensity, lower household cost than top ECNL.
 
 Boys can play ECNL. Girls can play ECNL. The league handles both.
 
@@ -77,6 +77,19 @@ Both are considered top-tier nationally. The differences are real but smaller th
 
 **Cost.** Tuition and all-in costs are comparable across both tiers. Differences between specific clubs within each tier are usually larger than differences between the tiers.
 
+## What runs below the two top tiers
+
+Below ECNL and MLS Next / GA, several secondary and developmental leagues operate at meaningfully lower household cost. Many San Diego competitive clubs field teams at one or more of these levels concurrently with their top-tier program.
+
+- **ECRL (ECNL Regional League)** — ECNL's secondary tier on both the boys' and girls' sides. Same competitive framework, lower travel footprint.
+- **GA Aspire** — Girls Academy's secondary tier. Developmental layer beneath the top GA flight; clubs and players progress upward into the championship level.
+- **NPL (National Premier Leagues)** — US Club Soccer's national developmental league, operated on both boys' and girls' sides.
+- **DPL (Discovery Player League)** — a girls' developmental league frequently paired with GA programming.
+- **Elite Academy** — a boys' developmental league operating below MLS Next.
+- **SoCal Flight System** — California's regional ranking and competitive structure (Flight 1 / 2 / 3). Most San Diego competitive clubs participate at one or more flights regardless of national-tier affiliation.
+
+The cost gap between the top tiers and these secondary tiers is real — typically $2,000–$5,000 a year lower at the all-in line — and many high-talent kids spend years at these levels before stepping up. A scholarship that funds a kid at a secondary tier is funding the same developmental work for a smaller dollar.
+
 ## What this means for families
 
 If you're a family choosing between pathways, the decision is usually club-by-club, not tier-by-tier. A specific San Diego club's coaching, schedule, fit with your kid's developmental stage, and travel intensity will matter more than the tier label.
@@ -92,7 +105,7 @@ A few practical implications:
 For donors trying to understand where scholarship dollars go, the relevant frame is:
 
 - **Both top tiers have meaningful financial gates.** Tuition runs in the same range across both. Travel, kit, ID camps, and showcase events stack similarly.
-- **Below the top tiers, regional leagues like NPL and DPL run at lower cost.** A scholarship dollar can place a kid at any tier from a strong regional league through the top of either MLS Next/GA or ECNL — depending on the kid's developmental fit and the partner-club intake decision.
+- **Below the top tiers, secondary and regional leagues run at lower cost.** ECRL, GA Aspire, NPL, DPL, Elite Academy, and the SoCal Flight System all operate strong competitive play at $2,000–$5,000 a year less than the top tiers. A scholarship dollar can place a kid at any level from these regional leagues through the top of either MLS Next / GA or ECNL — depending on the kid's developmental fit and the partner-club intake decision.
 - **The tier choice is downstream of the placement decision.** Grassroots Foundation funds the scholarship; the partner club places the kid where they fit best, which may or may not be the highest possible tier.
 
 ## The honest read
