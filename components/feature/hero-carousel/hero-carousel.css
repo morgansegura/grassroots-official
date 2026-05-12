@@ -28,13 +28,14 @@
 
 .hero-carousel-slide-overlay {
   @apply pointer-events-none absolute inset-0 z-0;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     color-mix(in oklch, var(--color-touchline) 50%, transparent) 0%,
     color-mix(in oklch, var(--color-touchline) 15%, transparent) 38%,
     color-mix(in oklch, var(--color-touchline) 55%, transparent) 70%,
     color-mix(in oklch, var(--color-touchline) 95%, transparent) 100%
-  );
+  ); */
+  @apply bg-linear-to-b from-(--color-touchline) via-(--color-touchline)/10 to-(--color-touchline);
 }
 
 .hero-carousel-slide-content {
@@ -72,7 +73,7 @@
 
 .hero-carousel-slide-cta {
   @apply inline-flex items-center gap-3 rounded-full bg-(--color-golden-goal) px-7 py-3.5 outline-none transition-all duration-200 ease-out;
-  @apply text-lg font-semibold uppercase tracking-wider text-white text-shadow-md text-shadow-black/10;
+  @apply text-base md:text-lg font-semibold uppercase tracking-wider text-white text-shadow-md text-shadow-black/10;
   @apply shadow-[0_4px_14px_-4px_color-mix(in_oklch,var(--color-golden-goal)_55%,transparent)];
   @apply hover:-translate-y-px hover:brightness-[0.97];
   @apply hover:shadow-[0_10px_24px_-6px_color-mix(in_oklch,var(--color-golden-goal)_75%,transparent)];
