@@ -33,7 +33,7 @@ const DEFAULT_SLIDES: HeroSlide[] = [
       src: "https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?auto=format&fit=crop&w=2400&q=80",
       alt: "Young player controlling the ball on the pitch",
     },
-    eyebrow: "Grassroots Foundation · San Diego",
+    eyebrow: "San Diego, CA",
     heading: "Free\nthe game.",
     tagline:
       "Soccer should be free for every kid. We close the cost barrier that prices working-class families out of competitive youth soccer in San Diego County.",
