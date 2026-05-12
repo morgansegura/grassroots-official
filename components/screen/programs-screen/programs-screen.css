@@ -1,0 +1,74 @@
+@reference "tailwindcss";
+
+.programs-screen {
+  @apply relative;
+
+  .hero-extended {
+    @apply md:pb-40;
+
+    + .section {
+      @apply -mt-32 md:-mt-40;
+    }
+  }
+}
+
+/* ─── "How they stack" — five-up card row, matching CardGrid pattern ─── */
+
+.programs-screen-stack {
+  @apply flex flex-col gap-12 md:gap-16;
+}
+
+.programs-screen-stack-header {
+  @apply max-w-3xl mx-auto text-center flex flex-col items-center gap-4;
+}
+
+.programs-screen-stack-eyebrow {
+  @apply text-sm font-bold uppercase tracking-widest text-(--color-golden-goal);
+}
+
+.programs-screen-stack-heading {
+  @apply font-(family-name:--font-heading) text-(--color-touchline) text-3xl md:text-5xl font-medium;
+  @apply leading-[1.15] tracking-tight text-balance;
+}
+
+.programs-screen-stack-lead {
+  @apply text-base md:text-lg leading-[1.6] text-mist-700;
+}
+
+/* flex-wrap + justify-center centers an incomplete trailing row
+   (5 cards on a 3-up layout = row of 3 + centered row of 2). */
+.programs-screen-stack-row {
+  @apply flex flex-wrap justify-center gap-5 md:gap-6 list-none m-0 p-0;
+}
+
+.programs-screen-stack-item {
+  @apply relative flex flex-col gap-4 bg-white rounded-3xl p-7 md:p-8;
+  @apply shadow-[0_12px_32px_-14px_color-mix(in_oklch,var(--color-cleat)_25%,transparent)];
+  @apply transition-all duration-300 ease-out;
+
+  /* Explicit widths give a 1 → 2 → 3 column layout. With flex-wrap +
+     justify-center on the parent, the trailing row of 2 (after a row
+     of 3) centers automatically. Subtract the gap so 3 fit cleanly:
+     gap-5 (1.25rem) on small, gap-6 (1.5rem) on md+. */
+  @apply w-full;
+  @apply sm:w-[calc(50%-0.625rem)];
+  @apply lg:w-[calc(33.333%-1rem)];
+}
+
+.programs-screen-stack-item:hover {
+  @apply -translate-y-1;
+  @apply shadow-[0_18px_40px_-12px_color-mix(in_oklch,var(--color-cleat)_35%,transparent)];
+}
+
+.programs-screen-stack-icon {
+  @apply size-7 md:size-8 text-(--color-golden-goal);
+}
+
+.programs-screen-stack-title {
+  @apply font-(family-name:--font-heading) text-xl md:text-2xl font-medium;
+  @apply leading-[1.2];
+}
+
+.programs-screen-stack-body {
+  @apply text-sm md:text-base leading-[1.55] text-mist-800;
+}

@@ -1,0 +1,10 @@
+@reference "tailwindcss";
+
+.logo-icon {
+  .color-accent-light,
+  .color-accent-base,
+  .color-base-light,
+  .color-base-dark {
+    @apply fill-inherit;
+  }
+}

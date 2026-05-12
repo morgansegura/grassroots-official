@@ -1,0 +1,138 @@
+@reference "tailwindcss";
+
+.post-screen {
+  @apply relative;
+}
+
+.post-screen-header {
+  @apply flex flex-col gap-4 max-w-3xl mx-auto;
+  @apply px-4 lg:px-8;
+}
+
+.post-screen-back {
+  @apply text-xs font-bold uppercase tracking-widest text-(--color-golden-goal);
+  @apply no-underline border p-2 rounded;
+}
+
+.post-screen-category {
+  @apply text-xs font-bold uppercase tracking-widest text-(--color-golden-goal);
+}
+
+.post-screen-title {
+  @apply font-(family-name:--font-heading) text-(--color-touchline);
+  @apply text-4xl md:text-6xl font-medium leading-[1.05] tracking-tight text-balance;
+}
+
+.post-screen-summary {
+  @apply text-lg md:text-xl leading-[1.5] text-(--muted-foreground);
+}
+
+.post-screen-meta {
+  @apply mt-2 text-xs font-medium tracking-wider text-(--muted-foreground) uppercase;
+}
+
+.post-screen-body {
+  @apply max-w-3xl mx-auto;
+  @apply px-4 lg:px-8;
+  @apply text-base md:text-lg leading-[1.7];
+}
+
+.post-screen-body > * + * {
+  @apply mt-5;
+}
+
+.post-screen-body h2 {
+  @apply font-(family-name:--font-heading) text-(--color-touchline);
+  @apply text-2xl md:text-3xl font-medium leading-[1.15];
+  @apply mt-12 md:mt-16 mb-4;
+}
+
+.post-screen-body h3 {
+  @apply font-(family-name:--font-heading) text-(--color-touchline);
+  @apply text-xl md:text-2xl font-medium leading-[1.2];
+  @apply mt-10 md:mt-12 mb-3;
+}
+
+.post-screen-body strong {
+  @apply font-semibold text-(--color-touchline);
+}
+
+.post-screen-body a {
+  @apply text-(--color-golden-goal) underline underline-offset-4 decoration-(--color-golden-goal)/40;
+  @apply hover:decoration-(--color-golden-goal);
+}
+
+.post-screen-body ul,
+.post-screen-body ol {
+  @apply pl-6;
+}
+
+.post-screen-body ul {
+  @apply list-disc;
+}
+
+.post-screen-body ol {
+  @apply list-decimal;
+}
+
+.post-screen-body li + li {
+  @apply mt-2;
+}
+
+.post-screen-body blockquote {
+  @apply border-l-2 border-(--color-golden-goal) pl-5;
+  @apply italic text-(--muted-foreground);
+}
+
+.post-screen-body table {
+  @apply w-full border-collapse my-6 text-sm md:text-base;
+}
+
+.post-screen-body th,
+.post-screen-body td {
+  @apply border border-(--color-touchline)/15 px-3 py-2 text-left align-top;
+}
+
+.post-screen-body th {
+  @apply bg-(--color-touchline)/5 font-semibold;
+}
+
+.post-screen-body code {
+  @apply font-mono text-sm bg-(--color-touchline)/8 px-1.5 py-0.5 rounded;
+}
+
+.post-screen-faq {
+  @apply max-w-3xl mx-auto;
+  @apply px-4 lg:px-8;
+}
+
+.post-screen-faq-eyebrow {
+  @apply text-xs font-bold uppercase tracking-widest text-(--color-golden-goal);
+}
+
+.post-screen-faq-heading {
+  @apply font-(family-name:--font-heading) text-(--color-touchline);
+  @apply text-2xl md:text-4xl font-medium leading-[1.15] tracking-tight;
+  @apply mt-3 mb-10 text-balance;
+}
+
+.post-screen-faq-list {
+  @apply flex flex-col;
+}
+
+.post-screen-faq-item {
+  @apply border-t border-(--color-touchline)/12 py-6 md:py-8;
+}
+
+.post-screen-faq-item:last-child {
+  @apply border-b border-(--color-touchline)/12;
+}
+
+.post-screen-faq-question {
+  @apply font-(family-name:--font-heading) text-(--color-touchline);
+  @apply text-lg md:text-xl font-medium leading-[1.3] mb-2;
+}
+
+.post-screen-faq-answer {
+  @apply m-0 text-base md:text-lg leading-[1.6];
+}

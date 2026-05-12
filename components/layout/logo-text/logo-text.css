@@ -1,0 +1,7 @@
+@reference "tailwindcss";
+
+.logo-text {
+  .color-base-dark {
+    @apply fill-inherit;
+  }
+}

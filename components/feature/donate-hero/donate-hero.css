@@ -1,0 +1,19 @@
+@reference "tailwindcss";
+
+.donate-hero {
+  @apply relative w-full bg-(--color-sideline);
+  @apply py-20 md:py-28 lg:py-32;
+}
+
+.donate-hero-inner {
+  @apply flex flex-col items-start gap-6 max-w-3xl;
+}
+
+.donate-hero-heading {
+  @apply font-(family-name:--font-heading) text-4xl md:text-6xl lg:text-7xl font-bold;
+  @apply leading-[1.05] tracking-tight text-balance;
+}
+
+.donate-hero-body {
+  @apply text-base md:text-lg leading-[1.65];
+}

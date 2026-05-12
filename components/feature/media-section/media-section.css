@@ -1,0 +1,174 @@
+@reference "tailwindcss";
+
+.media-section {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16;
+
+  &[data-align="center"] {
+    @apply items-center;
+  }
+
+  &[data-align="start"] {
+    @apply items-start;
+  }
+
+  /* Media position: default right (text left), or left (text right) */
+  &[data-media-position="left"] .media-section-text {
+    @apply lg:order-2;
+  }
+
+  &[data-media-position="left"] .media-section-figure {
+    @apply lg:order-1;
+  }
+
+  .media-section-text {
+    @apply flex flex-col items-start gap-6;
+  }
+
+  .media-section-heading {
+    @apply font-(family-name:--font-heading) text-3xl md:text-5xl lg:text-6xl font-bold text-(--color-touchline);
+    @apply leading-[1.1] tracking-tight text-balance;
+  }
+
+  .media-section-body {
+    @apply flex flex-col gap-4 text-base md:text-lg leading-[1.65] mb-2 md:mb-4;
+  }
+
+  .media-section-figure {
+    @apply m-0 relative w-full flex flex-col gap-3 overflow-hidden;
+  }
+
+  .media-section-figure img {
+    @apply w-full h-auto object-cover rounded-2xl;
+  }
+
+  /* Aspect ratios */
+  &[data-aspect="1/1"] .media-section-figure img {
+    @apply aspect-square;
+  }
+
+  &[data-aspect="4/3"] .media-section-figure img {
+    @apply aspect-4/3;
+  }
+
+  &[data-aspect="3/2"] .media-section-figure img {
+    @apply aspect-3/2;
+  }
+
+  &[data-aspect="4/5"] .media-section-figure img {
+    @apply aspect-4/5;
+  }
+
+  &[data-aspect="16/9"] .media-section-figure img {
+    @apply aspect-video;
+  }
+
+  &[data-aspect="flush"] .media-section-figure img {
+    @apply absolute inset-0;
+  }
+
+  .media-section-figure-caption {
+    @apply text-xs text-center rounded-xl border px-1.5 py-1;
+  }
+
+  /* ─── Layout: bg-half (image edge-to-edge) ─── */
+  &[data-layout="bg-half"] {
+    @apply gap-0 overflow-hidden rounded-3xl;
+    @apply min-h-[clamp(24rem,55vh,40rem)];
+  }
+
+  &[data-layout="bg-half"] .media-section-text {
+    @apply flex flex-col justify-center bg-white;
+    @apply px-8 py-16 md:px-12 md:py-20 lg:px-16;
+  }
+
+  &[data-layout="bg-half"] .media-section-figure {
+    @apply relative h-full overflow-hidden gap-0;
+  }
+
+  &[data-layout="bg-half"] .media-section-figure img {
+    @apply absolute inset-0 w-full h-full object-cover rounded-none shadow-none;
+    aspect-ratio: auto;
+  }
+
+  /* ─── Layout: bg-full (image fills entire section as background) ─── */
+  &[data-layout="bg-full"] {
+    @apply relative grid-cols-1 lg:grid-cols-1 gap-0 overflow-hidden rounded-3xl;
+    @apply min-h-[clamp(28rem,65vh,44rem)];
+  }
+
+  &[data-layout="bg-full"] .media-section-figure {
+    @apply absolute inset-0 z-0 m-0 gap-0;
+  }
+
+  &[data-layout="bg-full"] .media-section-figure img {
+    @apply absolute inset-0 w-full h-full object-cover rounded-none shadow-none;
+    aspect-ratio: auto;
+  }
+
+  &[data-layout="bg-full"]::before {
+    content: "";
+    @apply pointer-events-none absolute inset-0 z-10;
+    background: linear-gradient(
+      100deg,
+      color-mix(in oklch, var(--color-touchline) 92%, transparent) 0%,
+      color-mix(in oklch, var(--color-touchline) 70%, transparent) 50%,
+      color-mix(in oklch, var(--color-touchline) 30%, transparent) 100%
+    );
+  }
+
+  &[data-layout="bg-full"] .media-section-text {
+    @apply relative z-20 w-full max-w-350 mx-auto;
+    @apply px-4 lg:px-8 py-20 md:py-28;
+  }
+
+  &[data-layout="bg-full"] .media-section-text > * {
+    @apply max-w-2xl;
+  }
+
+  /* Recolor for dark overlay */
+  &[data-layout="bg-full"] .media-section-heading {
+    @apply text-white;
+  }
+
+  &[data-layout="bg-full"] .media-section-body {
+    @apply text-white/85;
+  }
+
+  /* ─── Parallax (opt-in via parallax prop) ─── */
+  /* In split layout, move the aspect ratio + rounded corner onto the figure
+     so the scaled/translated image stays clipped inside it. */
+  &[data-parallax="true"][data-layout="split"] .media-section-figure {
+    @apply rounded-2xl;
+  }
+  &[data-parallax="true"][data-layout="split"][data-aspect="1/1"]
+    .media-section-figure {
+    @apply aspect-square;
+  }
+  &[data-parallax="true"][data-layout="split"][data-aspect="4/3"]
+    .media-section-figure {
+    @apply aspect-4/3;
+  }
+  &[data-parallax="true"][data-layout="split"][data-aspect="3/2"]
+    .media-section-figure {
+    @apply aspect-3/2;
+  }
+  &[data-parallax="true"][data-layout="split"][data-aspect="4/5"]
+    .media-section-figure {
+    @apply aspect-4/5;
+  }
+  &[data-parallax="true"][data-layout="split"][data-aspect="16/9"]
+    .media-section-figure {
+    @apply aspect-video;
+  }
+  &[data-parallax="true"][data-layout="split"] .media-section-figure img {
+    @apply absolute inset-0 w-full h-full object-cover rounded-none;
+    aspect-ratio: auto;
+  }
+
+  /* Image is oversized so the JS-driven translate can move it inside the
+     clipped figure without ever revealing an edge. */
+  &[data-parallax="true"] .media-section-figure img {
+    scale: 1.25;
+    will-change: transform;
+  }
+}

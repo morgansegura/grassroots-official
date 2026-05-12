@@ -1,0 +1,26 @@
+@reference "tailwindcss";
+
+.not-found {
+  @apply relative;
+}
+
+.not-found-actions {
+  @apply mt-8 flex flex-wrap gap-3 md:gap-4;
+}
+
+.not-found-action {
+  @apply inline-flex items-center rounded-full bg-(--color-golden-goal) px-6 py-3;
+  @apply text-sm font-bold uppercase tracking-wider text-white no-underline;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:-translate-y-px hover:brightness-[0.97];
+  @apply focus-visible:ring-2 focus-visible:ring-(--color-golden-goal) focus-visible:ring-offset-2;
+}
+
+.not-found-action-secondary {
+  @apply inline-flex items-center rounded-full px-6 py-3;
+  @apply border border-white;
+  @apply text-sm font-bold uppercase tracking-wider text-white no-underline;
+  @apply transition-all duration-200 ease-out;
+  @apply hover:border-white/40 hover:-translate-y-px;
+  @apply focus-visible:ring-2 focus-visible:ring-(--color-touchline) focus-visible:ring-offset-2;
+}

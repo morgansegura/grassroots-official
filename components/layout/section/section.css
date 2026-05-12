@@ -1,0 +1,167 @@
+@reference "tailwindcss";
+
+.section {
+  @apply relative;
+  .eyebrow {
+    @apply text-(--color-golden-goal);
+  }
+}
+
+.section[data-size="compact"] {
+  @apply py-12 md:py-16;
+}
+
+.section[data-size="default"] {
+  @apply py-16 md:py-20;
+}
+
+.section[data-size="loose"] {
+  @apply py-24 md:py-32;
+}
+
+.section[data-size="flush"] {
+  @apply py-0;
+}
+
+/** Top padding only — use when the section that follows already
+    has its own top padding and you don't want a double gap. */
+.section[data-size="intro"] {
+  @apply pt-16 md:pt-20 pb-0;
+}
+
+/** Background variants — apply alongside Section as a className. */
+.section.section-light {
+  @apply bg-olive-50;
+}
+
+.section.section-warm {
+  @apply bg-olive-200;
+}
+
+.section.section-dark {
+  @apply bg-(--color-touchline);
+  @apply bg-linear-to-br from-(--color-touchline) via-(--color-touchline) to-90% to-(--color-first-touch)/30;
+}
+
+/** ─── Tone system ───
+    Each tone sets the section's background and overrides the existing
+    --foreground / --muted-foreground tokens for everything inside. Features
+    use Tailwind's `text-(--foreground)` / `text-(--muted-foreground)` utilities and
+    automatically pick up the right values per tone. No new tokens. */
+
+.section[data-tone="white"] {
+  @apply bg-white;
+
+  .eyebrow {
+    @apply text-(--color-golden-goal);
+  }
+
+  .heading {
+    @apply text-(--color-touchline);
+  }
+}
+
+.section[data-tone="light"] {
+  @apply bg-olive-50;
+
+  .heading {
+    @apply text-(--color-touchline);
+  }
+}
+
+.section[data-tone="neutral"] {
+  @apply bg-olive-200;
+
+  .heading {
+    @apply text-(--color-touchline);
+  }
+}
+
+.section[data-tone="dark"] {
+  @apply bg-(--color-touchline) text-white;
+
+  .heading {
+    @apply text-white;
+  }
+}
+
+.section[data-tone="gold"] {
+  @apply bg-(--color-golden-goal)/25;
+
+  .heading {
+    @apply text-(--color-touchline);
+  }
+}
+
+/** ─── Section header (eyebrow + heading + description + cta) ───
+    Rendered automatically when any of those props are passed to <Section>.
+    Sits above the children inside the contain wrapper. */
+
+.section-heading {
+  @apply flex flex-col gap-6 mb-10 md:mb-16;
+  @apply md:flex-row md:items-end md:justify-between md:gap-10;
+}
+
+.section-heading-text {
+  @apply max-w-3xl flex flex-col gap-3;
+}
+
+.section-description {
+  @apply text-base md:text-lg leading-[1.6] text-(--muted-foreground);
+}
+
+/* Heading inside a Section header inherits the section's foreground (which
+   tone overrides) instead of using its own hardcoded touchline color. */
+.section-heading .heading {
+  @apply text-inherit;
+}
+
+/* Eyebrow inside a Section header gets the brand accent. On gold-toned
+   sections the accent flips to touchline so it's not gold-on-gold. */
+.section-heading .eyebrow {
+  @apply text-(--color-golden-goal);
+}
+
+.section[data-tone="gold"] .section-heading .eyebrow {
+  @apply text-(--color-touchline);
+}
+
+/* Header-level CTA — distinct from the UI primitive `.section-cta` button.
+   Uses inherit + currentColor so it adapts to whatever the tone provides. */
+.section-header-cta {
+  @apply shrink-0 mt-4;
+  @apply inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest;
+  @apply border-b-2 no-underline transition-opacity duration-200;
+  @apply text-inherit border-current;
+}
+
+.section-header-cta:hover {
+  @apply opacity-80;
+}
+
+/** Decorative swirl backgrounds — large peach-toned line strokes. Each variant
+    pins one of three SVGs into the section as a non-interactive ::before.
+    Uses `isolate` so children paint above the swirl without needing z-index. */
+.section.section-swirl-1,
+.section.section-swirl-2,
+.section.section-swirl-3 {
+  @apply relative overflow-hidden isolate;
+}
+
+.section.section-swirl-1::before {
+  @apply content-[''] absolute pointer-events-none select-none -z-10;
+  @apply top-0 right-0 w-3/4 md:w-1/2 aspect-792/452;
+  @apply bg-[url('/media/image/bg-swirl-1.svg')] bg-no-repeat bg-contain bg-top-right;
+}
+
+.section.section-swirl-2::before {
+  @apply content-[''] absolute pointer-events-none select-none -z-10;
+  @apply bottom-0 inset-x-0 w-full aspect-1355/503;
+  @apply bg-[url('/media/image/bg-swirl-2.svg')] bg-no-repeat bg-contain bg-bottom sepia-100;
+}
+
+.section.section-swirl-3::before {
+  @apply content-[''] absolute pointer-events-none select-none -z-10;
+  @apply bottom-[-5%] left-[-5%] w-3/4 aspect-1224/1091;
+  @apply bg-[url('/media/image/bg-swirl-3.svg')] bg-no-repeat bg-contain bg-bottom-left;
+}

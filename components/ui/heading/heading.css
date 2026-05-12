@@ -1,0 +1,37 @@
+@reference "tailwindcss";
+
+.heading {
+  @apply relative text-(--color-touchline);
+
+  &[data-size="sm"] {
+    @apply text-xl md:text-3xl;
+  }
+
+  &[data-size="md"] {
+    @apply text-2xl md:text-4xl;
+  }
+
+  &[data-size="lg"] {
+    @apply text-3xl md:text-5xl;
+  }
+
+  &[data-size="xl"] {
+    @apply text-4xl md:text-6xl;
+  }
+
+  &[data-size="2xl"] {
+    @apply text-5xl md:text-7xl;
+  }
+
+  &[data-size="3xl"] {
+    @apply text-6xl md:text-8xl;
+  }
+
+  &[data-variant="display"] {
+    @apply font-(family-name:--font-heading);
+  }
+
+  &[data-variant="caption"] {
+    @apply font-sans;
+  }
+}

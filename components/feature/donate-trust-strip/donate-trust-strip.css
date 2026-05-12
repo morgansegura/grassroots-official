@@ -1,0 +1,41 @@
+@reference "tailwindcss";
+
+.donate-trust-strip {
+  @apply relative w-full bg-(--color-sideline);
+  @apply py-12 md:py-16;
+  @apply border-t border-(--color-touchline)/10;
+}
+
+.donate-trust-strip-inner {
+  @apply flex flex-col items-center gap-6 text-center;
+}
+
+.donate-trust-strip-heading {
+  @apply text-2xl font-bold font-(family-name:--font-heading);
+}
+
+.donate-trust-strip-row {
+  @apply flex flex-wrap items-center justify-center gap-x-8 gap-y-3 list-none m-0 p-0;
+}
+
+.donate-trust-strip-item {
+  @apply flex items-center;
+}
+
+.donate-trust-strip-link {
+  @apply text-sm font-medium no-underline;
+  @apply transition-all duration-300;
+  @apply bg-(--color-golden-goal) brightness-110 py-1 px-2 rounded-sm hover:brightness-125;
+}
+
+.donate-trust-strip-label-static {
+  @apply border border-(--color-golden-goal) py-1 px-2 rounded-sm;
+}
+
+.donate-trust-strip-label-static {
+  @apply text-sm font-medium;
+}
+
+.donate-trust-strip-disclosure {
+  @apply max-w-2xl text-base leading-relaxed;
+}

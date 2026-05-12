@@ -1,0 +1,111 @@
+@reference "tailwindcss";
+
+.faq-section {
+  @apply relative w-full;
+  @apply py-20 md:py-28 lg:py-32;
+}
+
+.faq-section-header {
+  @apply max-w-3xl mx-auto text-center flex flex-col items-center;
+  @apply mb-14 md:mb-20;
+
+  span {
+    @apply text-(--color-golden-goal);
+  }
+}
+
+.faq-section-heading {
+  @apply font-(family-name:--font-heading) text-3xl md:text-6xl font-semibold;
+  @apply leading-[1.15] tracking-tight text-balance text-(--color-touchline);
+}
+
+.faq-section-grid {
+  @apply flex flex-col gap-10 lg:gap-16 items-center;
+}
+
+/* ─── Image collage (left) ─── */
+.faq-section-images {
+  @apply lg:col-span-5 grid grid-cols-2 gap-4;
+  @apply auto-rows-[10rem] md:auto-rows-[12rem];
+}
+
+.faq-section-image {
+  @apply m-0 overflow-hidden rounded-2xl;
+  @apply shadow-[0_12px_28px_-12px_color-mix(in_oklch,var(--color-cleat)_30%,transparent)];
+}
+
+.faq-section-image img {
+  @apply w-full h-full object-cover;
+}
+
+.faq-section-image-2 {
+  /* right column, spans both rows = tall portrait */
+  @apply row-span-2;
+}
+
+/* ─── Accordion (right) ─── */
+.faq-section-accordion {
+  @apply flex flex-col gap-1 max-w-6xl w-full;
+}
+
+.faq-section-item {
+  @apply rounded-md bg-olive-100/50 border border-olive-300;
+  @apply transition-all duration-200;
+
+  /* Animate the open/close — `interpolate-size: allow-keywords` lets
+     `block-size: auto` transition. `::details-content` is the modern
+     pseudo-element exposing the collapsible region of <details>.
+     Supported in Chrome 131+, Safari 18+, Edge 131+. Older browsers
+     still snap open/closed (no regression — just no animation). */
+  interpolate-size: allow-keywords;
+}
+
+.faq-section-item::details-content {
+  block-size: 0;
+  overflow: clip;
+  transition:
+    block-size 320ms ease-out,
+    content-visibility 320ms allow-discrete;
+}
+
+.faq-section-item[open]::details-content {
+  block-size: auto;
+}
+
+.faq-section-item[open] {
+  @apply border-(--color-golden-goal)/50 bg-olive-100;
+  @apply shadow-[0_10px_28px_-10px_color-mix(in_oklch,var(--color-touchline)_18%,transparent)];
+}
+
+.faq-section-question {
+  @apply flex items-center gap-4 cursor-pointer list-none;
+  @apply px-6 py-5 md:px-8 md:py-6;
+}
+
+.faq-section-question::-webkit-details-marker {
+  @apply hidden;
+}
+
+.faq-section-question-number {
+  @apply font-sans text-base md:text-lg font-bold tabular-nums tracking-widest;
+  @apply text-(--color-golden-goal) font-(family-name:--font-heading);
+}
+
+.faq-section-question-text {
+  @apply flex-1 text-2xl md:text-2xl font-medium font-(family-name:--font-heading);
+}
+
+.faq-section-question-mark {
+  @apply text-2xl md:text-3xl font-light leading-none;
+  @apply text-(--color-golden-goal);
+  @apply transition-transform duration-300 ease-out;
+}
+
+.faq-section-item[open] .faq-section-question-mark {
+  @apply rotate-45;
+}
+
+.faq-section-answer {
+  @apply pl-6 pb-5 md:pl-8 md:pb-6 pr-10 md:pr-24;
+  @apply text-base md:text-lg;
+}

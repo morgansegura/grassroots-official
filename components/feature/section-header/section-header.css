@@ -1,0 +1,67 @@
+@reference "tailwindcss";
+
+.section-header {
+  @apply flex flex-col gap-5;
+
+  &[data-align="left"] {
+    @apply items-start text-left;
+  }
+
+  &[data-align="center"] {
+    @apply items-center text-center mx-auto;
+  }
+
+  .section-header-eyebrow {
+    @apply inline-flex items-center gap-3 text-sm font-bold uppercase tracking-widest;
+  }
+
+  /* Pill label — softer, modern, less rigid than the box-outline. */
+  .section-header-eyebrow-text {
+    @apply inline-block px-3.5 py-1.5 rounded-full bg-(--color-golden-goal);
+  }
+
+  .section-header-heading {
+    @apply font-(family-name:--font-heading) font-bold uppercase text-balance;
+  }
+
+  /* Frame variant — pulls from the logo icon's box outline. */
+  &[data-frame="true"] .section-header-heading {
+    @apply inline-flex border-(--color-touchline) px-5 py-3;
+  }
+
+  &[data-frame="true"][data-size="lg"] .section-header-heading {
+    @apply border-8;
+  }
+
+  &[data-frame="true"][data-size="md"] .section-header-heading {
+    @apply border-[6px];
+  }
+
+  &[data-frame="true"][data-size="sm"] .section-header-heading {
+    @apply border-4;
+  }
+
+  &[data-frame="true"] .section-header-lead {
+    @apply mt-2;
+  }
+
+  &[data-size="sm"] .section-header-heading {
+    @apply text-2xl md:text-3xl leading-[1.1] tracking-tight;
+  }
+
+  &[data-size="md"] .section-header-heading {
+    @apply text-3xl md:text-5xl leading-[1.05] tracking-tight;
+  }
+
+  &[data-size="lg"] .section-header-heading {
+    @apply text-4xl md:text-6xl leading-none tracking-tight;
+  }
+
+  .section-header-lead {
+    @apply max-w-2xl text-base md:text-lg leading-[1.6];
+  }
+
+  &[data-align="center"] .section-header-lead {
+    @apply mx-auto;
+  }
+}

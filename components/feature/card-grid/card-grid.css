@@ -1,0 +1,66 @@
+@reference "tailwindcss";
+
+.card-grid {
+  @apply relative w-full overflow-hidden;
+}
+
+.card-grid-inner {
+  @apply relative z-10;
+}
+
+/* ─── Header ─── */
+
+.card-grid-header {
+  @apply max-w-3xl mx-auto text-center flex flex-col items-center;
+  @apply mb-12 md:mb-16;
+}
+
+.card-grid-heading {
+  @apply font-(family-name:--font-heading) text-3xl md:text-5xl font-medium;
+  @apply leading-[1.15] tracking-tight text-balance;
+}
+
+/* ─── Cards ─── */
+
+.card-grid-cards {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6;
+  @apply list-none m-0 p-0 pb-7;
+}
+
+.card-grid-card {
+  @apply relative flex flex-col gap-4 bg-white rounded-3xl p-7 md:p-8;
+  @apply shadow-[0_12px_32px_-14px_color-mix(in_oklch,var(--color-cleat)_25%,transparent)];
+  @apply transition-all duration-300 ease-out;
+}
+
+.card-grid-card:hover {
+  @apply -translate-y-1;
+  @apply shadow-[0_18px_40px_-12px_color-mix(in_oklch,var(--color-cleat)_35%,transparent)];
+}
+
+.card-grid-card-icon {
+  @apply size-7 md:size-8 text-(--color-golden-goal);
+}
+
+.card-grid-card-title {
+  @apply font-(family-name:--font-heading) text-(--color-touchline) text-xl md:text-2xl font-medium;
+  @apply leading-[1.2];
+}
+
+.card-grid-card-description {
+  @apply text-sm md:text-base leading-[1.55];
+}
+
+/* ─── CTA ─── */
+
+.card-grid-cta-row {
+  @apply flex justify-center mt-12 md:mt-16;
+}
+
+/* ─── Decorative curve ─── */
+
+.card-grid-curve {
+  @apply absolute pointer-events-none select-none z-0;
+  @apply top-0 left-0 w-full h-full;
+  @apply text-(--color-golden-goal)/30;
+}

@@ -1,0 +1,25 @@
+@reference "tailwindcss";
+
+.header-nav {
+  @apply relative z-0 hidden md:block;
+
+  .header-nav-list {
+    @apply flex items-center gap-8 list-none m-0 p-0;
+  }
+
+  .header-nav-item {
+    @apply leading-none;
+  }
+
+  .header-nav-link {
+    @apply relative inline-block text-lg font-semibold uppercase tracking-wider no-underline transition-colors duration-200;
+
+    @apply font-(family-name:--font-heading);
+
+    @apply after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-(--color-pitch) after:origin-left after:scale-x-0 after:transition-transform after:duration-300 after:ease-out;
+  }
+
+  .header-nav-link:hover {
+    @apply text-(--color-pitch) after:scale-x-100;
+  }
+}

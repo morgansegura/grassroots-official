@@ -1,0 +1,38 @@
+@reference "tailwindcss";
+
+.donate-screen {
+  @apply min-h-dvh;
+}
+
+.donate-screen-embed-section {
+  @apply relative w-full bg-(--background);
+  @apply py-16 md:py-24;
+}
+
+.donate-screen-embed {
+  @apply max-w-3xl mx-auto flex flex-col gap-8;
+}
+
+.donate-screen-embed-header {
+  @apply flex flex-col gap-3 text-center;
+}
+
+.donate-screen-embed-heading {
+  @apply font-(family-name:--font-heading) text-4xl md:text-6xl font-medium;
+  @apply leading-[1.05] tracking-tight text-balance;
+}
+
+.donate-screen-embed-lead {
+  @apply text-base md:text-lg leading-[1.6] text-(--muted-foreground);
+  @apply max-w-xl mx-auto;
+}
+
+.donate-screen-embed-slot {
+  @apply w-full overflow-hidden rounded-3xl bg-white;
+  @apply shadow-[0_12px_32px_-14px_color-mix(in_oklch,var(--color-touchline)_25%,transparent)];
+}
+
+.donate-screen-embed-iframe {
+  @apply block w-full border-0;
+  @apply h-[clamp(36rem,80vh,52rem)];
+}

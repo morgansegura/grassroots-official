@@ -1,0 +1,119 @@
+@reference "tailwindcss";
+
+.campaign-progress {
+  @apply flex flex-col gap-10;
+}
+
+/* ─── Header ─── */
+
+.campaign-progress-header {
+  @apply flex flex-col gap-4 max-w-2xl;
+}
+
+.campaign-progress-eyebrow {
+  @apply text-xs font-bold uppercase tracking-widest text-(--color-golden-goal);
+}
+
+.campaign-progress-heading {
+  @apply font-(family-name:--font-heading) text-3xl md:text-5xl font-bold uppercase leading-[1.05] tracking-tight text-balance;
+}
+
+.campaign-progress-lead {
+  @apply text-base md:text-lg leading-[1.6];
+}
+
+/* ─── Meter ─── */
+
+.campaign-progress-meter {
+  @apply flex flex-col gap-3;
+}
+
+.campaign-progress-meter-stats {
+  @apply flex items-baseline gap-2;
+}
+
+.campaign-progress-meter-current {
+  @apply font-(family-name:--font-heading) text-8xl md:text-9xl font-bold tabular-nums leading-none tracking-tighter;
+}
+
+.campaign-progress-meter-divider {
+  @apply font-(family-name:--font-heading) text-5xl md:text-7xl font-bold leading-none;
+}
+
+.campaign-progress-meter-goal {
+  @apply font-(family-name:--font-heading) text-5xl md:text-7xl font-bold tabular-nums leading-none;
+}
+
+.campaign-progress-meter-label {
+  @apply ml-2 text-xs uppercase tracking-widest;
+}
+
+.campaign-progress-meter-bar {
+  @apply relative h-5 w-full overflow-hidden bg-(--color-touchline)/10 border-2 border-(--color-touchline);
+}
+
+.campaign-progress-meter-fill {
+  @apply absolute left-0 top-0 bottom-0 bg-(--color-golden-goal) transition-[width] duration-700 ease-out;
+}
+
+.campaign-progress-meter-percent {
+  @apply text-xs uppercase tracking-widest;
+}
+
+/* ─── Milestones ─── */
+
+.campaign-progress-milestones {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-6 list-none m-0 p-0;
+  @apply pt-8 border-t border-(--color-touchline)/15;
+}
+
+.campaign-progress-milestone {
+  @apply flex flex-col gap-3;
+}
+
+.campaign-progress-milestone-dot {
+  @apply size-3 rounded-full border-2 border-(--color-touchline)/30;
+}
+
+.campaign-progress-milestone[data-status="complete"]
+  .campaign-progress-milestone-dot {
+  @apply bg-(--color-pitch) border-(--color-pitch);
+}
+
+.campaign-progress-milestone[data-status="in-progress"]
+  .campaign-progress-milestone-dot {
+  @apply bg-(--color-golden-goal) border-(--color-golden-goal);
+}
+
+.campaign-progress-milestone-content {
+  @apply flex flex-col gap-1;
+}
+
+.campaign-progress-milestone-label {
+  @apply font-(family-name:--font-heading) text-sm font-bold uppercase tracking-widest;
+}
+
+.campaign-progress-milestone[data-status="complete"]
+  .campaign-progress-milestone-label {
+  @apply text-(--color-pitch);
+}
+
+.campaign-progress-milestone-detail {
+  @apply text-sm leading-[1.55];
+}
+
+/* ─── CTA ─── */
+
+.campaign-progress-cta {
+  @apply mt-2 inline-flex items-center gap-3 self-start text-sm font-bold uppercase tracking-widest no-underline transition-colors;
+  @apply border-b-2 border-(--color-golden-goal) pb-1;
+  @apply hover:text-(--color-pitch);
+}
+
+.campaign-progress-cta-arrow {
+  @apply size-4 transition-transform duration-200;
+}
+
+.campaign-progress-cta:hover .campaign-progress-cta-arrow {
+  @apply translate-x-1;
+}

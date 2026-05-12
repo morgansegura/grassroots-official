@@ -1,0 +1,18 @@
+@reference "tailwindcss";
+
+.header {
+  @apply fixed z-40 inset-x-0 top-0 bg-olive-50 flex items-center py-3;
+  @apply transition-transform duration-300 ease-out;
+
+  &[data-visible="false"] {
+    @apply -translate-y-full;
+  }
+
+  .header-container {
+    @apply flex items-center justify-between gap-6;
+  }
+
+  .header-actions {
+    @apply flex items-center gap-4 md:gap-6;
+  }
+}

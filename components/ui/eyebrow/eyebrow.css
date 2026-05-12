@@ -1,0 +1,6 @@
+@reference "tailwindcss";
+
+.eyebrow {
+  @apply inline-flex items-center text-4xl tracking-wider;
+  @apply font-semibold font-(family-name:--font-alternate) mb-2;
+}

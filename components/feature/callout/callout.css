@@ -1,0 +1,33 @@
+@reference "tailwindcss";
+
+.callout {
+  @apply flex flex-col items-center relative py-24 md:py-32 gap-10 md:gap-12;
+
+  .callout-title-block {
+    @apply flex flex-col items-center text-center gap-6;
+  }
+
+  .callout-title {
+    @apply mx-auto max-w-3xl font-semibold;
+  }
+
+  .callout-description {
+    @apply mx-auto text-lg max-w-xl;
+  }
+
+  &[data-variant="primary"] {
+    @apply bg-(--color-touchline);
+    @apply bg-linear-to-br from-(--color-touchline) via-(--color-touchline) to-90% to-(--color-first-touch)/30;
+
+    .callout-title-block {
+      .heading {
+        @apply text-white;
+      }
+      @apply text-white;
+
+      span {
+        @apply text-(--color-golden-goal);
+      }
+    }
+  }
+}

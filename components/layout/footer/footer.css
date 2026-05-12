@@ -1,0 +1,138 @@
+@reference "tailwindcss";
+
+.footer {
+  @apply pt-14;
+  @apply bg-linear-to-br from-olive-600 via-olive-700 to-olive-800 border-t text-white;
+}
+
+.footer-container {
+  @apply flex flex-col gap-6 md:gap-8;
+}
+
+/* ─── Top: brand + newsletter ─── */
+
+.footer-top {
+  @apply grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start;
+}
+
+.footer-brand {
+  @apply lg:col-span-5 flex flex-col gap-3;
+
+  .logo-text .color-base-dark {
+    @apply fill-white;
+  }
+}
+
+.footer-brand-link {
+  @apply inline-flex outline-none;
+}
+
+.footer-brand-tagline {
+  @apply font-(family-name:--font-alternate) text-(--color-golden-goal) brightness-120 text-4xl font-semibold tracking-wider text-balance max-w-md;
+}
+
+.footer-brand-location {
+  @apply text-sm uppercase font-medium tracking-wide;
+}
+
+.footer-newsletter {
+  @apply lg:col-span-7 lg:w-full lg:max-w-xl lg:ml-auto flex flex-col gap-3 bg-olive-400/10 py-4 px-6 rounded-3xl border border-olive-500;
+}
+
+.footer-newsletter-label {
+  @apply text-2xl text-white font-(family-name:--font-heading) font-semibold;
+}
+
+.footer-newsletter-row {
+  @apply flex flex-col sm:flex-row gap-2;
+}
+
+.footer-newsletter-input {
+  @apply flex-1 bg-black/10 border-olive-400 border px-4 py-2 rounded-sm text-base  outline-none transition-colors text-(--foregound);
+
+  @apply focus-visible:border-(--color-golden-goal) focus-visible:bg-black/15;
+}
+
+.footer-newsletter-submit {
+  @apply inline-flex items-center justify-center text-white bg-(--color-golden-goal) px-6 py-3 text-sm font-bold uppercase tracking-widest cursor-pointer transition-all duration-200;
+  @apply hover:brightness-110 rounded-full;
+  @apply active:translate-y-0;
+  @apply focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-(--color-touchline);
+}
+
+.footer-newsletter-fineprint {
+  @apply text-xs font-medium tracking-wide text-olive-300 italic;
+}
+
+/* ─── Middle: link columns ─── */
+
+.footer-columns {
+  @apply grid grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8 pb-8;
+  @apply pt-12 border-y border-olive-600;
+}
+
+.footer-column {
+  @apply flex flex-col gap-4;
+}
+
+.footer-column-heading {
+  @apply inline-flex text-base font-(family-name:--font-heading) font-bold uppercase tracking-widest text-(--color-golden-goal) brightness-110;
+
+  span {
+    @apply inline border-b-2 border-(--color-golden-goal)/50;
+  }
+}
+
+.footer-column-links {
+  @apply flex flex-col gap-3 list-none m-0 p-0;
+}
+
+.footer-column-link {
+  @apply no-underline transition-colors font-semibold p-0.25 px-1 rounded-sm text-white;
+  @apply hover:bg-white/15;
+  @apply focus-visible:text-(--color-golden-goal) outline-none;
+}
+
+/* ─── Legal link row ─── */
+
+.footer-legal-row {
+  @apply flex justify-center md:justify-start flex-wrap items-center gap-x-5 gap-y-2 list-none m-0 p-0;
+}
+
+.footer-legal-link {
+  @apply text-base font-medium no-underline transition-colors  p-0.25 px-1 rounded-sm;
+  @apply hover:bg-white/15;
+  @apply focus-visible:text-(--color-golden-goal) outline-none;
+}
+
+/* ─── Bottom: legal + social ─── */
+
+.footer-bottom {
+  @apply flex pb-4 flex-col-reverse lg:flex-row lg:justify-between lg:items-end gap-8 pt-8;
+}
+
+.footer-bottom-legal {
+  @apply flex flex-col gap-2 max-w-2xl;
+}
+
+.footer-disclosure {
+  @apply text-base leading-relaxed mb-4;
+}
+
+.footer-copyright {
+  @apply text-sm;
+}
+
+.footer-social {
+  @apply flex items-center gap-3 list-none m-0 p-0;
+}
+
+.footer-social-link {
+  @apply inline-flex size-10 items-center justify-center text-white rounded-full border border-olive-400 outline-none transition-all;
+  @apply hover:bg-white/10 hover:border-white/40;
+  @apply focus-visible:border-(--color-golden-goal) focus-visible:bg-white/10;
+}
+
+.footer-social-icon {
+  @apply size-4;
+}

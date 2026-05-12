@@ -1,0 +1,67 @@
+@reference "tailwindcss";
+
+.mission-screen {
+  @apply relative;
+
+  .hero-extended {
+    @apply md:pb-40;
+
+    + .section {
+      @apply -mt-32 md:-mt-40;
+    }
+  }
+}
+
+.mission-screen-founder-signoff {
+  @apply mt-3 text-sm font-medium text-(--color-golden-goal);
+}
+
+/* ─── Three-ways "Get involved" — flat icon-left layout ─── */
+
+.mission-screen-involve {
+  @apply flex flex-col gap-12 md:gap-16;
+}
+
+.mission-screen-involve-header {
+  @apply max-w-3xl mx-auto text-center flex flex-col items-center gap-4;
+}
+
+.mission-screen-involve-eyebrow {
+  @apply text-sm font-bold uppercase tracking-widest text-(--color-golden-goal);
+}
+
+.mission-screen-involve-heading {
+  @apply font-(family-name:--font-heading) text-3xl md:text-5xl font-medium;
+  @apply leading-[1.1] tracking-tight text-balance;
+}
+
+.mission-screen-involve-lead {
+  @apply text-base md:text-lg leading-[1.6];
+}
+
+.mission-screen-involve-row {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 list-none m-0 p-0;
+}
+
+.mission-screen-involve-item {
+  @apply flex items-start gap-5;
+}
+
+.mission-screen-involve-icon {
+  @apply flex items-center justify-center shrink-0;
+  @apply size-12 md:size-14 rounded-full;
+  @apply bg-(--color-golden-goal) text-white;
+}
+
+.mission-screen-involve-content {
+  @apply flex flex-col gap-2;
+}
+
+.mission-screen-involve-title {
+  @apply font-(family-name:--font-heading) text-xl md:text-2xl font-medium;
+  @apply leading-[1.2];
+}
+
+.mission-screen-involve-body {
+  @apply text-sm md:text-base leading-[1.55];
+}

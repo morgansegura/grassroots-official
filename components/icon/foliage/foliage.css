@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.foliage {
+  @apply fill-(--color-hattrick);
+}

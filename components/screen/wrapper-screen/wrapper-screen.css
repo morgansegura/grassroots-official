@@ -1,0 +1,12 @@
+@reference "tailwindcss";
+
+.wrapper-screen {
+  @apply relative h-full antialiased;
+
+  main {
+    @apply flex-1;
+  }
+}
+.wrapper-body {
+  @apply min-h-full flex flex-col pt-16;
+}

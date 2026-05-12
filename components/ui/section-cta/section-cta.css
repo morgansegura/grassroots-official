@@ -1,0 +1,21 @@
+@reference "tailwindcss";
+
+.section-cta {
+  @apply inline-flex items-center justify-center gap-2;
+  @apply rounded-full px-7 py-3.5 no-underline outline-none;
+  @apply font-sans text-sm font-bold uppercase tracking-widest;
+  @apply bg-(--color-golden-goal) text-white;
+  @apply shadow-[0_8px_22px_-6px_color-mix(in_oklch,var(--color-golden-goal)_55%,transparent)];
+  @apply transition-all duration-200 ease-out;
+  @apply hover:-translate-y-px hover:brightness-[0.97];
+  @apply hover:shadow-[0_12px_28px_-6px_color-mix(in_oklch,var(--color-golden-goal)_70%,transparent)];
+  @apply focus-visible:ring-2 focus-visible:ring-(--color-golden-goal)/60 focus-visible:ring-offset-2;
+}
+
+.section-cta-arrow {
+  @apply size-4 transition-transform duration-200;
+}
+
+.section-cta:hover .section-cta-arrow {
+  @apply translate-x-1;
+}
