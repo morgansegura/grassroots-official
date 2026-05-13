@@ -2,8 +2,6 @@
 
 import * as React from "react";
 import Link from "next/link";
-import Fade from "embla-carousel-fade";
-import useEmblaCarousel from "embla-carousel-react";
 
 import { cn } from "@/lib/utils";
 
@@ -70,37 +68,27 @@ export function HeroCarousel({
   slides = DEFAULT_SLIDES,
   autoPlayDelay = 6500,
 }: HeroCarouselProps) {
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    {
-      loop: true,
-      watchDrag: true,
-      dragThreshold: 8,
-      duration: 25,
-    },
-    [Fade()],
-  );
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   const [isPaused, setIsPaused] = React.useState(false);
 
   const scrollTo = React.useCallback(
-    (index: number) => emblaApi?.scrollTo(index),
-    [emblaApi],
+    (index: number) => {
+      setSelectedIndex(
+        ((index % slides.length) + slides.length) % slides.length,
+      );
+    },
+    [slides.length],
   );
 
   React.useEffect(() => {
-    if (!emblaApi) return;
-    const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
-    emblaApi.on("select", onSelect);
-    onSelect();
-  }, [emblaApi]);
-
-  React.useEffect(() => {
-    if (!emblaApi || !autoPlayDelay || slides.length < 2) return;
+    if (!autoPlayDelay || slides.length < 2) return;
     const interval = setInterval(() => {
-      if (!isPaused) emblaApi.scrollNext();
+      if (!isPaused) {
+        setSelectedIndex((prev) => (prev + 1) % slides.length);
+      }
     }, autoPlayDelay);
     return () => clearInterval(interval);
-  }, [emblaApi, autoPlayDelay, isPaused, slides.length]);
+  }, [autoPlayDelay, isPaused, slides.length]);
 
   return (
     <section
@@ -109,7 +97,7 @@ export function HeroCarousel({
       onMouseLeave={() => setIsPaused(false)}
       aria-roledescription="carousel"
     >
-      <div ref={emblaRef} className="hero-carousel-viewport">
+      <div className="hero-carousel-viewport">
         <div className="hero-carousel-track">
           {slides.map((slide, index) => (
             <Slide

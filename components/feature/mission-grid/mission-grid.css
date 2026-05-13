@@ -1,7 +1,7 @@
 @reference "tailwindcss";
 
 .mission-grid {
-  @apply relative w-full overflow-hidden;
+  @apply relative w-full;
 }
 
 .mission-grid-inner {
@@ -119,6 +119,6 @@
 
 .mission-grid-curve {
   @apply absolute pointer-events-none select-none z-0;
-  @apply top-0 right-[-6%] w-2/3 h-full;
+  @apply top-0 right-0 w-2/3 h-full;
   @apply text-(--color-golden-goal)/30;
 }

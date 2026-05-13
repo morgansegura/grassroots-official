@@ -33,7 +33,7 @@ export function CardGrid({
     <div className={cn("card-grid", className)}>
       <Curve />
 
-      <div className="card-grid-inner contain">
+      <div className="card-grid-inner">
         {eyebrow || heading ? (
           <header className="card-grid-header">
             {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}

@@ -6,8 +6,7 @@
 }
 
 .hero-carousel-viewport {
-  @apply absolute inset-0;
-  touch-action: pan-y;
+  @apply absolute inset-0 overflow-hidden;
 }
 
 .hero-carousel-track {
@@ -155,6 +154,7 @@
 .hero-carousel-indicator-dot::before {
   content: "";
   @apply block h-px w-8 bg-white/35 transition-all duration-300 ease-out;
+  @apply pointer-events-none;
 }
 
 .hero-carousel-indicator-dot:hover::before {
