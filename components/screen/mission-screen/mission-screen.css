@@ -2,13 +2,14 @@
 
 .mission-screen {
   @apply relative;
+}
 
-  .hero-extended {
-    @apply md:pb-40;
+.mission-screen-founder-body {
+  @apply max-w-2xl mx-auto flex flex-col gap-5 items-start text-left;
+  @apply text-base md:text-lg leading-[1.65];
 
-    + .section {
-      @apply -mt-32 md:-mt-40;
-    }
+  > p:last-of-type {
+    @apply self-stretch;
   }
 }
 

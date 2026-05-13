@@ -9,7 +9,6 @@ export type CalloutProps = {
   eyebrow?: string;
   title?: React.ReactNode;
   description?: React.ReactNode;
-  variant?: "dark" | "primary" | "light";
 };
 
 export function Callout({
@@ -18,10 +17,9 @@ export function Callout({
   description,
   eyebrow,
   title,
-  variant = "primary",
 }: CalloutProps) {
   return (
-    <section className={cn("callout", className)} data-variant={variant}>
+    <div className={cn("callout", className)}>
       {title ? (
         <div className="callout-title-block">
           <div>
@@ -33,6 +31,6 @@ export function Callout({
         </div>
       ) : null}
       {children}
-    </section>
+    </div>
   );
 }

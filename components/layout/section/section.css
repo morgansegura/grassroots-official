@@ -26,7 +26,7 @@
 /** Top padding only — use when the section that follows already
     has its own top padding and you don't want a double gap. */
 .section[data-size="intro"] {
-  @apply pt-16 md:pt-20 pb-0;
+  @apply pt-16 pb-32 -mb-32 md:pt-20 md:pb-40 md:-mb-40;
 }
 
 /** Background variants — apply alongside Section as a className. */

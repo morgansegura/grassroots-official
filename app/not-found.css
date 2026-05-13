@@ -18,9 +18,9 @@
 
 .not-found-action-secondary {
   @apply inline-flex items-center rounded-full px-6 py-3;
-  @apply border border-white;
-  @apply text-sm font-bold uppercase tracking-wider text-white no-underline;
+  @apply border border-(--color-touchline);
+  @apply text-sm font-bold uppercase tracking-wider text-(--color-touchline) no-underline;
   @apply transition-all duration-200 ease-out;
-  @apply hover:border-white/40 hover:-translate-y-px;
+  @apply hover:border-(--color-touchline)/40 hover:-translate-y-px;
   @apply focus-visible:ring-2 focus-visible:ring-(--color-touchline) focus-visible:ring-offset-2;
 }

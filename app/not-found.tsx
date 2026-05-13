@@ -8,11 +8,15 @@ import "./not-found.css";
 export default function NotFound() {
   return (
     <main className="not-found">
-      <Section size="flush" contain={false} ariaLabel="Page not found">
+      <Section contain={false} ariaLabel="Page not found">
         <Callout
           className="hero-extended"
-          eyebrow="404 — page not found"
-          title={<>This page didn&apos;t make the roster.</>}
+          eyebrow="Error 404"
+          title={
+            <>
+              This page didn&apos;t <br /> make the roster.
+            </>
+          }
           description={
             <>
               The page you&apos;re looking for isn&apos;t here. It may have

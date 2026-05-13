@@ -90,15 +90,15 @@ const DEFAULT_ITEMS: FaqItem[] = [
       <>
         Grassroots Foundation is a registered DBA of Grass Roots Foundation, a
         501(c)(3) public charity (EIN 35-2822183). We&apos;re listed in the IRS
-        Tax-Exempt Organization database and the{" "}
+        Tax-Exempt Organization database, the{" "}
         <Link
           href="https://projects.propublica.org/nonprofits/organizations/352822183"
           target="_blank"
         >
           ProPublica Nonprofit Explorer
         </Link>
-        , and we&apos;re working toward Candid Bronze → Gold transparency
-        status. We&apos;ll publish our 990 the day it&apos;s filed.
+        , and hold the Candid Platinum Seal of Transparency. We&apos;ll publish
+        our 990 the day it&apos;s filed.
       </>
     ),
   },

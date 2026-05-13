@@ -22,10 +22,12 @@ const HERO = {
 export function MissionScreen({ className }: MissionScreenProps) {
   return (
     <main className={cn("mission-screen", className)}>
-      <Callout {...HERO} className="hero-extended" />
+      <Section tone="dark" size="intro">
+        <Callout {...HERO} className="hero-extended" />
+      </Section>
 
       {/* ─── Section 1 — Our mission ───────────────────────────── */}
-      <Section size="intro">
+      <Section>
         <MediaSection
           layout="bg-half"
           eyebrow="Our mission"
@@ -122,44 +124,44 @@ export function MissionScreen({ className }: MissionScreenProps) {
         />
       </Section>
 
-      {/* ─── Section 4 — From the founder ──────────────────────── */}
-      <Section ariaLabel="From the founder">
-        <MediaSection
-          eyebrow="From the founder"
-          heading="Every parent in this system says it. We can actually do it."
-          mediaPosition="left"
-          body={
+      {/* ─── Section 4 — From the founders ─────────────────────── */}
+      <Section ariaLabel="From the founders">
+        <Callout
+          eyebrow="From the founders"
+          title={
             <>
-              <p>
-                My kids have played club soccer in San Diego for years — across
-                age groups, across levels, across clubs. I&apos;ve sat in the
-                parking lot at 7 a.m. tournaments and 9 p.m. training sessions
-                for the better part of a decade. And year after year, I&apos;ve
-                watched the cost wall do the same thing: a kid disappears
-                somewhere between U12 and U14, and the family stops bringing it
-                up because the math is the math.
-              </p>
-              <p>
-                Every parent in this system has said some version of the same
-                thing — <em>somebody should do something.</em> The honest answer
-                is, we can. The people inside it know where the breaks are,
-                who&apos;s about to be priced out next, and which dollars
-                actually move a kid back onto the field. Grassroots Foundation
-                is the start of doing that — in San Diego, in public, funded
-                honestly, one kid at a time.
-              </p>
-              <p className="mission-screen-founder-signoff">
-                — Morgan Segura, founder
-              </p>
+              This is the first step to <br />
+              doing something about it.
             </>
           }
-          media={{
-            src: "",
-            alt: "Morgan Segura, founder of Grassroots Foundation",
-            aspect: "4/5",
-          }}
-          cta={{ label: "Read the strategic plan", href: "/about" }}
-        />
+        >
+          <div className="mission-screen-founder-body">
+            <p>
+              Our kids have played club soccer in San Diego for years — across
+              age groups, across levels, across clubs. We&apos;ve driven the 3–7
+              hours to be at a tournament at 6 a.m., juggled who takes whom to
+              which training for our three soccer players until 10 p.m., Monday
+              through Friday, for the better part of a decade. All of the
+              cross-country and international travel for showcases, tournaments,
+              and league matches. We&apos;ve been blessed to be able to do so.
+              And year after year, we&apos;ve watched the cost of this sport
+              climb. We&apos;ve seen players stop participating somewhere
+              between U12 and U16, in part because many families are being
+              priced out of the sport.
+            </p>
+            <p>
+              Most parents we&apos;ve met — and likely many who we haven&apos;t
+              — have said some version of the same thing:{" "}
+              <em>somebody should do something. But what can we do?</em>{" "}
+              Grassroots Foundation is the beginning of doing something — in San
+              Diego, in public, funded honestly, one kid at a time.
+            </p>
+            <p className="mission-screen-founder-signoff text-center">
+              — Mirella Hinojosa and Morgan Segura, founders
+            </p>
+            {/* <SectionCta href="/mission">Read the strategic plan</SectionCta> */}
+          </div>
+        </Callout>
       </Section>
 
       {/* ─── Section 5 — Three ways to be part of this ─────────── */}

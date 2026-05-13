@@ -46,7 +46,7 @@ All donations are processed through compliant third-party platforms (Zeffy, PayP
 
 - IRS 501(c)(3): EIN 35-2822183
 - ProPublica Nonprofit Explorer: https://projects.propublica.org/nonprofits/organizations/352822183
-- Candid (GuideStar): in progress (Bronze → Silver → Gold → Platinum)
+- Candid (GuideStar): Platinum Seal of Transparency
 - PayPal Giving Fund: enrolled
 - Goodstack: enrolled
 
