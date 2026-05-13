@@ -27,12 +27,12 @@ const HERO = {
 export function BlogScreen({ posts, className }: BlogScreenProps) {
   return (
     <main className={cn("blog-screen", className)}>
-      <Section tone="white">
+      <Section tone="gold">
         <Callout {...HERO} />
       </Section>
 
       {posts.length > 0 ? (
-        <Section ariaLabel="All field notes" tone="light">
+        <Section tone="white" ariaLabel="All field notes">
           <ul className="blog-screen-list contain" role="list">
             {posts.map((post) => (
               <li key={post.slug} className="blog-screen-item">
@@ -55,7 +55,7 @@ export function BlogScreen({ posts, className }: BlogScreenProps) {
         </Section>
       ) : null}
 
-      <Section tone="white">
+      <Section tone="gold">
         <CtaBanner
           eyebrow="Get involved"
           heading="Read the math, then put a kid on the roster."

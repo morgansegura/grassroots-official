@@ -130,8 +130,8 @@ export function VolunteerScreen() {
         <h2>4. How to get involved</h2>
         <ol>
           <li>
-            <Link href="/contact">Reach out</Link> with a short note about your
-            skills, capacity, and what you&apos;d like to contribute. Two
+            <Link href="/contact">Reach out</Link>&nbsp; with a short note about
+            your skills, capacity, and what you&apos;d like to contribute. Two
             sentences is enough.
           </li>
           <li>

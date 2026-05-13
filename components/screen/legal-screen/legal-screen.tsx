@@ -25,7 +25,7 @@ export function LegalScreen({
 }: LegalScreenProps) {
   return (
     <main className={cn("legal-screen", className)}>
-      <Section tone="white" size="hero" ariaLabel={title} className="border-b">
+      <Section tone="gold" size="hero" ariaLabel={title}>
         <header className="legal-screen-header">
           <div>
             <Eyebrow>{eyebrow}</Eyebrow>
@@ -36,7 +36,7 @@ export function LegalScreen({
         </header>
       </Section>
 
-      <Section tone="light">
+      <Section tone="white">
         <div className="legal-screen-content">{children}</div>
 
         <footer className="legal-screen-footer">

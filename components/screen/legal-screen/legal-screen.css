@@ -14,11 +14,11 @@
 }
 
 .legal-screen-meta {
-  @apply text-sm font-medium uppercase tracking-wider text-mist-500;
+  @apply text-sm font-medium uppercase tracking-wider;
 }
 
 .legal-screen-intro {
-  @apply text-lg md:text-xl leading-[1.55] text-mist-800 mt-2;
+  @apply text-lg md:text-xl leading-[1.55]  mt-2;
 }
 
 .legal-screen-intro p {
@@ -36,7 +36,7 @@
 }
 
 .legal-screen-content h3 {
-  @apply font-(family-name:--font-heading) text-lg md:text-xl font-medium;
+  @apply font-(family-name:--font-heading) text-(--color-golden-goal) brightness-65 text-xl md:text-2xl font-medium;
   @apply leading-snug;
   @apply mt-4 mb-2;
 }

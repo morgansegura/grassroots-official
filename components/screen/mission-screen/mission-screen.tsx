@@ -93,7 +93,7 @@ export function MissionScreen({ className }: MissionScreenProps) {
       </Section>
 
       {/* ─── Section 3 — Where we focus ────────────────────────── */}
-      <Section>
+      <Section tone="gold">
         <MediaSection
           eyebrow="Where we focus"
           heading="San Diego first."

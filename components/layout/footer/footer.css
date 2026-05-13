@@ -1,7 +1,7 @@
 @reference "tailwindcss";
 
 .footer {
-  @apply pt-14 bg-(--color-golden-goal);
+  @apply pt-14 bg-(--color-pitch);
   @apply bg-linear-to-br from-(--color-touchline)/50 via-(--color-touchline) to-(--color-touchline) border-t text-white;
 }
 

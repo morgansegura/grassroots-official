@@ -50,9 +50,6 @@ type FeatureEntry =
 
 export type LandingScreenSection = SectionConfig & FeatureEntry;
 
-const PLACEHOLDER_IMG =
-  "https://images.unsplash.com/photo-1577741314755-048d8525d31e?auto=format&fit=crop&w=1200&q=80";
-
 export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
   // ─── Hero ───
   {
@@ -232,7 +229,7 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
   // ─── Youth soccer in the U.S., by age group ───
   {
     ariaLabel: "Youth soccer in the U.S., by age group",
-    tone: "neutral",
+    tone: "gold",
     "card-grid": {
       eyebrow: "How the system works",
       heading: "Youth soccer in the U.S., by age group.",
