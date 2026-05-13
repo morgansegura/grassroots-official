@@ -57,10 +57,12 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
   return (
     <main className={cn("programs-screen", className)}>
       <ServiceListSchema services={PROGRAM_SERVICES} />
-      <Callout {...HERO} className="hero-extended" />
+      <Section size="intro" tone="dark">
+        <Callout {...HERO} />
+      </Section>
 
       {/* ─── Program 1 — Player Scholarships ─────────────────────── */}
-      <Section size="intro" id="scholarships">
+      <Section id="scholarships">
         <MediaSection
           layout="bg-half"
           eyebrow="Program · Player Scholarships"
@@ -94,7 +96,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
       </Section>
 
       {/* ─── Program 2 — Team Sponsorship ────────────────────────── */}
-      <Section id="team-sponsorship">
+      <Section id="team-sponsorship" tone="light">
         <MediaSection
           eyebrow="Program · Team Sponsorship"
           heading="Underwrite an entire roster — every kid plays."
@@ -128,7 +130,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
       </Section>
 
       {/* ─── Program 3 — Kit & Uniform Grants ────────────────────── */}
-      <Section id="kit-uniform" className="section-light">
+      <Section id="kit-uniform">
         <MediaSection
           eyebrow="Program · Kit & Uniform Grants"
           heading="Match-day kit, training kit, team bag."
@@ -160,7 +162,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
       </Section>
 
       {/* ─── Program 4 — Equipment Grants ────────────────────────── */}
-      <Section id="equipment">
+      <Section id="equipment" tone="light">
         <MediaSection
           eyebrow="Program · Equipment Grants"
           heading="Cleats, ball, shin guards, training bag."
@@ -193,7 +195,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
       </Section>
 
       {/* ─── Program 5 — Methodology Clinic Access ──────────────── */}
-      <Section id="clinics" className="section-warm">
+      <Section id="clinics">
         <MediaSection
           eyebrow="Program · Methodology Clinic Access"
           heading="Reserved seats at elite-methodology training clinics."
@@ -224,7 +226,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
       </Section>
 
       {/* ─── How the programs fit together ──────────────────────── */}
-      <Section>
+      <Section tone="gold">
         <div className="programs-screen-stack">
           <header className="programs-screen-stack-header">
             <div>
@@ -322,7 +324,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
       </Section>
 
       {/* ─── Closing CTA banner ─────────────────────────────────── */}
-      <Section tone="white" size="flush">
+      <Section tone="white">
         <CtaBanner
           eyebrow="Get involved"
           heading="Every kid plays the game."

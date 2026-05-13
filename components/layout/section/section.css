@@ -86,7 +86,7 @@
 }
 
 .section[data-tone="gold"] {
-  @apply bg-(--color-golden-goal)/25;
+  @apply bg-(--color-golden-goal)/15;
 
   .heading {
     @apply text-(--color-touchline);

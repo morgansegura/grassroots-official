@@ -10,7 +10,7 @@
 }
 
 .blog-screen-item {
-  @apply border-b border-(--color-touchline)/12;
+  @apply not-last:border-b border-(--color-golden-goal)/25;
 }
 
 /* .blog-screen-item:first-child {

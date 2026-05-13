@@ -43,13 +43,17 @@ export type StoriesScreenSection = SectionConfig & FeatureEntry;
 export const STORIES_SCREEN_MOCK: StoriesScreenSection[] = [
   // ─── Hero ───
   {
-    size: "flush",
     contain: false,
+    size: "intro",
+    tone: "dark",
     ariaLabel: "Stories from the work",
     callout: {
-      className: "hero-extended",
       eyebrow: "Stories",
-      title: <>Stories from the field — coming soon.</>,
+      title: (
+        <>
+          Stories from the field <br />— coming soon —
+        </>
+      ),
       description:
         "We don't have recipient stories yet. The Class of '26 is being funded now. When kids are on the roster, their stories — told with consent, by them and their families — will live here.",
     },
@@ -57,7 +61,6 @@ export const STORIES_SCREEN_MOCK: StoriesScreenSection[] = [
 
   // ─── Pre-launch posture ───
   {
-    size: "intro",
     ariaLabel: "Pre-launch posture",
     "media-section": {
       layout: "bg-half",
@@ -93,6 +96,7 @@ export const STORIES_SCREEN_MOCK: StoriesScreenSection[] = [
   // ─── What stories will include ───
   {
     ariaLabel: "What every story will include",
+    tone: "light",
     "media-section": {
       eyebrow: "What every story will include",
       heading: "Honest. Specific. Verifiable.",
@@ -126,7 +130,7 @@ export const STORIES_SCREEN_MOCK: StoriesScreenSection[] = [
   // ─── How we work with families (consent + care) ───
   {
     ariaLabel: "How we work with families",
-    tone: "light",
+    tone: "gold",
     "card-grid": {
       eyebrow: "Story capture",
       heading: "How we work with families.",
@@ -253,7 +257,7 @@ export const STORIES_SCREEN_MOCK: StoriesScreenSection[] = [
 
   // ─── Class of '26 first stories ───
   {
-    className: "section-warm",
+    tone: "white",
     ariaLabel: "Class of '26 first stories",
     "media-section": {
       eyebrow: "Class of '26 · First stories",
@@ -304,8 +308,8 @@ export const STORIES_SCREEN_MOCK: StoriesScreenSection[] = [
 
   // ─── Closing CTA ───
   {
-    size: "flush",
     contain: false,
+    tone: "gold",
     ariaLabel: "Closing CTA",
     "cta-banner": {
       tone: "light",

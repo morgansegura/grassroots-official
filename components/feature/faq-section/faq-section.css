@@ -2,7 +2,6 @@
 
 .faq-section {
   @apply relative w-full;
-  @apply py-20 md:py-28 lg:py-32;
 }
 
 .faq-section-header {

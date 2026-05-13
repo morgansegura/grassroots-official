@@ -5,7 +5,7 @@
 }
 
 .impact-stats-heading {
-  @apply font-(family-name:--font-heading) text-2xl md:text-5xl font-semibold text-center;
+  @apply font-(family-name:--font-heading) text-(--color-golden-goal) text-2xl md:text-5xl font-semibold text-center;
   @apply tracking-tight text-balance;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .impact-stats-value {
-  @apply font-(family-name:--font-heading) text-(--color-touchline) text-4xl md:text-6xl font-bold tabular-nums;
+  @apply font-(family-name:--font-heading) text-(--color-golden-goal) text-4xl md:text-6xl font-bold tabular-nums;
   @apply leading-none tracking-tight;
 
   span {

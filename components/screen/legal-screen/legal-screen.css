@@ -30,7 +30,7 @@
 }
 
 .legal-screen-content h2 {
-  @apply font-(family-name:--font-heading) text-2xl md:text-3xl font-medium;
+  @apply font-(family-name:--font-heading) text-(--color-touchline) text-2xl md:text-3xl font-medium;
   @apply leading-tight tracking-tight;
   @apply mb-3;
 }
@@ -69,7 +69,7 @@
 }
 
 .legal-screen-content a {
-  @apply text-yellow-700 underline underline-offset-2;
+  @apply text-(--color-golden-goal) brightness-80 underline underline-offset-2 hover:brightness-60;
   @apply transition-colors;
 }
 
@@ -96,6 +96,6 @@
 }
 
 .legal-screen-footer-link {
-  @apply text-yellow-700 underline underline-offset-2;
+  @apply text-(--color-golden-goal) brightness-80 underline underline-offset-2 hover:brightness-60;
   @apply transition-colors;
 }

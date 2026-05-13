@@ -86,8 +86,6 @@ export function MissionGrid({
       className={cn("mission-grid contain", className)}
       aria-label="What we fund"
     >
-      {/* <DotPattern /> */}
-
       <div className="mission-grid-inner">
         <header className="mission-grid-header">
           <Eyebrow>{eyebrow}</Eyebrow>
@@ -158,28 +156,5 @@ function Body({ card }: { card: MissionCard }) {
         ) : null}
       </div>
     </>
-  );
-}
-
-function DotPattern() {
-  return (
-    <svg className="mission-grid-dots" viewBox="0 0 120 120" aria-hidden="true">
-      <defs>
-        <pattern
-          id="mission-grid-dots-pattern"
-          x="0"
-          y="0"
-          width="20"
-          height="20"
-          patternUnits="userSpaceOnUse"
-        >
-          <circle cx="2" cy="2" r="1.4" fill="currentColor" />
-        </pattern>
-      </defs>
-      <polygon
-        points="0,120 120,120 0,0"
-        fill="url(#mission-grid-dots-pattern)"
-      />
-    </svg>
   );
 }

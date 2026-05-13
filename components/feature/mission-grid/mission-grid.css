@@ -2,7 +2,6 @@
 
 .mission-grid {
   @apply relative w-full overflow-hidden;
-  @apply py-20 md:py-28 lg:py-32;
 }
 
 .mission-grid-inner {

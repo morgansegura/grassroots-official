@@ -1,8 +1,8 @@
 @reference "tailwindcss";
 
 .footer {
-  @apply pt-14 bg-emerald-300;
-  @apply bg-linear-to-br from-(--color-touchline)/75 via-(--color-touchline) to-emerald-950 border-t text-white;
+  @apply pt-14 bg-(--color-golden-goal);
+  @apply bg-linear-to-br from-(--color-touchline)/50 via-(--color-touchline) to-(--color-touchline) border-t text-white;
 }
 
 .footer-container {

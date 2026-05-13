@@ -60,7 +60,7 @@ export function MissionScreen({ className }: MissionScreenProps) {
       </Section>
 
       {/* ─── Section 2 — How we work ───────────────────────────── */}
-      <Section>
+      <Section tone="light">
         <MediaSection
           eyebrow="How we work"
           heading="Partner-club integration."
@@ -93,7 +93,7 @@ export function MissionScreen({ className }: MissionScreenProps) {
       </Section>
 
       {/* ─── Section 3 — Where we focus ────────────────────────── */}
-      <Section className="section-light">
+      <Section>
         <MediaSection
           eyebrow="Where we focus"
           heading="San Diego first."
@@ -125,7 +125,7 @@ export function MissionScreen({ className }: MissionScreenProps) {
       </Section>
 
       {/* ─── Section 4 — From the founders ─────────────────────── */}
-      <Section ariaLabel="From the founders">
+      <Section tone="light" ariaLabel="From the founders">
         <Callout
           eyebrow="From the founders"
           title={
@@ -165,7 +165,7 @@ export function MissionScreen({ className }: MissionScreenProps) {
       </Section>
 
       {/* ─── Section 5 — Three ways to be part of this ─────────── */}
-      <Section className="section-warm">
+      <Section tone="gold">
         <div className="mission-screen-involve">
           <header className="mission-screen-involve-header">
             <div>
@@ -231,14 +231,16 @@ export function MissionScreen({ className }: MissionScreenProps) {
       </Section>
 
       {/* ─── Section 6 — Closing CTA banner ─────────────────────── */}
-      <CtaBanner
-        tone="light"
-        eyebrow="Get involved"
-        heading="Be part of the Class of '26."
-        body="Founding donors decide which kids get the first call when the season begins. Every gift moves the roster from 0 toward 100 by World Cup 2026."
-        cta={{ label: "Become a founding donor", href: "/donate" }}
-        tiers={[]}
-      />
+      <Section tone="light">
+        <CtaBanner
+          tone="light"
+          eyebrow="Get involved"
+          heading="Be part of the Class of '26."
+          body="Founding donors decide which kids get the first call when the season begins. Every gift moves the roster from 0 toward 100 by World Cup 2026."
+          cta={{ label: "Become a founding donor", href: "/donate" }}
+          tiers={[]}
+        />
+      </Section>
     </main>
   );
 }

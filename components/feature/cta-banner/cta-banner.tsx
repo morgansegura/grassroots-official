@@ -47,7 +47,7 @@ export function CtaBanner({
   fineprint = DEFAULT_PROPS.fineprint,
 }: Partial<CtaBannerProps>) {
   return (
-    <Section
+    <div
       className={cn("cta-banner", className)}
       data-tone={tone}
       aria-label={heading}
@@ -80,7 +80,7 @@ export function CtaBanner({
 
         {fineprint ? <p className="cta-banner-fineprint">{fineprint}</p> : null}
       </div>
-    </Section>
+    </div>
   );
 }
 

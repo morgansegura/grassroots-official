@@ -82,7 +82,8 @@
   }
 
   &[data-layout="bg-half"] .media-section-figure {
-    @apply relative h-full overflow-hidden gap-0;
+    @apply relative overflow-hidden gap-0;
+    @apply aspect-4/3 lg:aspect-auto lg:h-full;
   }
 
   &[data-layout="bg-half"] .media-section-figure img {

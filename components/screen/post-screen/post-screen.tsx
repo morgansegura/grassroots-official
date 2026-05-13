@@ -25,25 +25,24 @@ export function PostScreen({ post, className }: PostScreenProps) {
         datePublished={post.date}
       />
 
-      <Section size="intro" ariaLabel="Article header">
+      <Section ariaLabel="Article header" tone="white">
         <header className="post-screen-header">
-          <div className="mb-3">
-            <Link href="/blog" className="post-screen-back">
-              ← All Posts
-            </Link>
-          </div>
           {post.category ? (
             <p className="post-screen-category">{post.category}</p>
           ) : null}
           <h1 className="post-screen-title">{post.title}</h1>
           <p className="post-screen-summary">{post.summary}</p>
           <p className="post-screen-meta">
+            <Link href="/blog" className="post-screen-back">
+              ← Back to All Posts
+            </Link>
+            &nbsp;
             {post.readingTimeMinutes} min read · Grassroots Foundation
           </p>
         </header>
       </Section>
 
-      <Section ariaLabel="Article body">
+      <Section ariaLabel="Article body" tone="light">
         <article className="post-screen-body">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {post.content}
@@ -54,7 +53,7 @@ export function PostScreen({ post, className }: PostScreenProps) {
       {post.faq && post.faq.length > 0 ? (
         <>
           <FaqSchema items={post.faq} />
-          <Section ariaLabel="Frequently asked questions" tone="light">
+          <Section ariaLabel="Frequently asked questions" tone="white">
             <div className="post-screen-faq">
               <p className="post-screen-faq-eyebrow">Common questions</p>
               <h2 className="post-screen-faq-heading">
@@ -75,14 +74,16 @@ export function PostScreen({ post, className }: PostScreenProps) {
         </>
       ) : null}
 
-      <CtaBanner
-        tone="light"
-        eyebrow="Get involved"
-        heading="Put a name on the roster."
-        body="The numbers in this piece sit on real San Diego kids. Founding donors are funding the first 25 scholarships on the Class of '26 roster — every gift names a kid."
-        cta={{ label: "Become a founding donor", href: "/donate" }}
-        tiers={[]}
-      />
+      <Section tone="gold">
+        <CtaBanner
+          tone="light"
+          eyebrow="Get involved"
+          heading="Put a name on the roster."
+          body="The numbers in this piece sit on real San Diego kids. Founding donors are funding the first 25 scholarships on the Class of '26 roster — every gift names a kid."
+          cta={{ label: "Become a founding donor", href: "/donate" }}
+          tiers={[]}
+        />
+      </Section>
     </main>
   );
 }

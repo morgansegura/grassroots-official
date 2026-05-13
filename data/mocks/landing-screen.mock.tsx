@@ -7,7 +7,6 @@ import {
   GraduationCap,
   MapPin,
   Sparkles,
-  Star,
   TrendingDown,
   TrendingUp,
   Trophy,
@@ -57,9 +56,9 @@ const PLACEHOLDER_IMG =
 export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
   // ─── Hero ───
   {
-    size: "flush",
     contain: false,
     ariaLabel: "Hero",
+    size: "flush",
     "hero-carousel": {
       slides: [
         {
@@ -160,7 +159,7 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
   // ─── The scale (impact stats) ───
   {
     ariaLabel: "The scale",
-    tone: "white",
+    tone: "dark",
     "impact-stats": {
       heading: "What it actually costs to play.",
       stats: [
@@ -168,10 +167,14 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
           value: "$8K–$20K",
           label: "All-in per year at top tiers (ECNL · MLS NEXT · GA)",
         },
-        { value: "+46%", label: "Family spending on youth sports, 2019–2024" },
         {
-          value: "20.2 pts",
-          label: "Income gap in regular sports participation, 2024",
+          value: "+46%",
+          label: "Family spending on youth sports (Project Play, 2025)",
+        },
+        {
+          value: "41%",
+          label:
+            "Of parents say cost is the top barrier to their kid playing sports (Project Play, 2025)",
         },
         { value: "100", label: "Scholarships we'll fund by World Cup '26" },
       ],
@@ -229,6 +232,7 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
   // ─── Youth soccer in the U.S., by age group ───
   {
     ariaLabel: "Youth soccer in the U.S., by age group",
+    tone: "neutral",
     "card-grid": {
       eyebrow: "How the system works",
       heading: "Youth soccer in the U.S., by age group.",
@@ -260,7 +264,6 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
 
   // ─── Who we are ───
   {
-    size: "loose",
     ariaLabel: "Who we are",
     tone: "light",
     "media-section": {
@@ -297,7 +300,6 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
 
   // ─── Mission grid ───
   {
-    size: "flush",
     contain: false,
     ariaLabel: "What we fund",
     "mission-grid": {
@@ -360,7 +362,6 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
 
   // ─── Founding cohort ───
   {
-    size: "loose",
     className: "section-warm",
     ariaLabel: "Founding cohort",
     tone: "light",
@@ -395,8 +396,8 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
 
   // ─── FAQ ───
   {
-    size: "flush",
     contain: false,
+    tone: "gold",
     ariaLabel: "Frequently asked questions",
 
     "faq-section": {
@@ -488,7 +489,6 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
 
   // ─── Closing CTA ───
   {
-    size: "flush",
     contain: false,
     ariaLabel: "Sustainer CTA",
     tone: "light",
