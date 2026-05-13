@@ -70,7 +70,15 @@ export function HeroCarousel({
   slides = DEFAULT_SLIDES,
   autoPlayDelay = 6500,
 }: HeroCarouselProps) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Fade()]);
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      loop: true,
+      watchDrag: true,
+      dragThreshold: 8,
+      duration: 25,
+    },
+    [Fade()],
+  );
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   const [isPaused, setIsPaused] = React.useState(false);
 

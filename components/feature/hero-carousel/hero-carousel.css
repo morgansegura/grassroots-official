@@ -7,6 +7,7 @@
 
 .hero-carousel-viewport {
   @apply absolute inset-0;
+  touch-action: pan-y;
 }
 
 .hero-carousel-track {
@@ -143,17 +144,29 @@
 }
 
 .hero-carousel-indicator-dot {
-  @apply relative h-px w-8 cursor-pointer overflow-hidden bg-white/35 outline-none transition-all duration-300 ease-out;
-  @apply hover:bg-white/55;
+  /* 40x40 hit area (mobile-tap-friendly) with the visible line drawn
+     via ::before. Click target is much larger than the visual mark. */
+  @apply relative inline-flex items-center justify-center;
+  @apply h-10 w-10 cursor-pointer bg-transparent outline-none;
+  @apply transition-all duration-300 ease-out;
   @apply focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-(--color-touchline);
 }
 
-.hero-carousel-indicator-dot[data-active="true"] {
+.hero-carousel-indicator-dot::before {
+  content: "";
+  @apply block h-px w-8 bg-white/35 transition-all duration-300 ease-out;
+}
+
+.hero-carousel-indicator-dot:hover::before {
+  @apply bg-white/55;
+}
+
+.hero-carousel-indicator-dot[data-active="true"]::before {
   @apply w-12 bg-white;
 }
 
 .hero-carousel-indicator-fill {
-  @apply absolute inset-0 origin-left scale-x-0 bg-(--color-first-touch);
+  @apply hidden;
 }
 
 .hero-carousel-indicator-count {
