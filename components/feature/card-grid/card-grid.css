@@ -44,7 +44,7 @@
 }
 
 .card-grid-card-title {
-  @apply font-(family-name:--font-heading) text-(--color-touchline) text-xl md:text-2xl font-medium;
+  @apply font-(family-name:--font-heading) text-(--color-touchline) text-2xl md:text-3xl font-medium;
   @apply leading-[1.2];
 }
 

@@ -98,7 +98,7 @@ export const STORIES_SCREEN_MOCK: StoriesScreenSection[] = [
     ariaLabel: "What every story will include",
     tone: "light",
     "media-section": {
-      eyebrow: "What every story will include",
+      eyebrow: "What stories will include",
       heading: "Honest. Specific. Verifiable.",
       mediaPosition: "left",
       parallax: true,

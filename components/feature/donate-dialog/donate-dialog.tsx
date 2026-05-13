@@ -113,6 +113,35 @@ export function DonateDialog({
             )}
             style={{ height: `min(90vh, ${popupHeight}px)` }}
           >
+            <button
+              type="button"
+              onClick={() => setOpen(false)}
+              aria-label="Close donation form"
+              className={cn(
+                "absolute top-3 right-3 z-10 inline-flex items-center justify-center",
+                "size-9 rounded-full bg-white/95",
+                "text-(--color-cleat)",
+                "shadow-[0_4px_12px_-4px_color-mix(in_oklch,var(--color-cleat)_30%,transparent)]",
+                "hover:bg-white hover:-translate-y-px",
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-touchline)/40",
+                "transition-all duration-150 ease-out",
+              )}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="size-5"
+                aria-hidden="true"
+              >
+                <line x1="6" y1="6" x2="18" y2="18" />
+                <line x1="18" y1="6" x2="6" y2="18" />
+              </svg>
+            </button>
             <iframe
               src={formUrl}
               title="Donate to Grassroots Foundation"

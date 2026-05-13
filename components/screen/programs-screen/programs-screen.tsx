@@ -65,7 +65,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
       <Section id="scholarships">
         <MediaSection
           layout="bg-half"
-          eyebrow="Program · Player Scholarships"
+          eyebrow="Player Scholarships"
           heading="Need-based tuition for the kids who'd otherwise step away."
           body={
             <>
@@ -98,7 +98,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
       {/* ─── Program 2 — Team Sponsorship ────────────────────────── */}
       <Section id="team-sponsorship" tone="light">
         <MediaSection
-          eyebrow="Program · Team Sponsorship"
+          eyebrow="Team Sponsorship"
           heading="Underwrite an entire roster — every kid plays."
           mediaPosition="left"
           parallax
@@ -132,7 +132,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
       {/* ─── Program 3 — Kit & Uniform Grants ────────────────────── */}
       <Section id="kit-uniform">
         <MediaSection
-          eyebrow="Program · Kit & Uniform Grants"
+          eyebrow="Kit & Uniform Grants"
           heading="Match-day kit, training kit, team bag."
           parallax
           body={
@@ -164,7 +164,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
       {/* ─── Program 4 — Equipment Grants ────────────────────────── */}
       <Section id="equipment" tone="light">
         <MediaSection
-          eyebrow="Program · Equipment Grants"
+          eyebrow="Equipment Grants"
           heading="Cleats, ball, shin guards, training bag."
           mediaPosition="left"
           parallax
@@ -197,7 +197,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
       {/* ─── Program 5 — Methodology Clinic Access ──────────────── */}
       <Section id="clinics">
         <MediaSection
-          eyebrow="Program · Methodology Clinic Access"
+          eyebrow="Clinic Access"
           heading="Reserved seats at elite-methodology training clinics."
           body={
             <>

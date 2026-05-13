@@ -2,5 +2,5 @@
 
 .eyebrow {
   @apply inline-flex items-center text-3xl md:text-4xl tracking-wider;
-  @apply font-semibold font-(family-name:--font-alternate) mb-2 leading-8 max-w-xs lg:max-w-xl;
+  @apply font-semibold font-(family-name:--font-alternate) mb-2 leading-5 md:leading-8 max-w-xl;
 }

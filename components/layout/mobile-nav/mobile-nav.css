@@ -43,5 +43,5 @@
 }
 
 .mobile-nav-cta {
-  @apply w-full;
+  @apply w-full py-2 text-xl;
 }

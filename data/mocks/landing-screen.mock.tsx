@@ -364,7 +364,7 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
     tone: "light",
     "media-section": {
       parallax: true,
-      eyebrow: "Class of '26 · The founding cohort",
+      eyebrow: "The founding cohort",
       heading: "We're funding our first 25 scholarships now.",
       body: (
         <>
@@ -398,7 +398,7 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
     ariaLabel: "Frequently asked questions",
 
     "faq-section": {
-      eyebrow: "Common questions, honest answers",
+      eyebrow: "Honest answers",
       heading:
         "How donations work, who we fund, and how to be sure we're legit.",
       images: [

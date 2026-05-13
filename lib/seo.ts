@@ -16,7 +16,7 @@ export const SITE = {
   country: "US",
   serviceArea: "San Diego County",
   logo: `https://grassrootsfdn.org/media/brand/logo.png`,
-  ogImage: `https://grassrootsfdn.org/media/brand/og-default.jpg`,
+  ogImage: `https://grassrootsfdn.org/og-image.png`,
   sameAs: [
     "https://www.instagram.com/grassrootsfdn",
     "https://www.facebook.com/people/Grass-Roots-Foundation/61566761322907/",

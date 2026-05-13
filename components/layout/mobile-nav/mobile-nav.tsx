@@ -28,6 +28,7 @@ const defaultItems: MobileNavItem[] = [
   { label: "Mission", href: "/mission" },
   { label: "Stories", href: "/stories" },
   { label: "Programs", href: "/programs" },
+  { label: "Blog", href: "/blog" },
 ];
 
 export function MobileNav({ className, items = defaultItems }: MobileNavProps) {
