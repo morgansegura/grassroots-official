@@ -120,7 +120,7 @@ export function MissionScreen({ className }: MissionScreenProps) {
             alt: "Youth soccer player on a San Diego pitch",
             aspect: "4/3",
           }}
-          cta={{ label: "Read the strategic plan", href: "/about" }}
+          cta={{ label: "Read the strategic plan", href: "/strategic-plan" }}
         />
       </Section>
 
@@ -156,7 +156,7 @@ export function MissionScreen({ className }: MissionScreenProps) {
               Grassroots Foundation is the beginning of doing something — in San
               Diego, in public, funded honestly, one kid at a time.
             </p>
-            <p className="mission-screen-founder-signoff text-center">
+            <p className="mission-screen-founder-signoff">
               — Mirella Hinojosa and Morgan Segura, founders
             </p>
             {/* <SectionCta href="/mission">Read the strategic plan</SectionCta> */}

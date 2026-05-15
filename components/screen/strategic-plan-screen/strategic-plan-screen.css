@@ -1,0 +1,326 @@
+@reference "tailwindcss";
+
+.strategic-plan-screen {
+  @apply relative;
+
+  .hero-extended {
+    @apply md:pb-40;
+
+    + .section {
+      @apply -mt-32 md:-mt-40;
+    }
+  }
+}
+
+/* ─── Executive summary ─────────────────────────────── */
+
+.strategic-plan-screen-summary {
+  @apply max-w-3xl mx-auto text-center flex flex-col items-center gap-4;
+}
+
+.strategic-plan-screen-summary-heading {
+  @apply font-(family-name:--font-heading) text-3xl md:text-5xl font-medium;
+  @apply leading-[1.15] tracking-tight text-balance;
+  @apply text-(--color-touchline);
+}
+
+.strategic-plan-screen-summary-body {
+  @apply flex flex-col gap-5 text-base md:text-lg leading-[1.65] text-left mt-2;
+}
+
+/* ─── Vision & Mission (dark band) ──────────────────── */
+
+.strategic-plan-screen-vision {
+  @apply max-w-4xl mx-auto flex flex-col gap-12;
+}
+
+.strategic-plan-screen-vision-block {
+  @apply flex flex-col gap-3 max-w-3xl border p-4 rounded-2xl;
+}
+
+.strategic-plan-screen-vision-heading {
+  @apply font-(family-name:--font-heading) text-3xl md:text-5xl font-medium;
+  @apply leading-[1.15] tracking-tight text-balance text-white;
+}
+
+.strategic-plan-screen-vision-body {
+  @apply text-lg md:text-xl leading-[1.6] text-white/90;
+}
+
+.strategic-plan-screen-vision-tagline {
+  @apply text-(--color-golden-goal) brightness-125 font-(family-name:--font-alternate) text-4xl;
+}
+
+.strategic-plan-screen-vision-tagline-prefix {
+  @apply mr-2 font-(family-name:--font-heading) uppercase  text-2xl;
+}
+
+/* ─── Theory of change ──────────────────────────────── */
+
+.strategic-plan-screen-toc {
+  @apply max-w-4xl mx-auto flex flex-col gap-10 md:gap-12;
+}
+
+.strategic-plan-screen-toc-header {
+  @apply flex flex-col items-center text-center gap-4;
+}
+
+.strategic-plan-screen-toc-heading {
+  @apply font-(family-name:--font-heading) text-3xl md:text-5xl font-medium;
+  @apply leading-[1.15] tracking-tight text-balance text-(--color-touchline);
+}
+
+.strategic-plan-screen-toc-list {
+  @apply list-none m-0 p-0 flex flex-col gap-6 md:gap-8;
+}
+
+.strategic-plan-screen-toc-item {
+  @apply relative grid grid-cols-1 md:grid-cols-[8rem_1fr] gap-3;
+
+  p {
+    @apply border-l-3  border-(--color-golden-goal) pl-6;
+  }
+}
+
+.strategic-plan-screen-toc-step {
+  @apply font-(family-name:--font-heading) text-base md:text-xl font-bold uppercase tracking-widest;
+  @apply text-(--color-golden-goal) self-center justify-self-end;
+}
+
+.strategic-plan-screen-toc-item p {
+  @apply text-base md:text-lg leading-[1.65];
+}
+
+/* ─── Programs ──────────────────────────────────────── */
+
+.strategic-plan-screen-programs-header {
+  @apply max-w-3xl mx-auto text-center flex flex-col items-center gap-4 mb-12 md:mb-16;
+}
+
+.strategic-plan-screen-programs-heading {
+  @apply font-(family-name:--font-heading) text-3xl md:text-5xl font-medium;
+  @apply leading-[1.15] tracking-tight text-balance text-(--color-touchline);
+}
+
+.strategic-plan-screen-programs-lead {
+  @apply text-base md:text-lg leading-[1.6];
+}
+
+.strategic-plan-screen-programs-list {
+  @apply list-none m-0 p-0 flex flex-col gap-6 md:gap-8 max-w-4xl mx-auto;
+}
+
+.strategic-plan-screen-program {
+  @apply grid grid-cols-[auto_1fr] gap-4 md:gap-6 items-start;
+
+  @apply bg-white rounded-3xl p-6 md:p-8;
+
+  @apply shadow-[0_12px_32px_-14px_color-mix(in_oklch,var(--color-cleat)_25%,transparent)];
+}
+
+.strategic-plan-screen-program-index {
+  @apply font-(family-name:--font-heading) text-3xl md:text-5xl font-bold;
+  @apply text-(--color-golden-goal) leading-none tabular-nums;
+}
+
+.strategic-plan-screen-program-body {
+  @apply flex flex-col gap-2;
+}
+
+.strategic-plan-screen-program-title {
+  @apply font-(family-name:--font-heading) text-2xl md:text-3xl font-medium;
+  @apply text-(--color-touchline) leading-[1.2];
+}
+
+.strategic-plan-screen-program-body p {
+  @apply text-base md:text-lg leading-[1.6];
+}
+
+/* ─── Funding ladder ────────────────────────────────── */
+
+.strategic-plan-screen-ladder {
+  @apply max-w-5xl mx-auto flex flex-col gap-10 md:gap-12;
+}
+
+.strategic-plan-screen-ladder-header {
+  @apply flex flex-col items-start gap-4;
+}
+
+.strategic-plan-screen-ladder-heading {
+  @apply font-(family-name:--font-heading) text-3xl md:text-5xl font-medium;
+  @apply leading-[1.15] tracking-tight text-balance text-(--color-touchline);
+}
+
+.strategic-plan-screen-ladder-lead {
+  @apply text-base md:text-lg leading-[1.6] max-w-3xl;
+}
+
+.strategic-plan-screen-ladder-table {
+  @apply flex flex-col gap-px bg-(--color-touchline)/15 rounded-2xl overflow-hidden;
+}
+
+.strategic-plan-screen-ladder-row {
+  @apply grid grid-cols-[3rem_1fr_1fr_5rem] md:grid-cols-[4rem_2fr_2fr_6rem];
+  @apply gap-3 md:gap-6 bg-white px-4 md:px-6 py-3;
+  @apply text-sm md:text-base leading-[1.5];
+}
+
+.strategic-plan-screen-ladder-head {
+  @apply bg-(--color-touchline) text-white font-bold uppercase tracking-widest text-xs;
+}
+
+.strategic-plan-screen-ladder-rung {
+  @apply font-(family-name:--font-heading) text-lg md:text-xl font-bold;
+  @apply text-(--color-golden-goal) tabular-nums;
+}
+
+/* ─── Partnership model ─────────────────────────────── */
+
+.strategic-plan-screen-partnership-list {
+  @apply list-decimal pl-5 flex flex-col gap-3 mt-2;
+}
+
+.strategic-plan-screen-partnership-list li {
+  @apply text-base md:text-lg leading-[1.6];
+}
+
+/* ─── Financial projections ─────────────────────────── */
+
+.strategic-plan-screen-financials {
+  @apply max-w-5xl mx-auto flex flex-col gap-10 md:gap-12;
+}
+
+.strategic-plan-screen-financials-header {
+  @apply flex flex-col items-start gap-4;
+}
+
+.strategic-plan-screen-financials-heading {
+  @apply font-(family-name:--font-heading) text-3xl md:text-5xl font-medium;
+  @apply leading-[1.15] tracking-tight text-balance text-(--color-touchline);
+}
+
+.strategic-plan-screen-financials-lead {
+  @apply text-base md:text-lg leading-[1.6] max-w-3xl;
+}
+
+.strategic-plan-screen-financials-table {
+  @apply flex flex-col gap-px bg-(--color-touchline)/15 rounded-2xl overflow-x-auto;
+}
+
+.strategic-plan-screen-financials-row {
+  @apply grid grid-cols-[2fr_repeat(5,_1fr)] gap-3 md:gap-6;
+  @apply bg-white px-4 md:px-6 py-4 md:py-5;
+  @apply text-sm md:text-base leading-[1.5] min-w-[44rem];
+}
+
+.strategic-plan-screen-financials-head {
+  @apply bg-(--color-touchline) text-white font-bold uppercase tracking-widest text-xs md:text-sm py-3;
+}
+
+.strategic-plan-screen-financials-total {
+  @apply bg-(--color-golden-goal)/15 font-bold py-3;
+}
+
+.strategic-plan-screen-financials-notes {
+  @apply flex flex-col gap-4 max-w-3xl text-sm md:text-base leading-[1.65];
+}
+
+/* ─── Governance ────────────────────────────────────── */
+
+.strategic-plan-screen-governance {
+  @apply max-w-5xl mx-auto flex flex-col gap-10 md:gap-12;
+}
+
+.strategic-plan-screen-governance-header {
+  @apply flex flex-col items-start gap-4;
+}
+
+.strategic-plan-screen-governance-heading {
+  @apply font-(family-name:--font-heading) text-3xl md:text-5xl font-medium;
+  @apply leading-[1.15] tracking-tight text-balance text-(--color-touchline);
+}
+
+.strategic-plan-screen-governance-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6;
+}
+
+.strategic-plan-screen-governance-card {
+  @apply flex flex-col gap-3 bg-white rounded-3xl p-6 md:p-8;
+  @apply shadow-[0_12px_32px_-14px_color-mix(in_oklch,var(--color-cleat)_25%,transparent)];
+}
+
+.strategic-plan-screen-governance-card h3 {
+  @apply font-(family-name:--font-heading) text-2xl md:text-3xl font-medium;
+  @apply text-(--color-touchline) leading-[1.2];
+}
+
+.strategic-plan-screen-governance-card p {
+  @apply text-sm md:text-base leading-[1.6];
+}
+
+/* ─── Risk & mitigation ─────────────────────────────── */
+
+.strategic-plan-screen-risk {
+  @apply max-w-4xl mx-auto flex flex-col gap-10 md:gap-12;
+}
+
+.strategic-plan-screen-risk-header {
+  @apply flex flex-col items-start gap-4;
+}
+
+.strategic-plan-screen-risk-heading {
+  @apply font-(family-name:--font-heading) text-3xl md:text-5xl font-medium;
+  @apply leading-[1.15] tracking-tight text-balance text-(--color-touchline);
+}
+
+.strategic-plan-screen-risk-list {
+  @apply list-none m-0 p-0 flex flex-col gap-6 md:gap-8;
+}
+
+.strategic-plan-screen-risk-list li {
+  @apply flex flex-col gap-2 border-l-2 border-(--color-golden-goal)/40 pl-6;
+}
+
+.strategic-plan-screen-risk-list h3 {
+  @apply font-(family-name:--font-heading) text-2xl md:text-3xl font-medium;
+  @apply text-(--color-touchline);
+}
+
+.strategic-plan-screen-risk-list p {
+  @apply text-base md:text-lg leading-[1.6];
+}
+
+/* ─── Roadmap ───────────────────────────────────────── */
+
+.strategic-plan-screen-roadmap {
+  @apply max-w-4xl mx-auto flex flex-col gap-10 md:gap-12;
+}
+
+.strategic-plan-screen-roadmap-header {
+  @apply flex flex-col items-start gap-4;
+}
+
+.strategic-plan-screen-roadmap-heading {
+  @apply font-(family-name:--font-heading) text-3xl md:text-5xl font-medium;
+  @apply leading-[1.15] tracking-tight text-balance text-(--color-touchline);
+}
+
+.strategic-plan-screen-roadmap-list {
+  @apply list-none m-0 p-0 flex flex-col gap-4;
+}
+
+.strategic-plan-screen-roadmap-list li {
+  @apply grid grid-cols-[auto_1fr] gap-4;
+  @apply bg-white rounded-2xl px-5 md:px-6;
+  @apply shadow-[0_8px_24px_-12px_color-mix(in_oklch,var(--color-cleat)_20%,transparent)] py-5;
+}
+
+.strategic-plan-screen-roadmap-month {
+  @apply font-(family-name:--font-heading) text-xl md:text-2xl font-bold;
+
+  @apply text-(--color-golden-goal) tabular-nums self-center;
+}
+
+.strategic-plan-screen-roadmap-list p {
+  @apply border-l pl-4 text-base md:text-lg leading-[1.6] self-center;
+}

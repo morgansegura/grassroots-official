@@ -14,7 +14,7 @@
 }
 
 .mission-screen-founder-signoff {
-  @apply mt-3 text-sm font-medium text-(--color-golden-goal);
+  @apply mt-3 text-sm text-center md:text-left font-medium text-(--color-golden-goal);
 }
 
 /* ─── Three-ways "Get involved" — flat icon-left layout ─── */
