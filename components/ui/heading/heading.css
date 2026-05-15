@@ -20,7 +20,7 @@
   }
 
   &[data-size="2xl"] {
-    @apply text-5xl md:text-7xl;
+    @apply text-4xl sm:text-5xl md:text-7xl;
   }
 
   &[data-size="3xl"] {

@@ -3,7 +3,7 @@
 .section-cta {
   @apply inline-flex items-center justify-center gap-2;
   @apply rounded-full px-5 lg:px-7 py-3.5 no-underline outline-none;
-  @apply font-sans text-sm font-bold uppercase tracking-widest;
+  @apply font-sans text-[13px] sm:text-sm font-bold uppercase tracking-widest;
   @apply bg-(--color-golden-goal) text-white;
   @apply shadow-[0_8px_22px_-6px_color-mix(in_oklch,var(--color-golden-goal)_55%,transparent)];
   @apply transition-all duration-200 ease-out;

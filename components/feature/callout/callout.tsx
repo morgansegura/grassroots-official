@@ -21,7 +21,7 @@ export function Callout({
   return (
     <div className={cn("callout", className)}>
       {title ? (
-        <div className="callout-title-block">
+        <div className="callout-title-block contain">
           <div>
             <Eyebrow>{eyebrow}</Eyebrow>
             <Heading size="2xl">{title}</Heading>

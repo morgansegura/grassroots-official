@@ -123,7 +123,7 @@ export const STORIES_SCREEN_MOCK: StoriesScreenSection[] = [
         alt: "Youth team huddled before a match",
         aspect: "4/3",
       },
-      cta: { label: "Read our safeguarding policy", href: "/safeguarding" },
+      cta: { label: "Our safeguarding policy", href: "/safeguarding" },
     },
   },
 
