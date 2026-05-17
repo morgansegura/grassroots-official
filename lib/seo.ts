@@ -9,7 +9,7 @@ export const SITE = {
   tagline: "Access, the Goal!",
   email: "morgan@grassrootsfdn.org",
   ein: "35-2822183",
-  founded: 2025,
+  founded: 2023,
   region: "San Diego County, California, United States",
   city: "San Diego",
   state: "CA",
