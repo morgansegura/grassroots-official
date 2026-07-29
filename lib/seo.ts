@@ -10,6 +10,7 @@ export const SITE = {
   email: "morgan@grassrootsfdn.org",
   ein: "35-2822183",
   founded: 2023,
+  foundedDate: "2023-09-01",
   region: "San Diego County, California, United States",
   city: "San Diego",
   state: "CA",

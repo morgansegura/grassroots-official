@@ -4,17 +4,18 @@ import { SITE } from "@/lib/seo";
 /**
  * Organization schema — 2026 best practices.
  *
- * Uses NonprofitOrganization (subtype of Organization) for 501(c)(3) work.
- * Includes founder Person schema, contactPoint, parentOrganization
- * (legal DBA relationship), areaServed, and granular knowsAbout entities.
+ * Uses NGO (Thing > Organization > NGO), the core schema.org type for
+ * nonprofits. NonprofitOrganization is pending-extension vocabulary, not
+ * core, so NGO is the safer signal for Google and AI crawlers. The
+ * nonprofitStatus property carries the 501(c)(3) detail either way.
  *
  * Refs:
- *  - https://schema.org/NonprofitOrganization
+ *  - https://schema.org/NGO
  *  - https://developers.google.com/search/docs/appearance/structured-data/organization
  */
 export function OrganizationSchema() {
   const data = {
-    "@type": "NonprofitOrganization",
+    "@type": "NGO",
     "@id": `${SITE.url}#organization`,
     name: SITE.name,
     legalName: SITE.legalName,
@@ -30,7 +31,7 @@ export function OrganizationSchema() {
     description: SITE.description,
     slogan: SITE.tagline,
     email: SITE.email,
-    foundingDate: `${SITE.founded}`,
+    foundingDate: SITE.foundedDate,
     taxID: SITE.ein,
     naics: "813219", // NAICS: Other Grantmaking and Giving Services
     nonprofitStatus: "Nonprofit501c3",
