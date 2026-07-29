@@ -111,7 +111,7 @@ export function MissionScreen({ className }: MissionScreenProps) {
                 Specificity is a strength. We prove the model where the cost
                 barrier is most acute — South Bay and East County — before
                 expanding county-wide. The Class of &apos;26 cohort funds 100
-                kids by World Cup 2026.
+                kids.
               </p>
             </>
           }
@@ -236,7 +236,7 @@ export function MissionScreen({ className }: MissionScreenProps) {
           tone="light"
           eyebrow="Get involved"
           heading="Be part of the Class of '26."
-          body="Founding donors decide which kids get the first call when the season begins. Every gift moves the roster from 0 toward 100 by World Cup 2026."
+          body="Founding donors decide which kids get the first call when the season begins. Every gift moves the roster from 0 toward 100."
           cta={{ label: "Become a founding donor", href: "/donate" }}
           tiers={[]}
         />

@@ -38,15 +38,15 @@ const DEFAULT_SLIDES: HeroSlide[] = [
     cta: { label: "Become a founding donor", href: "/donate" },
   },
   {
-    id: "road-to-2026",
+    id: "after-the-cup",
     image: {
       src: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=2400&q=80",
       alt: "Youth soccer team huddled on the field",
     },
-    eyebrow: "The Road to 2026",
-    heading: "Roster of 100\nby World Cup 2026.",
+    eyebrow: "After the Cup",
+    heading: "The World Cup came home.\nMost kids still can't afford to play.",
     tagline:
-      "We're funding 100 youth scholarships before the World Cup comes home. Be part of it.",
+      "The Cup left in July. The cost wall didn't. The season starts this fall, and we're building a roster of 100.",
     cta: { label: "Read our mission", href: "/mission" },
   },
   {

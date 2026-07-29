@@ -71,15 +71,16 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
           cta: { label: "Become a founding donor", href: "/donate" },
         },
         {
-          id: "road-to-2026",
+          id: "after-the-cup",
           image: {
             src: "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?q=80&w=1429&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             alt: "Youth players warming up on a club pitch",
           },
-          eyebrow: "The Road to 2026",
-          heading: "Roster of 100\nby World Cup '26.",
+          eyebrow: "After the Cup",
+          heading:
+            "The World Cup came home.\nMost kids still can't afford to play.",
           tagline:
-            "Our first goal: 100 funded scholarships across San Diego County before the 2026 World Cup. Founding donors are funding the Class of '26 now.",
+            "The Cup left in July. The cost wall didn't. The season starts this fall, and founding donors put the first names on the Class of '26 roster.",
           cta: { label: "Read our mission", href: "/mission" },
         },
         {
@@ -173,7 +174,7 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
           label:
             "Of parents say cost is the top barrier to their kid playing sports (Project Play, 2025)",
         },
-        { value: "100", label: "Scholarships we'll fund by World Cup '26" },
+        { value: "100", label: "Scholarships in the Class of '26" },
       ],
     },
   },
@@ -493,7 +494,7 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
       tone: "light",
       eyebrow: "Access, the Goal!",
       heading: "$50 a month keeps a kid in the game.",
-      body: "A First Touch sustainer covers a kid's club tuition, gear, and clinic spots for a season. We're funding 100 kids by World Cup 2026 — every monthly gift gets us closer.",
+      body: "A First Touch sustainer covers a kid's club tuition, gear, and clinic spots for a season. We're funding 100 kids in the Class of '26 — every monthly gift gets us closer.",
       tiers: [
         { amount: "$25/mo", label: "Funds gear and kits" },
         { amount: "$50/mo", label: "Adopt a kid for a season" },

@@ -25,7 +25,7 @@ const DEFAULT_PROPS: Omit<CtaBannerProps, "className"> = {
   tone: "dark",
   eyebrow: "First Touch · Sustainer program",
   heading: "$50 a month keeps a kid in the game.",
-  body: "A First Touch sustainer covers a kid's club tuition, gear, and clinic spots for a season. We're funding 100 kids by World Cup 2026 — every monthly gift gets us closer.",
+  body: "A First Touch sustainer covers a kid's club tuition, gear, and clinic spots for a season. We're funding 100 kids in the Class of '26 — every monthly gift gets us closer.",
   tiers: [
     { amount: "$25/mo", label: "Funds gear and kits" },
     { amount: "$50/mo", label: "Adopt a kid for a season" },

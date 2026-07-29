@@ -58,10 +58,11 @@ export function StrategicPlanScreen({ className }: StrategicPlanScreenProps) {
             </p>
             <p>
               Our near-term anchor is the <strong>Class of &apos;26</strong> —
-              100 youth players in San Diego County funded through World Cup
-              2026, regardless of what their family can afford. The five-year
-              arc expands to additional partner clubs and the highest
-              competitive tiers, where the per-kid cost barrier is steepest.
+              100 youth players in San Diego County funded through the
+              2026&ndash;27 season, regardless of what their family can afford.
+              The five-year arc expands to additional partner clubs and the
+              highest competitive tiers, where the per-kid cost barrier is
+              steepest.
             </p>
           </div>
         </div>

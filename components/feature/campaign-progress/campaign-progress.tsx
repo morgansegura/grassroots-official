@@ -32,7 +32,7 @@ const DEFAULT_MILESTONES: Milestone[] = [
   },
   {
     label: "Phase 3",
-    detail: "Class of '26 — full Roster of 100 by World Cup 2026",
+    detail: "Class of '26 — full Roster of 100",
     status: "upcoming",
   },
 ];
@@ -50,14 +50,14 @@ export function CampaignProgress({
     <div className={cn("campaign-progress", className)}>
       <div className="campaign-progress-header">
         <div>
-          <p className="campaign-progress-eyebrow">The Road to 2026</p>
+          <p className="campaign-progress-eyebrow">After the Cup</p>
           <h2 className="campaign-progress-heading">
-            {goal} {unit} by World Cup 2026.
+            {goal} {unit}.
           </h2>
         </div>
         <p className="campaign-progress-lead">
-          We&rsquo;re funding scholarships ahead of the World Cup coming home to
-          North America. Every kid we fund is another name on the Class of
+          The Cup was the kickoff, not the final whistle. The club season starts
+          this fall, and every kid we fund is another name on the Class of
           &rsquo;26 roster.
         </p>
       </div>

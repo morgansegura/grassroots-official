@@ -80,9 +80,9 @@ export function ContactScreen() {
         <h2>Press &amp; media</h2>
         <p>
           Reporters, producers, and editors covering youth sports access, San
-          Diego County nonprofits, the cost of competitive youth soccer, or
-          World Cup 2026 community impact. The full posture is on the{" "}
-          <Link href="/press">press page</Link>.
+          Diego County nonprofits, the cost of competitive youth soccer, or what
+          the World Cup left behind in Southern California. The full posture is
+          on the <Link href="/press">press page</Link>.
         </p>
         <p>
           Identify yourself as press in the subject line and include your

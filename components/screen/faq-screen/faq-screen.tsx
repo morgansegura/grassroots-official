@@ -197,9 +197,9 @@ const FAQ_ITEMS = [
     answer: (
       <>
         Our founding cohort: 100 youth players in San Diego County kept in
-        competitive soccer through World Cup 2026, regardless of what their
-        family can afford. Founding donors fund the first names on that roster.
-        The cohort begins fall 2026 and runs through the World Cup year.
+        competitive soccer through the 2026&ndash;27 season, regardless of what
+        their family can afford. Founding donors fund the first names on that
+        roster. The cohort begins fall 2026.
       </>
     ),
   },

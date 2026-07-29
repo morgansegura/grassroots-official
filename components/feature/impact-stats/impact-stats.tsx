@@ -17,7 +17,7 @@ export type ImpactStatsProps = {
 const DEFAULT_STATS: Stat[] = [
   { value: "$2K–$5K", label: "Club fees, just to be on the team" },
   { value: "~$11K", label: "All-in per kid, per year at the top tiers" },
-  { value: "100", label: "Kids we'll fund by World Cup 2026" },
+  { value: "100", label: "Kids in the Class of '26" },
   { value: "$50/mo", label: "Funds one kid for a season — First Touch" },
 ];
 

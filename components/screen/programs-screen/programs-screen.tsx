@@ -80,8 +80,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
                 need-qualified players. Confidential intake — no auditions.
                 Renewable each season so families plan multi-year participation,
                 not an annual lottery. Recipients become part of the{" "}
-                <strong>Class of &apos;26</strong> — 100 kids on the roster by
-                World Cup 2026.
+                <strong>Class of &apos;26</strong> — 100 kids on the roster.
               </p>
             </>
           }
@@ -197,6 +196,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
       {/* ─── Program 5 — Methodology Clinic Access ──────────────── */}
       <Section id="clinics">
         <MediaSection
+          parallax
           eyebrow="Clinic Access"
           heading="Reserved seats at elite-methodology training clinics."
           body={

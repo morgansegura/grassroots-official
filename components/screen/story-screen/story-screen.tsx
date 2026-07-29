@@ -120,9 +120,9 @@ export function StoryScreen() {
         <h3>Near-term — the Class of &apos;26</h3>
         <p>
           Fund 100 youth players in San Diego County, kept in competitive soccer
-          through World Cup 2026, regardless of what their family can afford.
-          The cohort begins fall 2026. Founding donors fund the first names on
-          the roster.
+          through the 2026&ndash;27 season, regardless of what their family can
+          afford. The cohort begins fall 2026. Founding donors fund the first
+          names on the roster.
         </p>
         <h3>Mid-term — partner expansion and team sponsorships</h3>
         <p>

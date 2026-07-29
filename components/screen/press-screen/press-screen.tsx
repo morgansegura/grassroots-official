@@ -13,10 +13,10 @@ export function PressScreen() {
       intro={
         <p>
           Reporters, producers, and editors covering youth sports access, San
-          Diego County nonprofits, the cost of competitive youth soccer, or the
-          World Cup 2026 community impact: we&apos;re available. Background,
-          on-the-record interviews, data, and partner-club introductions where
-          appropriate.
+          Diego County nonprofits, the cost of competitive youth soccer, or what
+          the World Cup left behind in Southern California: we&apos;re
+          available. Background, on-the-record interviews, data, and
+          partner-club introductions where appropriate.
         </p>
       }
     >
@@ -29,7 +29,7 @@ export function PressScreen() {
           San Diego club programs to fund tuition, kit, equipment, and clinic
           costs for need-qualified youth players in their existing teams. Our
           founding cohort, the Class of &apos;26, is funding 100 youth players
-          in San Diego County by World Cup 2026.
+          in San Diego County beginning with the 2026&ndash;27 season.
         </p>
       </section>
 
@@ -60,7 +60,7 @@ export function PressScreen() {
           </li>
           <li>
             <strong>Founding cohort:</strong> Class of &apos;26 — 100 youth
-            players funded in San Diego County by World Cup 2026
+            players funded in San Diego County, beginning fall 2026
           </li>
           <li>
             <strong>Public profiles:</strong>{" "}
@@ -97,8 +97,8 @@ export function PressScreen() {
             scholarship spots, and what makes that model durable
           </li>
           <li>
-            World Cup 2026 as a community-impact moment in San Diego County and
-            across the host-city region
+            What the World Cup left behind: whether a host-region summer changes
+            anything for the kids who can&apos;t afford to play
           </li>
           <li>
             The South Bay youth-soccer landscape — populations served,

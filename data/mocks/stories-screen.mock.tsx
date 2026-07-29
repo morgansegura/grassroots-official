@@ -205,9 +205,9 @@ export const STORIES_SCREEN_MOCK: StoriesScreenSection[] = [
         {
           id: "fn-world-cup",
           icon: Landmark,
-          title: "What the World Cup '26 spotlight means for SD youth soccer",
+          title: "What the World Cup '26 spotlight meant for SD youth soccer",
           description:
-            "LA is a host city. The world is watching American soccer for the first time in a generation. What it could mean for access — and what it probably won't.",
+            "LA hosted. The world watched American soccer for the first time in a generation. What it could still mean for access — and what it probably won't.",
         },
         {
           id: "fn-theory-of-change",
@@ -282,7 +282,7 @@ export const STORIES_SCREEN_MOCK: StoriesScreenSection[] = [
         alt: "Youth players gathered on a San Diego pitch",
         aspect: "4/3",
       },
-      mediaCaption: "100 kids by World Cup 2026.",
+      mediaCaption: "100 kids in the Class of '26.",
       cta: { label: "Fund the first names", href: "/donate" },
     },
   },
