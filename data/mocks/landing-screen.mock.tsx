@@ -387,7 +387,6 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
         alt: "Soccer cleats, ball, and bag at the touchline",
         aspect: "4/3",
       },
-      mediaCaption: "Placeholder — to be replaced with SD field photography",
       cta: { label: "Become a founding donor", href: "/donate" },
     },
   },
