@@ -2,7 +2,11 @@ import { cn } from "@/lib/utils";
 import { fontAlternate, fontBase, fontHeading } from "@/fonts";
 
 import { Footer, Header } from "@/components/layout";
-import { ConsentDefaults, GoogleTagManager } from "@/components/analytics";
+import {
+  ConsentDefaults,
+  GoogleTagManager,
+  InteractionTracker,
+} from "@/components/analytics";
 import { CookieConsentProvider } from "@/components/cookie-consent";
 import { OrganizationSchema, WebsiteSchema } from "@/components/seo";
 
@@ -25,6 +29,7 @@ export function WrapperScreen({ children }: WrapperScreenProps) {
       </head>
       <body className="wrapper-body">
         <GoogleTagManager />
+        <InteractionTracker />
         <OrganizationSchema />
         <WebsiteSchema />
         <CookieConsentProvider>

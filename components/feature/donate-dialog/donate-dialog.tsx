@@ -3,6 +3,7 @@
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
+import { trackEvent } from "@/lib/analytics";
 import { ZEFFY_FORM_URL } from "@/lib/givebutter";
 
 import {
@@ -91,6 +92,9 @@ export function DonateDialog({
     onClick: (event: React.MouseEvent<HTMLElement>) => {
       children.props.onClick?.(event);
       if (!event.defaultPrevented) {
+        trackEvent("donate_open", {
+          page_path: window.location.pathname,
+        });
         setOpen(true);
       }
     },
