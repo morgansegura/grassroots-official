@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { LegalScreen } from "../legal-screen";
 
-const LAST_UPDATED = "May 5, 2026";
+const LAST_UPDATED = "July 30, 2026";
 
 export function PrivacyScreen() {
   return (
@@ -65,8 +65,26 @@ export function PrivacyScreen() {
             troubleshooting, and basic traffic analysis.
           </li>
           <li>
+            <strong>Analytics.</strong> With your consent, Google Analytics 4
+            records aggregate usage — pages viewed, referring source,
+            approximate location, device type, and actions such as opening the
+            donation form.
+          </li>
+          <li>
+            <strong>Session recordings and heatmaps.</strong> With your consent,
+            Microsoft Clarity records pointer movement, clicks, and scrolling on
+            the pages you visit, so we can see where the site is confusing.
+            Recordings are masked by default and we do not use them to identify
+            individual visitors. Our donation form is embedded from Zeffy on
+            their own domain, so nothing you type into it — including payment
+            details — is visible to Clarity or to us.
+          </li>
+          <li>
             <strong>Cookies and similar technologies.</strong> See our{" "}
-            <Link href="/cookies">Cookie Policy</Link> for the full list.
+            <Link href="/cookies">Cookie Policy</Link> for the full list. All
+            analytics and recording are off by default and run only after you
+            accept analytics cookies. You can withdraw consent at any time from
+            the cookie preferences link in the footer.
           </li>
         </ul>
       </section>
@@ -104,8 +122,9 @@ export function PrivacyScreen() {
           <li>
             <strong>Service providers</strong> who run essential operations on
             our behalf — payment processing (Zeffy / Stripe), email delivery,
-            analytics, hosting (Vercel). They&apos;re bound by written
-            agreements to use information only as we direct.
+            analytics and session recording (Google, Microsoft), hosting
+            (Vercel). They&apos;re bound by written agreements to use
+            information only as we direct.
           </li>
           <li>
             <strong>Legal requirements.</strong> When required by subpoena,

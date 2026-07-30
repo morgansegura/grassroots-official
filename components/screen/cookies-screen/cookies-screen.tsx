@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { LegalScreen } from "../legal-screen";
 
-const LAST_UPDATED = "May 5, 2026";
+const LAST_UPDATED = "July 30, 2026";
 
 export function CookiesScreen() {
   return (
@@ -47,11 +47,30 @@ export function CookiesScreen() {
 
         <h3>Analytics</h3>
         <p>
-          Help us understand how the site is used in aggregate — which pages get
-          traffic, where visitors come from, what content performs well. We do
-          not currently run third-party analytics (e.g., Google Analytics) on
-          this site. If we add analytics, this policy will be updated and
-          consent will be requested per the applicable rules below.
+          Help us understand how the site is used — which pages get traffic,
+          where visitors come from, what content performs well, and where people
+          get stuck. These are set only after you accept analytics cookies, and
+          they are switched off by default until you do.
+        </p>
+        <ul>
+          <li>
+            <strong>Google Analytics 4</strong>, loaded through Google Tag
+            Manager. Aggregate traffic measurement: pages viewed, referring
+            source, approximate location, device and browser type, and actions
+            such as opening the donation form.
+          </li>
+          <li>
+            <strong>Microsoft Clarity.</strong> Heatmaps and session recordings
+            — a replay of pointer movement, clicks, and scrolling on the pages
+            you visit, so we can see where the site is confusing. Recordings are
+            masked by default, and we do not use them to identify individual
+            visitors.
+          </li>
+        </ul>
+        <p>
+          Because our donation form is embedded from Zeffy on their own domain,
+          neither tool can see anything you type into it, including payment
+          details.
         </p>
 
         <h3>Advertising / marketing</h3>
@@ -74,6 +93,16 @@ export function CookiesScreen() {
             When you open the donation modal, Zeffy may set cookies on its own
             domain to support the donation flow. See Zeffy&apos;s privacy and
             cookie policies for details.
+          </li>
+          <li>
+            <strong>Google.</strong> Google Tag Manager delivers our analytics
+            tags, and Google Analytics sets cookies to measure site usage. These
+            load only after you accept analytics cookies.
+          </li>
+          <li>
+            <strong>Microsoft.</strong> Clarity sets cookies to group the pages
+            you view into a single session for heatmaps and replay. These load
+            only after you accept analytics cookies.
           </li>
           <li>
             <strong>Vercel.</strong> Our hosting provider may set operational
