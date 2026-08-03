@@ -183,7 +183,12 @@ Landing: `/blog/competitive-tier-structure-explained` and
 ## Campaign 4 — Brand & Verification
 
 Cheap, near-100% CTR, and it props up the account-wide CTR average. Also catches
-donors doing diligence. **Landing: `/`, `/990`, `/financials`.**
+donors doing diligence. **Landing: `/` and `/990`.**
+
+> Sitelink display text and destination are separate fields in Google Ads.
+> Keep the human phrasing ("Where the money goes") and point it at `/990`.
+> There is no `/financials` page — it 308-redirects to `/990` — and Ad Grants
+> final URLs should be the destination itself, not a redirect.
 
 ### Ad group 4A — Brand terms
 
@@ -260,7 +265,7 @@ list is the account's CTR insurance policy.
 | -------------------- | ------------- | --------------------------------------------------------- |
 | How to apply         | `/apply`      | Confidential intake for San Diego families. No auditions. |
 | What we fund         | `/programs`   | Tuition, kit, equipment, and clinic access.               |
-| Where the money goes | `/financials` | Our 990, EIN, and financial posture.                      |
+| Where the money goes | `/990`        | Our 990, EIN, and financial posture.                      |
 | Common questions     | `/faq`        | How donations work and who we fund.                       |
 
 **Callout assets:** `501(c)(3) nonprofit` · `EIN 35-2822183` · `San Diego
