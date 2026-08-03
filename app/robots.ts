@@ -31,7 +31,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/admin/", "/private/"],
+        disallow: ["/api/", "/admin/", "/private/", "/thank-you"],
       },
 
       // ── Training crawlers: disallow (no referral traffic back) ───────

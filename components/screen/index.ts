@@ -1,6 +1,7 @@
 export { WrapperScreen } from "./wrapper-screen";
 export { LandingScreen } from "./landing-screen";
 export { DonateScreen } from "./donate-screen";
+export { ThankYouScreen } from "./thank-you-screen";
 export { MissionScreen } from "./mission-screen";
 export { StrategicPlanScreen } from "./strategic-plan-screen";
 export { StoriesScreen } from "./stories-screen";

@@ -7,7 +7,7 @@ export const SITE = {
   shortDescription:
     "San Diego youth-soccer scholarship nonprofit. Closing the pay-to-play cost wall.",
   tagline: "Access, the Goal!",
-  email: "morgan@grassrootsfdn.org",
+  email: "hello@grassrootsfdn.org",
   ein: "35-2822183",
   founded: 2023,
   foundedDate: "2023-09-01",

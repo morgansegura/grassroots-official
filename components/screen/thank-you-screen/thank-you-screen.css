@@ -1,0 +1,64 @@
+@reference "tailwindcss";
+
+.thank-you-screen {
+  @apply min-h-dvh;
+}
+
+.thank-you-screen-body {
+  @apply max-w-2xl mx-auto flex flex-col gap-6;
+}
+
+.thank-you-screen-eyebrow {
+  @apply text-xs font-semibold uppercase tracking-[0.18em];
+  @apply text-(--color-golden-goal);
+}
+
+.thank-you-screen-heading {
+  @apply font-(family-name:--font-heading);
+  @apply text-4xl md:text-6xl font-medium leading-[1.05] tracking-tight;
+}
+
+.thank-you-screen-lead {
+  @apply text-base md:text-lg leading-[1.6];
+}
+
+.thank-you-screen-section {
+  @apply flex flex-col gap-3;
+}
+
+.thank-you-screen-subheading {
+  @apply font-(family-name:--font-heading);
+  @apply text-xl md:text-2xl font-medium tracking-tight;
+}
+
+.thank-you-screen-section p {
+  @apply text-base leading-[1.65] text-(--muted-foreground);
+}
+
+.thank-you-screen-section a {
+  @apply text-(--color-touchline) underline underline-offset-4;
+  @apply hover:text-(--color-golden-goal);
+}
+
+.thank-you-screen-links {
+  @apply flex flex-wrap gap-x-6 gap-y-2 pt-2;
+}
+
+.thank-you-screen-links a {
+  @apply text-sm font-semibold text-(--color-touchline);
+  @apply underline underline-offset-4 hover:text-(--color-golden-goal);
+}
+
+/* Zeffy renders this page inside its embed iframe. Tighten it up so the
+   confirmation fits the modal without a scrollbar. */
+:root[data-embed="true"] .thank-you-screen {
+  @apply min-h-0;
+}
+
+:root[data-embed="true"] .thank-you-screen-heading {
+  @apply text-3xl md:text-4xl;
+}
+
+:root[data-embed="true"] .thank-you-screen-body {
+  @apply gap-4;
+}

@@ -36,7 +36,7 @@ const FAQ_SCHEMA_ITEMS = [
   {
     question: "How do I cancel a recurring (sustainer) gift?",
     answer:
-      "You can cancel or modify a recurring gift any time from the link in your receipt email, or by emailing morgan@grassrootsfdn.org. No questions asked.",
+      "You can cancel or modify a recurring gift any time from the link in your receipt email, or by emailing hello@grassrootsfdn.org. No questions asked.",
   },
   {
     question: "Will you sell or share my information?",

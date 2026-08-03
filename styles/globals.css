@@ -115,6 +115,14 @@
     @apply relative max-w-350 w-full mx-auto px-4 lg:px-8;
   }
 
+  /* Pages loaded inside our own iframe (the Zeffy embed redirects to
+     /thank-you) drop site chrome — a header and footer inside a 560px
+     modal is nonsense. Set by an inline script before paint. */
+  :root[data-embed="true"] .header,
+  :root[data-embed="true"] .footer {
+    display: none;
+  }
+
   /* Zeffy popup trigger — ensure clicks reach the .zeffy-btn element
      itself, not inner spans/icons. Zeffy's script may use
      `e.target.classList` matching which fails on child elements. */
