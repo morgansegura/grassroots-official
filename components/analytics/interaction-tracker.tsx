@@ -5,7 +5,7 @@ import * as React from "react";
 import { trackEvent } from "@/lib/analytics";
 
 /**
- * Delegated click tracking for mailto and off-site links.
+ * Delegated click tracking for donate links, mailto, and off-site links.
  *
  * A single listener on the document rather than per-link handlers: nearly
  * every screen here is a server component, so adding onClick at each call
@@ -29,19 +29,29 @@ export function InteractionTracker() {
         return;
       }
 
-      if (!/^https?:/i.test(href)) return;
-
-      let host: string;
+      let url: URL;
       try {
-        host = new URL(href, window.location.href).host;
+        url = new URL(href, window.location.href);
       } catch {
         return;
       }
-      if (host === window.location.host) return;
+
+      if (url.host === window.location.host) {
+        // Most donate CTAs on the site are plain links to /donate rather
+        // than modal triggers. Without this they'd signal nothing, and the
+        // only tracked donation intent would be the two header buttons.
+        if (url.pathname === "/donate") {
+          trackEvent("donate_open", {
+            donate_source: "link",
+            page_path: window.location.pathname,
+          });
+        }
+        return;
+      }
 
       trackEvent("outbound_click", {
         link_url: href,
-        link_domain: host,
+        link_domain: url.host,
         page_path: window.location.pathname,
       });
     };

@@ -93,6 +93,7 @@ export function DonateDialog({
       children.props.onClick?.(event);
       if (!event.defaultPrevented) {
         trackEvent("donate_open", {
+          donate_source: "modal",
           page_path: window.location.pathname,
         });
         setOpen(true);

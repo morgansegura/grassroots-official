@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import { ZEFFY_FORM_URL } from "@/lib/givebutter";
 
 import { DonateTrustStrip } from "@/components/feature";
+import { DonateEmbedEngagement } from "@/components/analytics";
 
 import "./donate-screen.css";
 
@@ -12,6 +13,7 @@ type DonateScreenProps = {
 export function DonateScreen({ className }: DonateScreenProps) {
   return (
     <main className={cn("donate-screen", className)}>
+      <DonateEmbedEngagement />
       <section className="donate-screen-embed-section" aria-label="Donate now">
         <div className="donate-screen-embed contain">
           <header className="donate-screen-embed-header">
