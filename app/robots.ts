@@ -31,7 +31,11 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/admin/", "/private/", "/thank-you"],
+        // /thank-you is deliberately NOT disallowed here. It carries a
+        // `noindex` in its metadata, and a robots.txt block would stop
+        // crawlers reading that directive — leaving the URL eligible for
+        // bare indexing instead of properly excluded.
+        disallow: ["/api/", "/admin/", "/private/"],
       },
 
       // ── Training crawlers: disallow (no referral traffic back) ───────

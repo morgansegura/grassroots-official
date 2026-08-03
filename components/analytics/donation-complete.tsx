@@ -33,6 +33,15 @@ export function DonationComplete() {
     const numericValue = rawValue ? Number(rawValue) : undefined;
     const transactionId = first("transaction_id", "transactionId", "id");
 
+    const embedded = window.self !== window.top;
+
+    // The page is publicly reachable, so a direct visit must not count as a
+    // donation — a fake conversion would teach Smart Bidding to chase page
+    // loads. Only two things look like a real completion: Zeffy rendering
+    // the redirect inside its embed iframe, or a top-level redirect that
+    // carries donation params. Someone typing the URL has neither.
+    if (!embedded && !transactionId && numericValue === undefined) return;
+
     const payload: Record<string, unknown> = {
       event: "donation_complete",
       currency: first("currency") ?? "USD",
@@ -57,7 +66,6 @@ export function DonationComplete() {
       }
     }
 
-    const embedded = window.self !== window.top;
     let target: FrameWithDataLayer = window;
 
     if (embedded) {
