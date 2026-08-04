@@ -211,6 +211,70 @@ donors doing diligence. **Landing: `/` and `/990`.**
 > terms report closely for other orgs' brand traffic and negative it out — it
 > will otherwise look like volume while converting nothing.
 
+### Campaign 4 ad copy
+
+Google Ads limits: headlines 30 characters, descriptions 90. Minimum 3
+headlines and 2 descriptions per ad; more assets means better ad strength.
+Two ads per ad group is the Ad Grants minimum — build the second by reordering
+and swapping a few of these.
+
+**Ad group 4A — Brand terms.** Landing page: `/`
+
+Headlines:
+
+```
+Grassroots Foundation
+SD youth soccer nonprofit
+501(c)(3) nonprofit
+EIN 35-2822183
+We fund kids into club soccer
+Tuition, kit, and equipment
+San Diego County nonprofit
+Scholarships for club soccer
+No auditions, no tryouts
+See where the money goes
+Confidential intake
+Youth soccer access nonprofit
+```
+
+Descriptions:
+
+```
+A 501(c)(3) nonprofit funding San Diego County kids into club soccer. EIN 35-2822183.
+We pay tuition, uniforms, and equipment directly to clubs so kids can keep playing.
+Need-based scholarships. No auditions, no tryouts. Confidential intake for families.
+Our EIN, filings, and financial posture are public. See where the money goes.
+```
+
+**Ad group 4B — Verification and transparency.** Landing page: `/990`
+
+Headlines:
+
+```
+EIN 35-2822183
+Our 990 and financials
+501(c)(3) public charity
+Verify us independently
+IRS-recognized nonprofit
+Where the money goes
+Grassroots Foundation
+Registered in California
+Donor protections in full
+No paid fundraisers
+```
+
+Descriptions:
+
+```
+Our EIN, IRS status, and California registration are public and independently verifiable.
+First Form 990 files for the year ending June 30, 2027 and posts here within seven days.
+No paid fundraisers. No commission-based solicitation. Donor information is never sold.
+Look us up on the IRS Tax-Exempt Organization Search or ProPublica Nonprofit Explorer.
+```
+
+Every claim above is verifiable against `/990` today. Nothing asserts kids
+served, dollars granted, or outcomes — because there aren't any yet.
+
 ---
 
 ## Negative keywords (account-level shared list)

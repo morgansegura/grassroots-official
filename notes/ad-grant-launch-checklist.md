@@ -186,6 +186,25 @@ DNS-only fix, roughly 15 minutes.
 
 ---
 
+## Permanent account facts
+
+**The Ads account time zone is (GMT-04:00) Eastern Time and cannot be changed.**
+Google's only remedy is creating a new account, which would mean re-applying
+for the grant. Not worth it. Consequences to remember when reading reports:
+
+- The reporting day ends at **9pm Pacific**, so late-evening activity lands on
+  the next day's report.
+- The daily budget resets at 9pm Pacific.
+- Ad scheduling is entered in ET — 8am–8pm Pacific means entering 11am–11pm.
+
+Nothing about CTR, conversions, cost, or grant compliance is affected.
+
+**Account name is "Grass Roots Foundation"** (two words) while the org is
+Grassroots Foundation. Renameable under Admin → Account settings; worth doing
+for brand-entity consistency since Campaign 4 bids on the brand name.
+
+---
+
 ## Known trap, worth repeating
 
 Google Ads' tag diagnostics may report pages as **"Not tagged."** The GTM
