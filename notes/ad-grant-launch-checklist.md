@@ -1,5 +1,14 @@
 # Ad Grant launch checklist
 
+> **Status as of August 3, 2026 — the launch gate is cleared.** Conversion
+> tracking is live (`donate_open`, imported to Ads as Primary under the
+> account-default Sign-up goal, Count: One, no value). Campaign 4 —
+> Brand & Verification is published and Enabled: 2 ad groups, 2 ads each,
+> 4 sitelinks, 5 callouts, 58 account-level negatives, US geo with
+> presence-only targeting, Search network only, Maximize clicks with a $2.00
+> CPC cap, $25/day. Steps 1–7 below are done. What remains is the parallel
+> track at the bottom plus the ongoing maintenance rhythm.
+
 Written August 3, 2026, after the grant was awarded. The ordered path from
 "awarded" to "ads running safely." Work top to bottom — the order matters,
 because each step depends on the one above it.

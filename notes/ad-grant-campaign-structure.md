@@ -275,6 +275,64 @@ Look us up on the IRS Tax-Exempt Organization Search or ProPublica Nonprofit Exp
 Every claim above is verifiable against `/990` today. Nothing asserts kids
 served, dollars granted, or outcomes — because there aren't any yet.
 
+#### Second ads (Ad Grants requires two per ad group)
+
+**4A — second ad.** Landing page: `/`
+
+Headlines:
+
+```
+San Diego youth soccer
+Grassroots Foundation
+Need-based scholarships
+501(c)(3), EIN 35-2822183
+Kids stay in the game
+We pay clubs directly
+No auditions, no tryouts
+Tuition, kit, and equipment
+Confidential intake
+See where the money goes
+```
+
+Descriptions:
+
+```
+We fund San Diego County kids into the club teams they already want to play for.
+Tuition, uniforms, equipment, and clinic spots, paid directly to partner clubs.
+A 501(c)(3) public charity. EIN 35-2822183. Registered in California.
+Need-based, not merit-based. No auditions and no tryouts to qualify.
+```
+
+**4B — second ad.** Landing page: `/990`
+
+Headlines:
+
+```
+Grassroots Foundation 990
+EIN 35-2822183
+Verify our IRS status
+Public charity, 501(c)(3)
+California registered
+Our financial posture
+No commission fundraising
+We never sell donor data
+First 990 files in 2027
+Where the money goes
+```
+
+Descriptions:
+
+```
+Look up EIN 35-2822183 on the IRS Tax-Exempt Organization Search or ProPublica.
+We publish our 990 unredacted within seven days of filing it with the IRS.
+Registered with the California Registry of Charitable Trusts. Filings are public.
+No paid fundraisers, no commission-based solicitation, no donor data sold.
+```
+
+> Do not accept Google's auto-suggested sitelinks on the ad screen. Campaign-level
+> sitelinks are already configured with descriptions; the suggestions duplicate
+> them and ship incomplete.
+
 ---
 
 ## Negative keywords (account-level shared list)
