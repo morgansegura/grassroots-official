@@ -1,12 +1,18 @@
 import Script from "next/script";
 
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
+const IS_PRODUCTION = process.env.VERCEL_ENV === "production";
 
 /**
  * Google Tag Manager container.
  *
  * Inert until `NEXT_PUBLIC_GTM_ID` is set, so the site builds and runs
  * unchanged without a container.
+ *
+ * Production-only, matching `app/robots.ts`. Preview deployments were firing
+ * into the production GA4 property — GA4 noticed and suggested the
+ * `*.vercel.app` host for cross-domain measurement. Every preview build
+ * opened was polluting the same data the Ad Grant is judged on.
  *
  * Must render AFTER `<ConsentDefaults />` in the tree. ConsentDefaults sits
  * in `<head>` and this sits at the top of `<body>`; both use
@@ -19,7 +25,7 @@ const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
  * block the consent signals Google uses for conversion modeling.
  */
 export function GoogleTagManager() {
-  if (!GTM_ID) return null;
+  if (!GTM_ID || !IS_PRODUCTION) return null;
 
   return (
     <>
