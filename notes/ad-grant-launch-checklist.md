@@ -9,6 +9,41 @@
 > CPC cap, $25/day. Steps 1–7 below are done. What remains is the parallel
 > track at the bottom plus the ongoing maintenance rhythm.
 
+## Open items — the running list
+
+Nothing here blocks an ad from serving. Roughly in priority order.
+
+- [ ] **Verify the conversion chain end to end.** Site → accept cookies →
+      click donate → confirm `donate_open` in GA4 DebugView. Do this before
+      trusting any number.
+- [ ] **Confirm ads cleared review** — status moves from "under review" to
+      Eligible. That's when serving actually starts.
+- [ ] **Search terms report, 3–5 days after launch, then weekly for two
+      months.** Campaign → Keywords → Search terms → add negatives. Nationwide
+      targeting on a shared nonprofit name means junk is guaranteed. This is
+      the highest-value recurring task of month one.
+- [ ] **When Zeffy confirms the redirect:** make one small real donation,
+      confirm `donation_complete` in DebugView, mark it a key event, import to
+      Ads as Primary, demote `donate_open` to Secondary.
+- [ ] **Campaigns 1 (Scholarship Help) and 2 (Cost Education).** Keywords and
+      ad copy already written in the campaign-structure note. Same build flow
+      as Campaign 4.
+- [ ] **SPF and DMARC records.** The domain has neither. Google requires both
+      for senders; donor mail is materially more likely to land in spam and the
+      domain is spoofable. DNS-only, ~15 minutes.
+- [ ] **`/apply` intake form** (dev work). Campaign 1's entire purpose is
+      unmeasurable without it — `email_click` is the current proxy. Should be a
+      modal, per the no-forms-on-pages convention.
+- [ ] **Google Business Profile.** Register as a **service-area business**, not
+      a storefront, so the El Cajon home address stays private. Entity/knowledge
+      -graph play, not a traffic play. Worth a Saturday morning after the ads
+      settle.
+- [ ] **Campaign 3 (Donate & Support)** once there's conversion data to bid on.
+- [ ] **Switch bidding to Maximize Conversions** once conversions are recording
+      — it also lifts the $2.00 CPC cap.
+- [ ] **Monthly, forever:** confirm account CTR is above 5% and at least one
+      conversion recorded. Those two numbers are what keep the grant.
+
 Written August 3, 2026, after the grant was awarded. The ordered path from
 "awarded" to "ads running safely." Work top to bottom — the order matters,
 because each step depends on the one above it.
