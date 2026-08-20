@@ -12,4 +12,5 @@ export { Callout, type CalloutProps } from "./callout";
 export { ImpactStats, type ImpactStatsProps } from "./impact-stats";
 export { MediaSection, type MediaSectionProps } from "./media-section";
 export { MissionGrid, type MissionGridProps } from "./mission-grid";
+export { ScholarshipForm } from "./scholarship-form";
 export { SectionHeader } from "./section-header";

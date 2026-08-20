@@ -1,0 +1,9 @@
+@reference "tailwindcss";
+
+.textarea {
+  @apply w-full min-h-32 rounded-lg border border-(--border) bg-white px-3.5 py-2.5;
+  @apply text-base leading-relaxed text-(--color-cleat) placeholder:text-(--color-cleat)/40;
+  @apply outline-none transition-colors resize-y;
+  @apply focus-visible:border-(--color-golden-goal) focus-visible:ring-3 focus-visible:ring-(--color-golden-goal)/25;
+  @apply aria-invalid:border-(--destructive) aria-invalid:ring-3 aria-invalid:ring-(--destructive)/15;
+}

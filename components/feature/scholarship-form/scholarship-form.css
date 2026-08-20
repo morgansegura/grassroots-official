@@ -1,0 +1,87 @@
+@reference "tailwindcss";
+
+.scholarship-form {
+  @apply flex w-full max-w-2xl flex-col gap-6 rounded-2xl border border-(--border);
+  @apply bg-white p-6 md:p-8;
+}
+
+.scholarship-form-top {
+  @apply flex items-center justify-between gap-4;
+}
+
+.scholarship-form-progress {
+  @apply text-xs font-semibold uppercase tracking-wider text-(--color-cleat)/55;
+}
+
+.scholarship-form-steps {
+  @apply flex gap-2;
+}
+
+.scholarship-form-step-dot {
+  @apply h-1.5 flex-1 rounded-full transition-colors;
+  @apply data-[state=todo]:bg-(--border);
+  @apply data-[state=current]:bg-(--color-golden-goal);
+  @apply data-[state=done]:bg-(--color-golden-goal)/50;
+}
+
+.scholarship-form-heading {
+  @apply text-2xl font-bold text-(--color-cleat) outline-none;
+  @apply font-(family-name:--font-heading);
+}
+
+.scholarship-form-fields {
+  @apply flex flex-col gap-5;
+}
+
+.scholarship-form-note {
+  @apply rounded-lg bg-(--color-golden-goal)/8 px-4 py-3;
+  @apply text-sm leading-relaxed text-(--color-cleat)/80;
+}
+
+.scholarship-form-group {
+  @apply flex flex-col gap-2;
+}
+
+.scholarship-form-legend {
+  @apply text-sm font-semibold text-(--color-cleat);
+}
+
+.scholarship-form-help {
+  @apply text-sm text-(--color-cleat)/65;
+}
+
+.scholarship-form-options {
+  @apply flex flex-col gap-2;
+}
+
+.scholarship-form-group-error {
+  @apply text-sm font-medium text-(--destructive);
+}
+
+.scholarship-form-privacy {
+  @apply rounded-lg border border-(--border) px-4 py-3;
+  @apply text-sm leading-relaxed text-(--color-cleat)/70;
+}
+
+.scholarship-form-error {
+  @apply rounded-lg border border-(--destructive)/40 bg-(--destructive)/8 px-4 py-3;
+  @apply text-sm leading-relaxed text-(--color-cleat);
+}
+
+.scholarship-form-actions {
+  @apply mt-2 flex items-center justify-between gap-4 border-t border-(--border) pt-5;
+}
+
+.scholarship-form-result {
+  @apply flex w-full max-w-2xl flex-col gap-3 rounded-2xl border border-(--border);
+  @apply bg-white p-8;
+}
+
+.scholarship-form-result-heading {
+  @apply text-2xl font-bold text-(--color-cleat) outline-none;
+  @apply font-(family-name:--font-heading);
+}
+
+.scholarship-form-result-body {
+  @apply text-base leading-relaxed text-(--color-cleat)/80;
+}

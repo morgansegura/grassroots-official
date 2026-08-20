@@ -1,0 +1,22 @@
+@reference "tailwindcss";
+
+.field {
+  @apply flex flex-col gap-1.5;
+}
+
+.field-label {
+  @apply flex items-baseline justify-between gap-3;
+  @apply text-sm font-semibold text-(--color-cleat);
+}
+
+.field-hint {
+  @apply text-xs font-normal text-(--color-cleat)/50;
+}
+
+.field-help {
+  @apply text-sm leading-relaxed text-(--color-cleat)/65;
+}
+
+.field-error {
+  @apply text-sm font-medium text-(--destructive);
+}

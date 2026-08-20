@@ -13,6 +13,13 @@ type LegalScreenProps = {
   lastUpdated: string;
   intro?: React.ReactNode;
   children: React.ReactNode;
+  /**
+   * Rendered after the prose block but outside `.legal-screen-content`, whose
+   * descendant selectors (p, ul, a, strong) would otherwise win on specificity
+   * over a component's own classes. Use this for interactive content — forms,
+   * widgets — rather than nesting it in the prose.
+   */
+  after?: React.ReactNode;
 };
 
 export function LegalScreen({
@@ -22,6 +29,7 @@ export function LegalScreen({
   lastUpdated,
   intro,
   children,
+  after,
 }: LegalScreenProps) {
   return (
     <main className={cn("legal-screen", className)}>
@@ -38,6 +46,8 @@ export function LegalScreen({
 
       <Section tone="white">
         <div className="legal-screen-content">{children}</div>
+
+        {after ? <div className="legal-screen-after">{after}</div> : null}
 
         <footer className="legal-screen-footer">
           <p className="legal-screen-footer-org">

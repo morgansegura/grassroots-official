@@ -1,8 +1,10 @@
 import Link from "next/link";
 
+import { ScholarshipForm } from "@/components/feature";
+
 import { LegalScreen } from "../legal-screen";
 
-const LAST_UPDATED = "May 5, 2026";
+const LAST_UPDATED = "August 19, 2026";
 
 export function ApplyScreen() {
   return (
@@ -10,6 +12,7 @@ export function ApplyScreen() {
       eyebrow="For families"
       title="Apply for a scholarship."
       lastUpdated={LAST_UPDATED}
+      after={<ScholarshipForm />}
       intro={
         <>
           <p>
@@ -18,11 +21,10 @@ export function ApplyScreen() {
             merit gates. Confidential intake.
           </p>
           <p>
-            We are a launch-year organization. Intake is currently routed
-            through our partner-club family services contacts; direct
-            applications open as we expand. The fastest path to a scholarship
-            today is through your existing club&apos;s family services
-            coordinator.
+            You can apply directly below. The form takes a few minutes, asks
+            for no documents, and is available in English and Spanish. If you
+            would rather go through your club&apos;s family services
+            coordinator, that route still works and reaches us the same way.
           </p>
         </>
       }
@@ -90,34 +92,33 @@ export function ApplyScreen() {
       </section>
 
       <section>
-        <h2>3. How to apply right now</h2>
-        <p>
-          For the launch year, intake is run through partner-club family
-          services contacts. The fastest path:
-        </p>
+        <h2>3. How to apply</h2>
+        <p>There are two ways in, and they land in the same place.</p>
         <ol>
           <li>
-            Contact your club&apos;s family services or financial assistance
-            coordinator. If you don&apos;t know who that is, the registrar or
-            director of operations can point you to the right person.
+            <strong>Apply directly.</strong> Use the form at the bottom of this
+            page. It asks who you are, who the player is, and enough about your
+            household to establish need. It does not ask for pay stubs, tax
+            returns, or any uploaded documents.
           </li>
           <li>
-            Tell them your family is exploring need-based assistance and ask
-            whether the club partners with Grassroots Foundation. If they do,
-            the family services contact will surface your family&apos;s
-            information to us through their existing confidential intake.
-          </li>
-          <li>
-            We confirm the partnership relationship, review the intake, and
-            respond to the partner club typically within two weeks. Families
-            receive notification through their club, not from us directly, to
-            keep the relationship close to the kid&apos;s existing team.
+            <strong>Through your club.</strong> Contact your club&apos;s family
+            services or financial assistance coordinator and ask whether they
+            partner with Grassroots Foundation. If you don&apos;t know who that
+            is, the registrar or director of operations can point you to them.
           </li>
         </ol>
         <p>
-          If you don&apos;t have a club yet, or your club isn&apos;t a partner
-          program, <Link href="/contact">contact us directly</Link> and we will
-          help orient you to the closest partner-club option in your area.
+          Either way, we review the application against the eligibility criteria
+          above and respond <strong>within 10 business days</strong>. If your
+          application moves forward, we confirm enrollment and cost with your
+          club before making a decision — which is why the form asks your
+          permission to contact them.
+        </p>
+        <p>
+          If you don&apos;t have a club yet, apply anyway and say so — or{" "}
+          <Link href="/contact">contact us directly</Link> and we will help
+          orient you to the closest partner-club option in your area.
         </p>
       </section>
 

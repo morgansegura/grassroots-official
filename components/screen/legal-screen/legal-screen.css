@@ -81,6 +81,12 @@
   @apply flex flex-col;
 }
 
+/* Outside .legal-screen-content on purpose — its p/ul/a selectors would win on
+   specificity over an embedded component's own classes. */
+.legal-screen-after {
+  @apply max-w-3xl mx-auto mt-12;
+}
+
 .legal-screen-footer {
   @apply max-w-3xl mx-auto mt-16 pt-8;
   @apply border-t border-olive-300;

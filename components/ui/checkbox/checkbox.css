@@ -1,0 +1,16 @@
+@reference "tailwindcss";
+
+.checkbox {
+  @apply flex cursor-pointer items-start gap-3 rounded-lg border border-(--border) bg-white;
+  @apply px-3.5 py-3 transition-colors;
+  @apply hover:border-(--color-golden-goal)/50;
+  @apply has-checked:border-(--color-golden-goal) has-checked:bg-(--color-golden-goal)/8;
+}
+
+.checkbox-input {
+  @apply mt-0.5 size-5 shrink-0 cursor-pointer accent-(--color-golden-goal);
+}
+
+.checkbox-label {
+  @apply text-base leading-snug text-(--color-cleat);
+}

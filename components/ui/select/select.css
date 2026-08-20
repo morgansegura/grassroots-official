@@ -1,0 +1,19 @@
+@reference "tailwindcss";
+
+.select-wrap {
+  @apply relative w-full;
+}
+
+.select {
+  @apply w-full appearance-none rounded-lg border border-(--border) bg-white;
+  @apply px-3.5 py-2.5 pr-10 text-base text-(--color-cleat);
+  @apply outline-none transition-colors;
+  @apply focus-visible:border-(--color-golden-goal) focus-visible:ring-3 focus-visible:ring-(--color-golden-goal)/25;
+  @apply aria-invalid:border-(--destructive) aria-invalid:ring-3 aria-invalid:ring-(--destructive)/15;
+}
+
+/* Chevron drawn in CSS so the control ships without an icon dependency. */
+.select-arrow {
+  @apply pointer-events-none absolute right-4 top-1/2 h-2 w-2 -translate-y-2/3 rotate-45;
+  @apply border-b-2 border-r-2 border-(--color-cleat)/50;
+}
