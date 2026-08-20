@@ -33,9 +33,8 @@ type Status = "idle" | "submitting" | "success" | "error";
 export function ScholarshipForm() {
   const [locale, setLocale] = React.useState<Locale>("en");
   const [step, setStep] = React.useState(0);
-  const [values, setValues] = React.useState<ApplicationInput>(
-    EMPTY_APPLICATION,
-  );
+  const [values, setValues] =
+    React.useState<ApplicationInput>(EMPTY_APPLICATION);
   const [errors, setErrors] = React.useState<Errors>({});
   const [status, setStatus] = React.useState<Status>("idle");
 
@@ -98,9 +97,7 @@ export function ScholarshipForm() {
       setErrors(all);
       // Jump back to the first step that has a problem rather than leaving the
       // applicant on a valid-looking final step.
-      const bad = STEP_FIELDS.findIndex((fields) =>
-        fields.some((f) => all[f]),
-      );
+      const bad = STEP_FIELDS.findIndex((fields) => fields.some((f) => all[f]));
       if (bad >= 0) setStep(bad);
       focusHeading();
       return;
@@ -134,7 +131,11 @@ export function ScholarshipForm() {
   if (status === "success") {
     return (
       <div className="scholarship-form-result" role="status">
-        <h2 className="scholarship-form-result-heading" tabIndex={-1} ref={headingRef}>
+        <h2
+          className="scholarship-form-result-heading"
+          tabIndex={-1}
+          ref={headingRef}
+        >
           {t.successHeading}
         </h2>
         <p className="scholarship-form-result-body">{t.successBody}</p>
@@ -170,11 +171,7 @@ export function ScholarshipForm() {
         ))}
       </ol>
 
-      <h2
-        className="scholarship-form-heading"
-        tabIndex={-1}
-        ref={headingRef}
-      >
+      <h2 className="scholarship-form-heading" tabIndex={-1} ref={headingRef}>
         {[t.s1Heading, t.s2Heading, t.s3Heading, t.s4Heading][step]}
       </h2>
 
@@ -188,14 +185,25 @@ export function ScholarshipForm() {
       {/* Step 1 — about you */}
       {step === 0 ? (
         <div className="scholarship-form-fields">
-          <Field htmlFor="relationship" label={t.relationship} error={err("relationship")}>
+          <Field
+            htmlFor="relationship"
+            label={t.relationship}
+            error={err("relationship")}
+          >
             <Select
               id="relationship"
               value={values.relationship}
               aria-invalid={Boolean(err("relationship"))}
-              aria-describedby={describedBy("relationship", undefined, err("relationship"))}
+              aria-describedby={describedBy(
+                "relationship",
+                undefined,
+                err("relationship"),
+              )}
               onChange={(e) =>
-                set("relationship", e.target.value as ApplicationInput["relationship"])
+                set(
+                  "relationship",
+                  e.target.value as ApplicationInput["relationship"],
+                )
               }
             >
               <option value="">—</option>
@@ -207,14 +215,22 @@ export function ScholarshipForm() {
             </Select>
           </Field>
 
-          <Field htmlFor="applicantName" label={t.applicantName} error={err("applicantName")}>
+          <Field
+            htmlFor="applicantName"
+            label={t.applicantName}
+            error={err("applicantName")}
+          >
             <Input
               id="applicantName"
               name="applicantName"
               autoComplete="name"
               value={values.applicantName}
               aria-invalid={Boolean(err("applicantName"))}
-              aria-describedby={describedBy("applicantName", undefined, err("applicantName"))}
+              aria-describedby={describedBy(
+                "applicantName",
+                undefined,
+                err("applicantName"),
+              )}
               onChange={(e) => set("applicantName", e.target.value)}
             />
           </Field>
@@ -252,27 +268,47 @@ export function ScholarshipForm() {
         <div className="scholarship-form-fields">
           <p className="scholarship-form-note">{t.s2Note}</p>
 
-          <Field htmlFor="playerFirstName" label={t.playerFirstName} error={err("playerFirstName")}>
+          <Field
+            htmlFor="playerFirstName"
+            label={t.playerFirstName}
+            error={err("playerFirstName")}
+          >
             <Input
               id="playerFirstName"
               value={values.playerFirstName}
               aria-invalid={Boolean(err("playerFirstName"))}
-              aria-describedby={describedBy("playerFirstName", undefined, err("playerFirstName"))}
+              aria-describedby={describedBy(
+                "playerFirstName",
+                undefined,
+                err("playerFirstName"),
+              )}
               onChange={(e) => set("playerFirstName", e.target.value)}
             />
           </Field>
 
-          <Field htmlFor="playerLastName" label={t.playerLastName} error={err("playerLastName")}>
+          <Field
+            htmlFor="playerLastName"
+            label={t.playerLastName}
+            error={err("playerLastName")}
+          >
             <Input
               id="playerLastName"
               value={values.playerLastName}
               aria-invalid={Boolean(err("playerLastName"))}
-              aria-describedby={describedBy("playerLastName", undefined, err("playerLastName"))}
+              aria-describedby={describedBy(
+                "playerLastName",
+                undefined,
+                err("playerLastName"),
+              )}
               onChange={(e) => set("playerLastName", e.target.value)}
             />
           </Field>
 
-          <Field htmlFor="playerBirthYear" label={t.playerBirthYear} error={err("playerBirthYear")}>
+          <Field
+            htmlFor="playerBirthYear"
+            label={t.playerBirthYear}
+            error={err("playerBirthYear")}
+          >
             <Input
               id="playerBirthYear"
               inputMode="numeric"
@@ -280,14 +316,23 @@ export function ScholarshipForm() {
               placeholder="2014"
               value={values.playerBirthYear}
               aria-invalid={Boolean(err("playerBirthYear"))}
-              aria-describedby={describedBy("playerBirthYear", undefined, err("playerBirthYear"))}
+              aria-describedby={describedBy(
+                "playerBirthYear",
+                undefined,
+                err("playerBirthYear"),
+              )}
               onChange={(e) =>
                 set("playerBirthYear", e.target.value.replace(/\D/g, ""))
               }
             />
           </Field>
 
-          <Field htmlFor="club" label={t.club} help={t.clubHelp} error={err("club")}>
+          <Field
+            htmlFor="club"
+            label={t.club}
+            help={t.clubHelp}
+            error={err("club")}
+          >
             <Input
               id="club"
               value={values.club}
@@ -304,28 +349,47 @@ export function ScholarshipForm() {
         <div className="scholarship-form-fields">
           <p className="scholarship-form-note">{t.s3Note}</p>
 
-          <Field htmlFor="householdSize" label={t.householdSize} error={err("householdSize")}>
+          <Field
+            htmlFor="householdSize"
+            label={t.householdSize}
+            error={err("householdSize")}
+          >
             <Input
               id="householdSize"
               inputMode="numeric"
               maxLength={2}
               value={values.householdSize}
               aria-invalid={Boolean(err("householdSize"))}
-              aria-describedby={describedBy("householdSize", undefined, err("householdSize"))}
+              aria-describedby={describedBy(
+                "householdSize",
+                undefined,
+                err("householdSize"),
+              )}
               onChange={(e) =>
                 set("householdSize", e.target.value.replace(/\D/g, ""))
               }
             />
           </Field>
 
-          <Field htmlFor="incomeBracket" label={t.incomeBracket} error={err("incomeBracket")}>
+          <Field
+            htmlFor="incomeBracket"
+            label={t.incomeBracket}
+            error={err("incomeBracket")}
+          >
             <Select
               id="incomeBracket"
               value={values.incomeBracket}
               aria-invalid={Boolean(err("incomeBracket"))}
-              aria-describedby={describedBy("incomeBracket", undefined, err("incomeBracket"))}
+              aria-describedby={describedBy(
+                "incomeBracket",
+                undefined,
+                err("incomeBracket"),
+              )}
               onChange={(e) =>
-                set("incomeBracket", e.target.value as ApplicationInput["incomeBracket"])
+                set(
+                  "incomeBracket",
+                  e.target.value as ApplicationInput["incomeBracket"],
+                )
               }
             >
               <option value="">—</option>
@@ -353,7 +417,10 @@ export function ScholarshipForm() {
             </div>
           </fieldset>
 
-          <fieldset className="scholarship-form-group" data-invalid={Boolean(err("costs"))}>
+          <fieldset
+            className="scholarship-form-group"
+            data-invalid={Boolean(err("costs"))}
+          >
             <legend className="scholarship-form-legend">{t.costs}</legend>
             <div className="scholarship-form-options">
               {COST_TYPES.map((c) => (

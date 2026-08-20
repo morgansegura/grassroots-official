@@ -21,10 +21,10 @@ export function ApplyScreen() {
             merit gates. Confidential intake.
           </p>
           <p>
-            You can apply directly below. The form takes a few minutes, asks
-            for no documents, and is available in English and Spanish. If you
-            would rather go through your club&apos;s family services
-            coordinator, that route still works and reaches us the same way.
+            You can apply directly below. The form takes a few minutes, asks for
+            no documents, and is available in English and Spanish. If you would
+            rather go through your club&apos;s family services coordinator, that
+            route still works and reaches us the same way.
           </p>
         </>
       }

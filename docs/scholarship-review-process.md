@@ -21,7 +21,7 @@ pre-selected individuals. GRF's charitable class is:
 > competitive club soccer.
 
 Funding a member of that class is squarely within GRF's exempt purpose. The risk
-is never *who* receives an award — it is **how they were chosen**. An award made
+is never _who_ receives an award — it is **how they were chosen**. An award made
 because a board member knows the family, absent an open process, is a private
 benefit regardless of how deserving the recipient is.
 
@@ -54,7 +54,7 @@ Two routes, both landing in the same queue:
 - **Direct application** — the family applies at `/apply`.
 
 **No financial documents are collected at intake.** The application captures
-household size and an income *bracket*, self-attested. This is deliberate:
+household size and an income _bracket_, self-attested. This is deliberate:
 storing pay stubs and tax returns creates a data-security and retention burden
 disproportionate to a launch-year organization, and it is a barrier for
 families. Documentation is verified later, and only for applications that
@@ -67,13 +67,13 @@ excludes part of the population GRF is chartered to serve.
 
 Applications move through a Monday board with these stages:
 
-| Stage | What happens |
-|---|---|
-| 1. New | Application received. Logged automatically. |
-| 2. Under review | Reviewer checks eligibility (§2) against the published criteria. |
+| Stage                      | What happens                                                                                                                                                                          |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. New                     | Application received. Logged automatically.                                                                                                                                           |
+| 2. Under review            | Reviewer checks eligibility (§2) against the published criteria.                                                                                                                      |
 | 3. Documentation requested | If advancing: the partner club's family-services contact confirms enrollment and cost, and confirms need through their own process. GRF does not take custody of financial documents. |
-| 4. Decision | Approve (with amount) or decline, against criteria, recorded with a one-line rationale. |
-| 5. Awarded / Declined | Terminal. Applicant notified either way. |
+| 4. Decision                | Approve (with amount) or decline, against criteria, recorded with a one-line rationale.                                                                                               |
+| 5. Awarded / Declined      | Terminal. Applicant notified either way.                                                                                                                                              |
 
 **Reviewers.** Every decision requires at least one reviewer who has no personal
 relationship to the applicant. Where the board is small, the decision may be

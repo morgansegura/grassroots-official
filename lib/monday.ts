@@ -12,7 +12,8 @@ import "server-only";
 
 const API = "https://api.monday.com/v2";
 
-export const APPLICATIONS_BOARD = process.env.MONDAY_APPLICATIONS_BOARD_ID ?? "";
+export const APPLICATIONS_BOARD =
+  process.env.MONDAY_APPLICATIONS_BOARD_ID ?? "";
 
 type ColInfo = { id: string; type: string };
 type ColMap = Record<string, ColInfo>;
@@ -51,7 +52,9 @@ async function gql<T>(
 /** Column ids are per-board and not stable across boards — resolve by title. */
 async function columnsByTitle(boardId: string): Promise<ColMap> {
   const data = await gql<{
-    boards: Array<{ columns: Array<{ id: string; title: string; type: string }> }>;
+    boards: Array<{
+      columns: Array<{ id: string; title: string; type: string }>;
+    }>;
   }>(
     `query ($ids: [ID!]) { boards (ids: $ids) { columns { id title type } } }`,
     { ids: [boardId] },
@@ -81,7 +84,8 @@ function buildColumnValues(
     if (!col || !value) continue;
 
     if (col.type === "email") payload[col.id] = { email: value, text: value };
-    else if (col.type === "phone") payload[col.id] = { phone: value, text: value };
+    else if (col.type === "phone")
+      payload[col.id] = { phone: value, text: value };
     else if (col.type === "status") payload[col.id] = { label: value };
     else if (col.type === "long_text") payload[col.id] = { text: value };
     else payload[col.id] = value;

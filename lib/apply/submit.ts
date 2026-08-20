@@ -73,7 +73,8 @@ export async function submitApplication(
   };
 
   const errors = validate(input, COPY[locale]);
-  if (Object.keys(errors).length > 0) return { ok: false, reason: "validation" };
+  if (Object.keys(errors).length > 0)
+    return { ok: false, reason: "validation" };
 
   if (!mondayConfigured) {
     // Nothing to write to. Fail loudly to the caller rather than silently
