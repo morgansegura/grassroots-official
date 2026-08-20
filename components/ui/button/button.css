@@ -46,8 +46,11 @@
   @apply text-sky-600 underline-offset-4 hover:underline;
 }
 
+/* Pill radius matches the site's CTA language (SectionCta, .button-donate).
+   The xs and icon sizes keep their tighter radius — the cookie banner uses
+   those and reads better square-ish at that scale. */
 .button-size-default {
-  @apply h-10 gap-2 px-4 has-data-[icon=inline-end]:pr-3.5 has-data-[icon=inline-start]:pl-3.5;
+  @apply h-11 gap-2 px-5 rounded-full has-data-[icon=inline-end]:pr-4 has-data-[icon=inline-start]:pl-4;
 }
 
 .button-size-xs {
@@ -55,11 +58,11 @@
 }
 
 .button-size-sm {
-  @apply gap-1 h-8.5 px-3 flex;
+  @apply gap-1 h-9 px-4 rounded-full flex;
 }
 
 .button-size-lg {
-  @apply h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2;
+  @apply h-12 gap-1.5 px-6 rounded-full has-data-[icon=inline-end]:pr-5 has-data-[icon=inline-start]:pl-5;
 }
 
 .button-icon-default {

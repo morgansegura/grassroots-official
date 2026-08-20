@@ -438,11 +438,15 @@ export function ScholarshipForm() {
         )}
 
         {step < STEP_COUNT - 1 ? (
-          <Button type="button" onClick={next}>
+          <Button type="button" variant="donate" onClick={next}>
             {t.next}
           </Button>
         ) : (
-          <Button type="submit" disabled={status === "submitting"}>
+          <Button
+            type="submit"
+            variant="donate"
+            disabled={status === "submitting"}
+          >
             {status === "submitting" ? t.submitting : t.submit}
           </Button>
         )}
