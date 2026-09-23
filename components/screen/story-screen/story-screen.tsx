@@ -52,8 +52,8 @@ export function StoryScreen() {
         </p>
         <p>
           Every gift, at every level, removes a layer of the cost stack for one
-          more kid. $60 covers a pair of cleats. $200 covers a full
-          season&apos;s kit. $2,500 covers a full season of tuition. $25,000
+          more kid. A pair of cleats runs $60 to $300. A season&apos;s kit runs
+          $300 to $600. A season of tuition runs $2,500 to $4,500. $25,000
           underwrites an entire team. Every level of giving maps to a definable,
           namable outcome a donor can point to.
         </p>

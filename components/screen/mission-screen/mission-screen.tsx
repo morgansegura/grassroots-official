@@ -191,8 +191,8 @@ export function MissionScreen({ className }: MissionScreenProps) {
                   Become a founding donor
                 </h3>
                 <p className="mission-screen-involve-body">
-                  Single gifts of any size — every $60 covers a pair of cleats,
-                  every $2,500 covers a full season for one kid.
+                  Single gifts of any size, from a $60 pair of cleats to a
+                  $2,500 to $4,500 season of tuition for one kid.
                 </p>
               </div>
             </li>

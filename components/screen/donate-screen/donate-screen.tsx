@@ -6,13 +6,6 @@ import { DonateEmbedEngagement } from "@/components/analytics";
 
 import "./donate-screen.css";
 
-// Amounts match the giving levels in public/llms.txt.
-const GIFT_USES = [
-  { amount: "$60", label: "buys a pair of cleats" },
-  { amount: "$200", label: "covers a full season of kit" },
-  { amount: "$2,500", label: "pays a full season of tuition" },
-];
-
 type DonateScreenProps = {
   className?: string;
 };
@@ -35,16 +28,6 @@ export function DonateScreen({ className }: DonateScreenProps) {
               funding our first 100 players, and we would be grateful for your
               help.
             </p>
-            <ul className="donate-screen-embed-uses">
-              {GIFT_USES.map((use) => (
-                <li key={use.amount} className="donate-screen-embed-use">
-                  <span className="donate-screen-embed-use-amount">
-                    {use.amount}
-                  </span>
-                  <span>{use.label}</span>
-                </li>
-              ))}
-            </ul>
           </header>
 
           <div className="donate-screen-embed-slot">

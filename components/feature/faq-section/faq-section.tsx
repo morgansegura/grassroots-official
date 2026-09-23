@@ -68,8 +68,8 @@ const DEFAULT_ITEMS: FaqItem[] = [
     answer: (
       <>
         Yes. We fund the full range — from a $60 pair of cleats to a $5,000–
-        $11,000 full season. Give to the general fund or sponsor a specific
-        named campaign. Each campaign shows what your gift covers.
+        $11,000 full season all-in. Give to the general fund or sponsor a
+        specific named campaign. Each campaign shows what your gift covers.
       </>
     ),
   },

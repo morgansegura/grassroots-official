@@ -35,7 +35,7 @@ const DEFAULT_TIERS: Tier[] = [
     label: "$60",
     unit: "One pair of cleats",
     description:
-      "Funds a single pair of cleats for a kid who'd otherwise sit out.",
+      "Funds an entry-level pair of cleats. Most pairs run $60 to $300.",
   },
   {
     id: "first-touch",
@@ -56,7 +56,7 @@ const DEFAULT_TIERS: Tier[] = [
     label: "$2,500",
     unit: "One full season",
     description:
-      "Covers full season tuition for one kid at most South Bay club programs.",
+      "Covers a season of tuition at clubs like Chula Vista FC. Others run up to $4,500.",
   },
   {
     id: "all-in",

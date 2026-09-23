@@ -22,7 +22,7 @@ const PROGRAM_SERVICES = [
   {
     name: "Kit & Uniform Grants",
     description:
-      "Match-day kit, training kit, sideline gear ($150–$300 per season). Direct-to-family or via partner-club retailer voucher. Renewable each season.",
+      "Match-day kit, training kit, sideline gear ($300–$600 per season). Direct-to-family or via partner-club retailer voucher. Renewable each season.",
     url: `${SITE.url}/programs#kit-uniform`,
   },
   {
@@ -89,7 +89,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
             alt: "Youth soccer player on a San Diego pitch",
             aspect: "4/3",
           }}
-          mediaCaption="$2,500 funds one full season. $25,000 funds ten kids."
+          mediaCaption="A season of tuition runs $2,500 to $4,500, depending on the club."
           cta={{ label: "Fund a scholarship", href: "/donate" }}
         />
       </Section>
@@ -155,7 +155,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
             alt: "Youth players in club kits",
             aspect: "4/3",
           }}
-          mediaCaption="$200 covers a full season's kit for one kid."
+          mediaCaption="A full season's kit runs $300 to $600 for one kid."
           cta={{ label: "Fund a kit", href: "/donate" }}
         />
       </Section>
@@ -171,9 +171,8 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
             <>
               <p>
                 At top-tier clubs, families bring their own gear — adding
-                $200–$400 per kid before kit and tuition. A $60 pair of cleats
-                that doesn&apos;t fit at the start of a season can end the
-                season.
+                $200–$400 per kid before kit and tuition. A pair of cleats that
+                doesn&apos;t fit at the start of a season can end the season.
               </p>
               <p>
                 We deliver direct or via partner-retailer voucher. Mid-season
@@ -188,7 +187,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
             alt: "Cleats and soccer ball on the pitch",
             aspect: "4/3",
           }}
-          mediaCaption="$60 covers a pair of cleats. $300 covers a goalkeeper kit."
+          mediaCaption="A pair of cleats runs $60 to $300."
           cta={{ label: "Fund equipment", href: "/donate" }}
         />
       </Section>
@@ -298,9 +297,8 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
               <h3 className="programs-screen-stack-title">Equipment Grants</h3>
               <p className="programs-screen-stack-body">
                 Cleats, shin guards, ball, training bag — the gear families are
-                expected to bring. Covered so a $60 pair of cleats that
-                doesn&apos;t fit doesn&apos;t end a season. Goalkeepers get
-                their own tier.
+                expected to bring. Covered so a pair of cleats that doesn&apos;t
+                fit doesn&apos;t end a season. Goalkeepers get their own tier.
               </p>
             </li>
 
