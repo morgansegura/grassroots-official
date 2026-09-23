@@ -82,8 +82,8 @@ A few specifics, because the marketing temptation is real:
 
 ## The honest read
 
-The World Cup was a real tailwind for U.S. youth soccer in the host regions. It was not, by itself, the fix. The fix is the boring, repeatable work of pulling the cost wall down one program, one club, one kid at a time. The tournament gave us an unusual amount of attention and a clearer name for the first cohort. The structural problem is what's standing there after the confetti.
+The World Cup was a real tailwind for U.S. youth soccer in the host regions. The lasting work is steadier: helping families with the cost of the season, one program, one club, and one kid at a time. The tournament gave us an unusual amount of attention and a clear name for our first cohort.
 
-The Cup left in July. The cost wall didn't. Tryouts and registration for the 2026–27 season are happening right now, which means the families who were priced out last year are being priced out again this month, in real time, while the coverage moves on.
+Tryouts and registration for the 2026–27 season are open right now, and every gift helps another family say yes to the season.
 
-The founding-donor block is the first 25 names on the Class of '26 roster, and those seats are open. That's the part of this moment anyone can actually move on. The rest of it was media.
+The founding-donor block is the first 25 names on the Class of '26 roster, and those seats are open. That's the part of this moment anyone can help with today.

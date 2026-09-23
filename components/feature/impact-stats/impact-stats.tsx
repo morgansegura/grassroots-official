@@ -15,10 +15,10 @@ export type ImpactStatsProps = {
 };
 
 const DEFAULT_STATS: Stat[] = [
-  { value: "$2K–$5K", label: "Club fees, just to be on the team" },
+  { value: "$2.5K–$4.5K", label: "A season of club tuition" },
   { value: "~$11K", label: "All-in per kid, per year at the top tiers" },
   { value: "100", label: "Kids in the Class of '26" },
-  { value: "$50/mo", label: "Funds one kid for a season — First Touch" },
+  { value: "$50/mo", label: "Covers a full season's kit" },
 ];
 
 export function ImpactStats({

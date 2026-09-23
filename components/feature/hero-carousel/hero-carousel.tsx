@@ -44,9 +44,9 @@ const DEFAULT_SLIDES: HeroSlide[] = [
       alt: "Youth soccer team huddled on the field",
     },
     eyebrow: "After the Cup",
-    heading: "The World Cup came home.\nMost kids still can't afford to play.",
+    heading: "The World Cup came home.\nNow it's their turn to play.",
     tagline:
-      "The Cup left in July. The cost wall didn't. The season starts this fall, and we're building a roster of 100.",
+      "The club season starts this fall, and San Diego kids are ready. We're building a roster of 100.",
     cta: { label: "Read our mission", href: "/mission" },
   },
   {

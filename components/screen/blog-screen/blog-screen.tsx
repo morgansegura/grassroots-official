@@ -59,7 +59,7 @@ export function BlogScreen({ posts, className }: BlogScreenProps) {
         <CtaBanner
           eyebrow="Get involved"
           heading="Read the math, then put a kid on the roster."
-          body="Every field note traces back to the same point: working-class kids in San Diego County are being priced out of the game. Founding donors are funding the first names on the Class of '26 roster."
+          body="Every field note comes back to the same hope: that every San Diego kid who loves soccer gets to play it. Founding donors are funding the first names on the Class of '26 roster."
           cta={{ label: "Become a founding donor", href: "/donate" }}
           tiers={[]}
         />

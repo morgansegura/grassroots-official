@@ -16,7 +16,7 @@ const PROGRAM_SERVICES = [
   {
     name: "Team Sponsorship",
     description:
-      "Underwriting an entire team's roster for a competitive season — every kid plays. Built for major-gift donors and family foundations at $25,000 and up across competitive tiers (community, NPL/DPL, MLS Next, ECNL).",
+      "Funding a whole team's roster for a competitive season. Built for major-gift donors and family foundations, with team gifts starting at $25,000 across competitive tiers (community, NPL/DPL, MLS Next, ECNL).",
     url: `${SITE.url}/programs#team-sponsorship`,
   },
   {
@@ -66,14 +66,14 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
         <MediaSection
           layout="bg-half"
           eyebrow="Player Scholarships"
-          heading="Need-based tuition for the kids who'd otherwise step away."
+          heading="Need-based tuition so kids can keep playing with their team."
           body={
             <>
               <p>
-                Club tuition in San Diego runs $2,000–$5,000 a season. All-in,
-                with travel and showcase costs, the highest competitive tiers
-                reach $11,000 a year per kid. Working-class families price out
-                long before the season starts.
+                A season of club tuition in San Diego runs $2,500 to $4,500.
+                All-in, with travel and showcase costs, the highest competitive
+                tiers reach $11,000 a year per kid. Many families need a hand
+                with that cost.
               </p>
               <p>
                 We cover full or partial tuition at partner club programs for
@@ -98,7 +98,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
       <Section id="team-sponsorship" tone="light">
         <MediaSection
           eyebrow="Team Sponsorship"
-          heading="Underwrite an entire roster — every kid plays."
+          heading="Fund a whole team for a season."
           mediaPosition="left"
           parallax
           body={
@@ -123,7 +123,7 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
             alt: "Youth soccer team huddled before a match",
             aspect: "4/3",
           }}
-          mediaCaption="Team-level gifts start at $25,000."
+          mediaCaption="Team gifts start at $25,000. A full team's season of tuition runs about $37,500 to $67,500."
           cta={{ label: "Talk to us about a team", href: "/donate" }}
         />
       </Section>
@@ -139,8 +139,8 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
               <p>
                 Most clubs require season-specific kits that rotate annually —
                 match-day jersey, training shirt, shorts, socks, team bag. Costs
-                run $150–$300 per kid per season. For a family already at the
-                financial edge, kit alone is enough to push them out.
+                run $300 to $600 per kid per season. We cover the kit so
+                families can focus on the season.
               </p>
               <p>
                 We fulfill kit directly to the family or via voucher at a
@@ -171,8 +171,8 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
             <>
               <p>
                 At top-tier clubs, families bring their own gear — adding
-                $200–$400 per kid before kit and tuition. A pair of cleats that
-                doesn&apos;t fit at the start of a season can end the season.
+                $200–$400 per kid before kit and tuition. When a player outgrows
+                their cleats mid-season, we replace them.
               </p>
               <p>
                 We deliver direct or via partner-retailer voucher. Mid-season
@@ -297,8 +297,8 @@ export function ProgramsScreen({ className }: ProgramsScreenProps) {
               <h3 className="programs-screen-stack-title">Equipment Grants</h3>
               <p className="programs-screen-stack-body">
                 Cleats, shin guards, ball, training bag — the gear families are
-                expected to bring. Covered so a pair of cleats that doesn&apos;t
-                fit doesn&apos;t end a season. Goalkeepers get their own tier.
+                expected to bring. Covered, including a new pair of cleats when
+                a player outgrows theirs. Goalkeepers get their own tier.
               </p>
             </li>
 

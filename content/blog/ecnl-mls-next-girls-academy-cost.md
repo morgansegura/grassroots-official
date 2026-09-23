@@ -69,7 +69,7 @@ This is the household-level expenditure that produces, in the United States, the
 
 In practice: kids whose families can absorb $8,000-to-$20,000-a-year participation costs.
 
-The talent does not respect household income. The system does. By the time a U18 player makes a national-team selection pool or earns a Division I college soccer scholarship, the underlying talent has been filtered through six-plus years of cost-wall selection. Kids who couldn't afford to stay in the pipeline are simply no longer in the pool.
+Talent shows up in every neighborhood, and cost shapes who gets to keep developing it. By the time a U18 player makes a national-team selection pool or earns a Division I college soccer scholarship, they have usually played six or more years of club soccer. Scholarships help more kids stay on that path long enough to find out how far they can go.
 
 This is the structural feature of U.S. youth soccer that most resembles a household-income screen, and it is the feature Grassroots Foundation is specifically designed to address.
 

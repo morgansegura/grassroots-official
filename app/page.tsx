@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Grassroots Foundation — Access, the Goal!",
   description:
-    "Grassroots Foundation closes the cost wall pricing working-class kids out of competitive youth soccer in San Diego County. Need-based scholarships, kit & equipment grants, clinic seats — at established partner clubs.",
+    "Grassroots Foundation helps San Diego County kids play club soccer with need-based scholarships, kit and equipment grants, and clinic seats at partner clubs.",
   path: "/",
 });
 

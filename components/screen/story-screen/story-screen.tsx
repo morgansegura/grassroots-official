@@ -12,50 +12,44 @@ export function StoryScreen() {
       lastUpdated={LAST_UPDATED}
       intro={
         <p>
-          Grassroots Foundation came out of a problem that working-class soccer
-          families in San Diego know firsthand: competitive youth soccer in
-          America runs on a tuition check most families can&apos;t write. A
-          talented kid whose family can&apos;t afford the club fees doesn&apos;t
-          go play somewhere else. They stop playing. That gap, repeating
-          thousands of times across one county, is what this organization exists
-          to close.
+          Grassroots Foundation started with something soccer families in San
+          Diego already know: kids love playing club soccer with their friends,
+          and a season costs more than many families can manage on their own. We
+          want every kid who loves the game to keep playing it, so we help
+          families with the cost, one season at a time.
         </p>
       }
     >
       <section>
-        <h2>The cost stack</h2>
+        <h2>What a season costs</h2>
         <p>
-          Club soccer in San Diego runs $2,000–$5,000 in tuition alone, and
-          roughly $11,000 a year all-in once travel, kits, equipment, and
-          training stack on top. Talented kids from working-class families price
-          out long before the season starts — often between ages 11 and 13, the
-          developmental window when most youth-soccer dropoff occurs.
+          A season of club tuition in San Diego runs $2,500 to $4,500, and
+          roughly $11,000 a year all-in at the top levels once travel, kits,
+          equipment, and training are added. Families feel that cost most
+          between ages 11 and 13, which is also when many kids decide whether to
+          keep playing.
         </p>
         <p>
-          This is not a niche problem. It&apos;s the predictable arithmetic of
-          how American youth sports work. In most countries, talented kids train
-          through publicly-funded academies. In the United States, families pay
-          club fees for the same development path — and the families who
-          can&apos;t pay don&apos;t get the path.
+          In many countries, talented kids train through publicly funded
+          academies. In the United States, families usually pay club fees
+          directly. That is where donors come in, and it is why every gift
+          reaches a real player on a real team.
         </p>
       </section>
 
       <section>
         <h2>Free is the goal. Affordable for now.</h2>
         <p>
-          The North-Star moral position is simple: soccer should be free for
-          every kid. The honest realism: we&apos;re not going to dismantle the
-          American pay-to-play system overnight, and lying to donors about how
-          fast that&apos;ll happen is the fastest way to lose their trust. So we
-          hold both at once. <strong>Free is the goal.</strong> Affordable, for
-          now, is what we&apos;re delivering.
+          Our long-term hope is simple: soccer should be free for every kid.
+          That will take time, and we want to be honest with donors about it. So
+          we hold both at once. <strong>Free is the goal.</strong> For now, we
+          make it affordable, one family at a time.
         </p>
         <p>
-          Every gift, at every level, removes a layer of the cost stack for one
-          more kid. A pair of cleats runs $60 to $300. A season&apos;s kit runs
-          $300 to $600. A season of tuition runs $2,500 to $4,500. $25,000
-          underwrites an entire team. Every level of giving maps to a definable,
-          namable outcome a donor can point to.
+          Every gift, at every level, helps one more kid play. A pair of cleats
+          runs $60 to $300. A season&apos;s kit runs $300 to $600. A season of
+          tuition runs $2,500 to $4,500. Team sponsorships start at $25,000.
+          Every level of giving maps to something real a donor can point to.
         </p>
       </section>
 
@@ -107,11 +101,8 @@ export function StoryScreen() {
           refugee-resettlement populations, is phase 2 of the same model.
         </p>
         <p>
-          Specificity is a strength. We prove the model where the cost barrier
-          is most acute, with partner clubs we already have relationships with,
-          before we expand. National-scale aspiration before the local model is
-          proven is what kills small nonprofits. We&apos;re going to prove it
-          here first.
+          We start close to home, with partner clubs we already know, and grow
+          from there. Doing this well for kids in the South Bay comes first.
         </p>
       </section>
 

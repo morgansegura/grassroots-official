@@ -67,7 +67,7 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
           eyebrow: "San Diego, CA",
           heading: "Access,\nthe Goal!",
           tagline:
-            "We fund youth soccer scholarships in San Diego County — covering club tuition, gear, and clinic spots for kids whose families can't sustain the all-in cost of competitive youth soccer.",
+            "We help San Diego County kids play club soccer with their friends. Your gift covers club tuition, gear, and clinic spots for families who need a hand with the cost.",
           cta: { label: "Become a founding donor", href: "/donate" },
         },
         {
@@ -77,10 +77,9 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
             alt: "Youth players warming up on a club pitch",
           },
           eyebrow: "After the Cup",
-          heading:
-            "The World Cup came home.\nMost kids still can't afford to play.",
+          heading: "The World Cup came home.\nNow it's their turn to play.",
           tagline:
-            "The Cup left in July. The cost wall didn't. The season starts this fall, and founding donors put the first names on the Class of '26 roster.",
+            "The club season starts this fall, and San Diego kids are ready. Founding donors help put the first names on the Class of '26 roster.",
           cta: { label: "Read our mission", href: "/mission" },
         },
         {
@@ -92,7 +91,7 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
           eyebrow: "What we fund",
           heading: "Tuition. Cleats. Clinics.",
           tagline:
-            "Tuition runs $2,000–$5,000 a season. Travel, gear, ID camps, and training kits add another $5,000+. We cover the line items that usually decide who plays.",
+            "A season of tuition runs $2,500 to $4,500, and gear and travel add more. We cover these costs so a kid can join the team and keep playing.",
           cta: { label: "See programs", href: "/programs" },
         },
       ],
@@ -104,50 +103,50 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
     ariaLabel: "The system",
     className: "section-swirl-2",
     "card-grid": {
-      eyebrow: "The system, in six facts",
-      heading: "Pay-to-play decides who develops in U.S. soccer.",
+      eyebrow: "What it takes to play",
+      heading: "What goes into a season of club soccer.",
       cards: [
         {
           id: "outlier",
           icon: Globe,
-          title: "The U.S. is the outlier",
+          title: "Clubs are how kids grow",
           description:
-            "In most countries, talented kids train through publicly-funded academies. In the U.S., families pay club fees for the same development path.",
+            "In the U.S., most competitive youth soccer happens at clubs that families pay to join. It's where kids train with friends, learn from good coaches, and grow as players.",
         },
         {
           id: "all-in-cost",
           icon: DollarSign,
-          title: "The fee is the floor",
+          title: "Tuition is only the start",
           description:
-            "Club fees are line one. Travel, kit, ID camps, training kits, gear — the all-in cost runs to roughly $11,000 a year at the top levels.",
+            "Club fees come first, then kit, gear, travel, and camps. At the top levels, the full cost can reach roughly $11,000 a year.",
         },
         {
           id: "geography",
           icon: MapPin,
-          title: "Where you live decides who plays",
+          title: "Weekends on the road",
           description:
-            "Elite training and showcase events cluster around expensive metros. Driving two hours to a tournament is normalized at the top tier.",
+            "Tournaments and showcases often mean long drives and weekend travel. Those trips are part of the fun of being on a team, and part of the cost.",
         },
         {
           id: "showcase",
           icon: Trophy,
-          title: "ID camps aren't free",
+          title: "Camps help players get seen",
           description:
-            "College recruitment runs through showcases and ID camps that cost extra. Families who can't afford the season can't afford the camps that get a kid seen.",
+            "Showcases and ID camps are where many players meet college coaches. They carry their own fees on top of the season.",
         },
         {
           id: "drop-off",
           icon: TrendingDown,
-          title: "12 is the average drop-off age",
+          title: "Help matters most around 12",
           description:
-            "Across U.S. youth sports, the average age a child stops playing is 12 — exactly when competitive club soccer becomes most expensive. Cost is the most-cited reason families step away in Project Play's community surveys.",
+            "Most kids who stop playing sports do it around age 12 or 13, just as club soccer gets more serious and more expensive. Support at that age helps a kid stay with the team they love.",
         },
         {
           id: "scholarships",
           icon: Award,
-          title: "Scholarships are the exception",
+          title: "Scholarships open the door",
           description:
-            "Most clubs don't fund a meaningful scholarship pool. The kids who'd benefit most from elite training are the least likely to be on the roster.",
+            "Our scholarships add to the help clubs already give, so more kids who love the game can join a team and keep playing.",
         },
       ],
       cta: { label: "See what we fund", href: "/programs" },
@@ -191,7 +190,7 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
           id: "outlier-united-states",
           title: "United States",
           description:
-            "Competitive youth soccer is a private market at every level. Recreational clubs run $200–$1,000+ a season. By U13, competitive tiers cost $2,000–$5,000 in club fees alone. At ECNL, MLS NEXT, and Girls Academy, all-in totals reach $8,000–$20,000 a year. Families pay the entire pipeline.",
+            "Families usually pay for competitive youth soccer directly. Recreational clubs run $200–$1,000+ a season. By U13, competitive tiers cost $2,500–$4,500 in club fees alone. At ECNL, MLS NEXT, and Girls Academy, all-in totals reach $8,000–$20,000 a year. This is where donors can help.",
         },
         {
           id: "outlier-canada",
@@ -209,19 +208,19 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
           id: "outlier-concacaf",
           title: "CONCACAF countries",
           description:
-            "In Costa Rica, Honduras, Jamaica, Trinidad, and El Salvador, most kids play through community leagues for minimal fees. Federation programs and small-club training make up the bulk; competitive selection is a separate, free track. U.S.-scale pay-to-play isn't the regional norm.",
+            "In Costa Rica, Honduras, Jamaica, Trinidad, and El Salvador, most kids play through community leagues for minimal fees. Federation programs and small-club training make up the bulk; competitive selection is a separate, free track. Most families pay very little.",
         },
         {
           id: "outlier-south-america",
           title: "South America",
           description:
-            "Across Brazil, Argentina, Colombia, and Uruguay, most kids play in community leagues, public fields, and barrio teams for next to nothing. Talent identified there gets pulled into club youth systems for free. Pay-to-play at the U.S. scale doesn't exist.",
+            "Across Brazil, Argentina, Colombia, and Uruguay, most kids play in community leagues, public fields, and barrio teams for next to nothing. Talented players are brought into club youth systems for free.",
         },
         {
           id: "outlier-europe",
           title: "Europe",
           description:
-            "In England, Spain, Germany, Italy, and France, most kids play through community clubs with modest annual dues — typically €50–€300. Federation- and club-funded development sits on top of that base, free for selected players. The U.S. pay-to-play model has no equivalent here.",
+            "In England, Spain, Germany, Italy, and France, most kids play through community clubs with modest annual dues — typically €50–€300. Federation- and club-funded development sits on top of that base, free for selected players.",
         },
       ],
     },
@@ -232,7 +231,7 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
     ariaLabel: "Youth soccer in the U.S., by age group",
     tone: "gold",
     "card-grid": {
-      eyebrow: "How the system works",
+      eyebrow: "How club soccer works",
       heading: "Youth soccer in the U.S., by age group.",
       cards: [
         {
@@ -240,21 +239,21 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
           icon: Sparkles,
           title: "U9–U12 · Foundation",
           description:
-            "Recreational and pre-academy play. Boys and girls develop fundamentals at modest cost ($300–$1,500 per season). The system is most accessible here — families haven't hit the cost wall yet.",
+            "Recreational and pre-academy play. Boys and girls develop fundamentals at modest cost ($300–$1,500 per season). This is where most kids fall in love with the game.",
         },
         {
           id: "age-u13-u17",
           icon: TrendingUp,
           title: "U13–U17 · Competitive years",
           description:
-            "Players move into competitive tiers — NPL, DPL, and the top levels (ECNL, MLS NEXT for boys, Girls Academy for girls). Costs jump from $2,000 at entry to $8,000–$20,000 a year at the top. This is the developmental drop-off window — many families step away.",
+            "Players move into competitive tiers — NPL, DPL, and the top levels (ECNL, MLS NEXT for boys, Girls Academy for girls). Costs jump from $2,000 at entry to $8,000–$20,000 a year at the top. This is when a little help does the most to keep a kid on the team.",
         },
         {
           id: "age-u18-u19",
           icon: GraduationCap,
           title: "U18–U19 · College pipeline",
           description:
-            "Showcases, ID camps, and college recruiting peak here. Pay-to-play extends to the camps that get a kid seen by coaches — $500–$2,000 per camp on top of season costs.",
+            "Showcases, ID camps, and college recruiting peak here. Camps that help a kid get seen by coaches run $500–$2,000 each, on top of season costs.",
         },
       ],
     },
@@ -274,15 +273,13 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
             Grassroots Foundation is a San Diego–based 501(c)(3) public charity
             (EIN 35-2822183) that funds youth soccer scholarships across San
             Diego County. We start in the South Bay — Chula Vista, National
-            City, San Ysidro, and Imperial Beach — where the cost gradient is
-            sharpest, and expand from there.
+            City, San Ysidro, and Imperial Beach — and grow from there.
           </p>
           <p>
-            Most clubs in the U.S. don&apos;t run scholarship pools at any
-            meaningful scale. The kids who&apos;d benefit most from elite
-            training are the least likely to be on the roster. Our grants cover
-            the line items families can&apos;t sustain — club tuition, travel
-            kits, cleats, and clinic spots — at clubs of every size.
+            We work alongside clubs of every size to help more kids play. Our
+            grants cover club tuition, kits, cleats, and clinic spots, so a
+            family can say yes to the season and a kid can keep playing with
+            their friends.
           </p>
         </>
       ),
@@ -303,7 +300,7 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
     "mission-grid": {
       eyebrow: "What we fund",
       heading:
-        "From a pair of cleats to a full season — every gap that prices a kid out of the game.",
+        "From a pair of cleats to a full season, we cover what it takes for a kid to play.",
       cards: [
         {
           id: "tuition",
@@ -314,7 +311,7 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
           aspect: "tall",
           title: "Tuition",
           description:
-            "Club fees alone run $2,000–$5,000 a season. Need-based scholarships will cover full or partial tuition at partner clubs so a kid stays on the roster — not the waitlist.",
+            "A season of club fees runs $2,500 to $4,500. Need-based scholarships cover full or partial tuition at partner clubs, so a kid can join the team and stay with it.",
           href: "/programs#scholarships",
           highlighted: true,
         },
@@ -327,7 +324,7 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
           aspect: "short",
           title: "Equipment & gear",
           description:
-            "Cleats, kits, training kits, balls, bags. The gear a kid needs to show up — covered by our grants when the family budget runs out before the season starts.",
+            "Cleats, kits, training kits, balls, and bags. Everything a kid needs to show up ready for practice, covered by our grants.",
           href: "/programs#equipment",
         },
         {
@@ -420,11 +417,11 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
           question: "Where does the money go?",
           answer: (
             <>
-              Directly to a kid playing soccer. We cover whatever the cost
-              barrier is — club fees, travel, uniforms, cleats, gear, training,
-              clinic spots — at partner clubs across San Diego County. Every
-              gift is tied to a kid in our Class of &apos;26 cohort, so you see
-              exactly where it lands as the roster fills.
+              Directly to a kid playing soccer. We cover what a kid needs to
+              play: club fees, travel, uniforms, cleats, gear, training, clinic
+              spots — at partner clubs across San Diego County. Every gift is
+              tied to a kid in our Class of &apos;26 cohort, so you see exactly
+              where it lands as the roster fills.
             </>
           ),
         },
@@ -433,9 +430,9 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
           answer: (
             <>
               Need-based. No merit gatekeeping, no auditions. We work with
-              partner clubs to identify families whose financial situation means
-              a kid would otherwise step away from the game. Households verify
-              income; the intake process is straightforward and stays private.
+              partner clubs to find families who need help with the cost of the
+              season. Households verify income; the intake process is
+              straightforward and stays private.
             </>
           ),
         },
@@ -445,9 +442,9 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
           answer: (
             <>
               Yes. We fund the full range — from a $60 pair of cleats to a
-              $5,000–$11,000 full season. Give to the general fund or sponsor a
-              specific named campaign. Each campaign shows what your gift
-              covers.
+              $2,500 to $4,500 season of tuition. Give to the general fund or
+              sponsor a specific named campaign. Each campaign shows what your
+              gift covers.
             </>
           ),
         },
@@ -492,16 +489,16 @@ export const LANDING_SCREEN_MOCK: LandingScreenSection[] = [
     "cta-banner": {
       tone: "light",
       eyebrow: "Access, the Goal!",
-      heading: "$50 a month keeps a kid in the game.",
-      body: "A First Touch sustainer covers a kid's club tuition, gear, and clinic spots for a season. We're funding 100 kids in the Class of '26 — every monthly gift gets us closer.",
+      heading: "Give monthly and help a kid play all season.",
+      body: "Monthly gifts give us steady support, so we can commit to a player's season before it starts. We're funding 100 kids in the Class of '26, and every monthly gift brings one closer to their team.",
       tiers: [
-        { amount: "$25/mo", label: "Funds gear and kits" },
-        { amount: "$50/mo", label: "Adopt a kid for a season" },
-        { amount: "$100/mo", label: "Sponsor a clinic spot" },
+        { amount: "$25/mo", label: "Cleats for a growing player" },
+        { amount: "$50/mo", label: "A full season's kit" },
+        { amount: "$100/mo", label: "Half a season of tuition" },
       ],
       cta: { label: "Give monthly", href: "/donate" },
       fineprint:
-        "Cancel anytime. 100% tax-deductible. Receipts emailed automatically.",
+        "Cancel anytime. Tax-deductible, with receipts emailed automatically. Tuition figures use a $2,500 season at Chula Vista FC.",
     },
   },
 ];

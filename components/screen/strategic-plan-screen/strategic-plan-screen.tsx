@@ -17,7 +17,7 @@ const HERO = {
     </>
   ),
   description:
-    "Grassroots Foundation is a San Diego–based 501(c)(3) closing the cost wall that prices working-class kids out of competitive youth soccer. This is our plan — the problem we're addressing, the programs we operate, the partners we work with, and the multi-year arc we're building toward.",
+    "Grassroots Foundation is a San Diego–based 501(c)(3) helping kids play competitive youth soccer. This is our plan — the problem we're addressing, the programs we operate, the partners we work with, and the multi-year arc we're building toward.",
 };
 
 export function StrategicPlanScreen({ className }: StrategicPlanScreenProps) {

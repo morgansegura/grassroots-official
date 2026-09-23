@@ -3,9 +3,9 @@ export const SITE = {
   legalName: "Grass Roots Foundation",
   url: "https://grassrootsfdn.org",
   description:
-    "Grassroots Foundation removes the cost wall that prices working-class kids out of competitive youth soccer in San Diego County. Need-based scholarships, kit and equipment grants, and reserved seats at training clinics — at established partner clubs.",
+    "Grassroots Foundation helps San Diego County kids play club soccer. Need-based scholarships, kit and equipment grants, and reserved seats at training clinics, at established partner clubs.",
   shortDescription:
-    "San Diego youth-soccer scholarship nonprofit. Closing the pay-to-play cost wall.",
+    "San Diego youth soccer scholarship nonprofit, helping kids play club soccer.",
   tagline: "Access, the Goal!",
   email: "hello@grassrootsfdn.org",
   ein: "35-2822183",

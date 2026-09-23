@@ -24,16 +24,16 @@ export type CtaBannerProps = {
 const DEFAULT_PROPS: Omit<CtaBannerProps, "className"> = {
   tone: "dark",
   eyebrow: "First Touch · Sustainer program",
-  heading: "$50 a month keeps a kid in the game.",
-  body: "A First Touch sustainer covers a kid's club tuition, gear, and clinic spots for a season. We're funding 100 kids in the Class of '26 — every monthly gift gets us closer.",
+  heading: "Give monthly and help a kid play all season.",
+  body: "Monthly gifts give us steady support, so we can commit to a player's season before it starts. We're funding 100 kids in the Class of '26, and every monthly gift brings one closer to their team.",
   tiers: [
-    { amount: "$25/mo", label: "Funds gear and kits" },
-    { amount: "$50/mo", label: "Adopt a kid for a season" },
-    { amount: "$100/mo", label: "Sponsor a clinic spot" },
+    { amount: "$25/mo", label: "Cleats for a growing player" },
+    { amount: "$50/mo", label: "A full season's kit" },
+    { amount: "$100/mo", label: "Half a season of tuition" },
   ],
   cta: { label: "Give monthly", href: "/donate" },
   fineprint:
-    "Cancel anytime. 100% tax-deductible. Receipts emailed automatically.",
+    "Cancel anytime. Tax-deductible, with receipts emailed automatically. Tuition figures use a $2,500 season at Chula Vista FC.",
 };
 
 export function CtaBanner({

@@ -16,7 +16,7 @@ const HERO = {
   title: <>Free the game.</>,
 
   description:
-    "Soccer should be free for every kid. Grassroots Foundation closes the cost barrier that prices working-class families out of competitive youth soccer in San Diego County.",
+    "Soccer should be free for every kid. Grassroots Foundation helps San Diego County families with the cost of club soccer, so more kids can play.",
 };
 
 export function MissionScreen({ className }: MissionScreenProps) {

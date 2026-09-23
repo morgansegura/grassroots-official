@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Become a Sustainer · First Touch",
   description:
-    "$50 a month keeps a kid in the game. Monthly giving funds the Class of '26 roster year over year. Predictable, renewable support for San Diego County club tuition.",
+    "Give monthly and help a San Diego kid play club soccer all season. Monthly gifts cover cleats, kit, and a share of tuition for the Class of '26 and beyond.",
   path: "/sustain",
 });
 

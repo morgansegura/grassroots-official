@@ -33,7 +33,7 @@ const DEFAULT_CARDS: MissionCard[] = [
     aspect: "tall",
     title: "Tuition",
     description:
-      "Club fees alone run $2,000–$5,000 a season. Need-based scholarships will cover full or partial tuition at partner clubs so a kid stays on the roster — not the waitlist.",
+      "A season of club fees runs $2,500 to $4,500. Need-based scholarships cover full or partial tuition at partner clubs, so a kid can join the team and stay with it.",
     href: "/programs#scholarships",
     highlighted: true,
   },
@@ -78,7 +78,7 @@ const DEFAULT_CARDS: MissionCard[] = [
 export function MissionGrid({
   className,
   eyebrow = "What we fund",
-  heading = "From a pair of cleats to a full season — every gap that prices a kid out of the game.",
+  heading = "From a pair of cleats to a full season, we cover what it takes for a kid to play.",
   cards = DEFAULT_CARDS,
 }: MissionGridProps) {
   return (

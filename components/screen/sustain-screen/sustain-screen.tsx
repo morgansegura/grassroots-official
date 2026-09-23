@@ -8,21 +8,22 @@ export function SustainScreen() {
   return (
     <LegalScreen
       eyebrow="Sustainer program"
-      title="First Touch — keep a kid in the game."
+      title="First Touch: help a kid play all season."
       lastUpdated={LAST_UPDATED}
       intro={
         <>
           <p>
-            <strong>$50 a month keeps a kid in the game.</strong> That&apos;s
-            the math behind our sustainer program. A recurring monthly gift
-            covers tuition, kit, equipment, and clinic spots over the course of
-            a season — for one kid, for real, year over year.
+            <strong>First Touch is our monthly giving program.</strong> A
+            monthly gift helps a San Diego kid play club soccer with their
+            friends, season after season. Depending on the amount, it covers
+            cleats, a season&apos;s kit, or a real share of a season&apos;s
+            tuition.
           </p>
           <p>
             Single gifts fund the Class of &apos;26 directly. First Touch
-            sustainers fund the cohorts that come after — the kids who join in
-            2027, 2028, 2029. Predictable monthly support is what turns a
-            one-year cohort into a multi-year roster.
+            sustainers also fund the kids who join in 2027, 2028, and 2029.
+            Predictable monthly support is what turns a one-year cohort into a
+            multi-year roster.
           </p>
         </>
       }
@@ -38,45 +39,40 @@ export function SustainScreen() {
           year-end fundraising to clear.
         </p>
         <p>
-          Monthly giving also compounds. A donor who gives $50/month for three
-          years has funded one kid&apos;s entire competitive arc — plus the kit,
-          clinic seats, and equipment that go with it. Single-shot $1,800 gifts
-          are rarer; the compounding monthly version reaches the same outcome at
-          a tier most donors can actually meet.
+          Monthly giving also adds up. A gift of $100 a month is $1,200 a year,
+          about half a season of tuition at Chula Vista FC. Over two years, it
+          covers a full season. Few donors can give that much at once, but many
+          can give it a month at a time.
         </p>
       </section>
 
       <section>
         <h2>2. Sustainer tiers</h2>
 
-        <h3>$25 a month — Equipment and kit</h3>
+        <h3>$25 a month: cleats for a growing player</h3>
         <p>
-          Covers cleats, ball, shin guards, and a season of training kit
-          replacements for one kid. A season&apos;s worth of gear replacement,
-          prevented from being a season-ending crisis.
+          $300 a year covers a good pair of cleats, and a new pair when a
+          growing player needs one mid-season. Cleats run $60 to $300.
         </p>
 
-        <h3>$50 a month — Adopt a kid for a season</h3>
+        <h3>$50 a month: a full season&apos;s kit</h3>
         <p>
-          Underwrites the equivalent of one full season of partial tuition
-          coverage at a community-tier club program, plus equipment and kit. The
-          flagship First Touch tier — most sustainers give here.
+          $600 a year covers a player&apos;s match and training kit for the
+          season, which runs $300 to $600.
         </p>
 
-        <h3>$100 a month — A scholarship plus a clinic spot</h3>
+        <h3>$100 a month: half a season of tuition</h3>
         <p>
-          Funds a more substantial tuition slice and adds reserved
-          methodology-clinic seats to the kid&apos;s development cycle.
-          Compounds quickly: at three years, this tier funds a single kid&apos;s
-          full multi-year arc.
+          $1,200 a year covers about half a season of tuition at Chula Vista FC,
+          where a season runs $2,500. At clubs where a season runs $4,500, it
+          covers about a quarter.
         </p>
 
-        <h3>$250 a month — Multi-kid impact</h3>
+        <h3>$250 a month: a full season of tuition</h3>
         <p>
-          At this tier, your sustainer commitment funds tuition slices for
-          multiple kids on the same partner-club team, plus a clinic-day
-          reserved seat allocation. Major-gift sustainer tier; reach out for
-          recognition design.
+          $3,000 a year covers a full season of tuition at Chula Vista FC, with
+          some left for kit. If you&apos;d like to be recognized at this level,
+          reach out and we&apos;ll design it with you.
         </p>
       </section>
 
@@ -87,8 +83,8 @@ export function SustainScreen() {
           retention. When we tell a partner-club coach &ldquo;this kid is
           funded&rdquo; in July, we are committing through the following spring.
           Sustainer revenue is what makes that commitment safe to make. Every
-          additional year a kid stays in the game is another year of development
-          — and another year they can&apos;t be priced out.
+          year a kid stays with their team is another year of growing as a
+          player and a friend.
         </p>
       </section>
 

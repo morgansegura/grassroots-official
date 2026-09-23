@@ -26,7 +26,7 @@ const FAQ_SCHEMA_ITEMS = [
   {
     question: "What if I want to sponsor a whole team or age group?",
     answer:
-      "Team Sponsorship underwrites an entire roster for a competitive season. Built for major-gift donors and family foundations at $25,000 and up, with recognition terms designed in conversation with the donor.",
+      "Team Sponsorship funds a whole team's roster for a competitive season. Built for major-gift donors and family foundations, with team gifts starting at $25,000 and recognition designed in conversation with the donor. A full team's season of tuition runs about $37,500 to $67,500.",
   },
   {
     question: "Are donations tax-deductible?",
@@ -56,7 +56,7 @@ const FAQ_SCHEMA_ITEMS = [
   {
     question: "Why San Diego County specifically?",
     answer:
-      "San Diego is the founder's home market and a competitive youth-soccer region where the cost wall is most acute in South Bay communities. We prove the model in San Diego before expanding county-wide.",
+      "San Diego is the founders' home and a strong youth soccer region, and South Bay families are where we can help first. We build the model here before expanding county-wide.",
   },
   {
     question: "Are you affiliated with any specific clubs?",
