@@ -74,7 +74,7 @@ export function DonateTrustStrip({
         <p className="donate-trust-strip-disclosure">
           Grassroots Foundation is the registered DBA of Grass Roots Foundation,
           a 501(c)(3) public charity (EIN {ein}). 100% tax-deductible. All
-          donations processed by Givebutter.
+          donations processed by Zeffy.
         </p>
       </div>
     </section>

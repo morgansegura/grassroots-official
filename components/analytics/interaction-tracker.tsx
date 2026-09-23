@@ -37,9 +37,8 @@ export function InteractionTracker() {
       }
 
       if (url.host === window.location.host) {
-        // Most donate CTAs on the site are plain links to /donate rather
-        // than modal triggers. Without this they'd signal nothing, and the
-        // only tracked donation intent would be the two header buttons.
+        // Every donate CTA on the site, header included, is a plain link to
+        // /donate, so this is the one place donation intent is recorded.
         if (url.pathname === "/donate") {
           trackEvent("donate_open", {
             donate_source: "link",

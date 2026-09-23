@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
-import { DonateDialog } from "@/components/feature";
 import { HeaderNav, Logo, MobileNav } from "@/components/layout";
 import { useHeaderVisibility } from "@/lib/hooks/use-header-visibility";
 
@@ -16,6 +16,8 @@ type HeaderProps = {
 
 export function Header({ className }: HeaderProps) {
   const visible = useHeaderVisibility();
+  // The donation page drops the nav so nothing competes with the form.
+  const focused = usePathname() === "/donate";
 
   return (
     <header
@@ -31,18 +33,21 @@ export function Header({ className }: HeaderProps) {
           <Logo />
         </Link>
 
-        <div className="header-actions">
-          <HeaderNav />
-          <DonateDialog>
-            <button
-              type="button"
-              className="button button-donate button-size-sm"
+        {focused ? null : (
+          <div className="header-actions">
+            <HeaderNav />
+            <Link
+              href="/donate"
+              className="button button-donate button-size-sm header-give"
             >
-              Give Now
-            </button>
-          </DonateDialog>
-          <MobileNav />
-        </div>
+              <span>Give Monthly</span>
+              <span className="header-give-reason">
+                Join us in helping a kid play all year
+              </span>
+            </Link>
+            <MobileNav />
+          </div>
+        )}
       </div>
     </header>
   );

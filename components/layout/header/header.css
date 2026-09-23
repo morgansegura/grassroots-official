@@ -15,4 +15,12 @@
   .header-actions {
     @apply flex items-center gap-4 md:gap-6;
   }
+
+  .header-give {
+    @apply items-center justify-center lg:h-11 lg:flex-col lg:gap-0;
+  }
+
+  .header-give-reason {
+    @apply hidden lg:block text-[10px] font-medium normal-case italic text-shadow-none;
+  }
 }

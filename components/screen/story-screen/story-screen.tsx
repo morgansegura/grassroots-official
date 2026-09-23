@@ -185,8 +185,8 @@ export function StoryScreen() {
             <Link href="/donate">Donate</Link> — single gifts at every level.
           </li>
           <li>
-            <Link href="/sustain">Become a First Touch sustainer</Link> —
-            monthly giving funds the cohort year over year.
+            <Link href="/donate">Become a First Touch sustainer</Link> — monthly
+            giving funds the cohort year over year.
           </li>
           <li>
             <Link href="/sponsor">Sponsor a clinic</Link> — clinic seats are the

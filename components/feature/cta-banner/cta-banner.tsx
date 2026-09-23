@@ -31,7 +31,7 @@ const DEFAULT_PROPS: Omit<CtaBannerProps, "className"> = {
     { amount: "$50/mo", label: "Adopt a kid for a season" },
     { amount: "$100/mo", label: "Sponsor a clinic spot" },
   ],
-  cta: { label: "Become a sustainer", href: "/sustain" },
+  cta: { label: "Give monthly", href: "/donate" },
   fineprint:
     "Cancel anytime. 100% tax-deductible. Receipts emailed automatically.",
 };

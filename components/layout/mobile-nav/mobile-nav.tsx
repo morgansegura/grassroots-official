@@ -4,7 +4,6 @@ import * as React from "react";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
-import { DonateDialog } from "@/components/feature";
 import {
   Drawer,
   DrawerClose,
@@ -69,14 +68,17 @@ export function MobileNav({ className, items = defaultItems }: MobileNavProps) {
           </nav>
 
           <div className="mobile-nav-footer">
-            <DonateDialog>
-              <button
-                type="button"
-                className="button button-donate mobile-nav-cta"
-              >
-                Give Now
-              </button>
-            </DonateDialog>
+            <DrawerClose
+              nativeButton={false}
+              render={
+                <Link
+                  href="/donate"
+                  className="button button-donate mobile-nav-cta"
+                >
+                  Give Monthly
+                </Link>
+              }
+            />
           </div>
         </DrawerContent>
       </Drawer>

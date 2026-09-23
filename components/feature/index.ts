@@ -2,7 +2,6 @@ export { CampaignProgress } from "./campaign-progress";
 export { CampaignsGrid, type CampaignsGridProps } from "./campaigns-grid";
 export { CardGrid, type CardGridItem, type CardGridProps } from "./card-grid";
 export { CtaBanner, type CtaBannerProps } from "./cta-banner";
-export { DonateDialog } from "./donate-dialog";
 export { DonateHero } from "./donate-hero";
 export { DonateTiers } from "./donate-tiers";
 export { DonateTrustStrip } from "./donate-trust-strip";

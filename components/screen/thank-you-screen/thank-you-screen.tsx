@@ -51,15 +51,15 @@ export function ThankYouScreen({ className }: ThankYouScreenProps) {
             <p>
               Questions about your gift, a recurring change, or a request to
               stay anonymous: email{" "}
-              <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>{" "}
-              and we&apos;ll answer within two business days.
+              <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> and
+              we&apos;ll answer within two business days.
             </p>
           </div>
 
           <nav className="thank-you-screen-links" aria-label="Next steps">
             <Link href="/programs">What we fund</Link>
             <Link href="/mission">Why we exist</Link>
-            <Link href="/sustain">Make it monthly</Link>
+            <Link href="/donate">Make it monthly</Link>
           </nav>
         </div>
       </Section>
