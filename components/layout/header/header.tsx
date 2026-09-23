@@ -41,9 +41,7 @@ export function Header({ className }: HeaderProps) {
               className="button button-donate button-size-sm header-give"
             >
               <span>Give Monthly</span>
-              <span className="header-give-reason">
-                Join us in helping a kid play all year
-              </span>
+              <span className="header-give-reason">Help a child in need</span>
             </Link>
             <MobileNav />
           </div>
