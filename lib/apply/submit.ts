@@ -113,6 +113,8 @@ export async function submitApplication(
         ["Information attested accurate", `Yes, ${today}`],
       ],
       need: input.needDescription,
+      email: input.email,
+      phone: input.phone,
     });
     return { ok: true };
   } catch (error) {
