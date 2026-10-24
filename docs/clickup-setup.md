@@ -10,13 +10,14 @@ Last updated: October 24, 2026
 ## Structure
 
 Grassroots Foundation workspace → space **Space** → folder **Scholarships** →
-three lists.
+four lists.
 
 | List                 | Holds                                                                       |
 | -------------------- | --------------------------------------------------------------------------- |
 | Applications         | One task per application, named for the player. This is the A1 Cover Sheet. |
 | Rounds               | One task per round. This is R1 + R2.                                        |
 | Reviewer Disclosures | One task per reviewer per round. This is V1.                                |
+| Clubs                | One task per club, with who to contact and how.                             |
 
 Keep all three **private**. Access is granted per round and removed at round
 close, per P3 §5.
@@ -28,7 +29,15 @@ close, per P3 §5.
 The form at `/apply` creates a task in **Applications** (`lib/clickup.ts`). The
 task description holds the family's answers and, under **In their words**, what
 they wrote about their need. Don't edit the description: it is the record of
-what the family sent.
+what the family sent. The task's **Email** and **Phone** fields are filled
+from the same answers, so they are clickable and show as columns.
+
+## Clubs
+
+One task per club, named for the club. Fields: Contact Name, Contact Role,
+Email, Phone, Website, City, and Club Aid (what the club's own assistance
+covers, so we fund alongside it, not instead of it). Fill these in when a club
+is first contacted to confirm a family's enrollment and cost.
 
 The site needs two environment variables, in `.env.local` and in Vercel:
 
