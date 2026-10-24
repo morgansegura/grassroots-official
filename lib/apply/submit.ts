@@ -87,6 +87,12 @@ export async function submitApplication(
   const t = COPY[locale];
   const label = (map: Record<string, string>, keys: string[]) =>
     keys.map((k) => map[k] ?? k).join(", ");
+  const today = new Date().toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "America/Los_Angeles",
+  });
 
   try {
     await createApplication({
@@ -103,6 +109,8 @@ export async function submitApplication(
         ["Assistance", label(t.assistanceOptions, input.assistance)],
         ["Costs requested", label(t.costsOptions, input.costs)],
         ["Language", locale === "es" ? "Español" : "English"],
+        ["Consent to contact club", `Yes, ${today}`],
+        ["Information attested accurate", `Yes, ${today}`],
       ],
       need: input.needDescription,
     });
