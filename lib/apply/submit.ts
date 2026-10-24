@@ -1,5 +1,6 @@
 "use server";
 
+import { logError } from "@/lib/logger";
 import { createApplication, mondayConfigured } from "@/lib/monday";
 
 import { COPY } from "./copy";
@@ -79,6 +80,7 @@ export async function submitApplication(
   if (!mondayConfigured) {
     // Nothing to write to. Fail loudly to the caller rather than silently
     // swallowing a family's application.
+    logError("apply", "Monday is not configured");
     return { ok: false, reason: "transport" };
   }
 
@@ -106,7 +108,8 @@ export async function submitApplication(
       },
     });
     return { ok: true };
-  } catch {
+  } catch (error) {
+    logError("apply", "Monday rejected the application", error);
     // Board/column/network failure. The caller shows the family a retry path
     // and an email address rather than a dead end.
     return { ok: false, reason: "transport" };

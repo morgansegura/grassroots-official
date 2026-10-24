@@ -74,7 +74,6 @@ type Strings = {
   vRequired: string;
   vEmail: string;
   vYear: string;
-  vShort: string;
 };
 
 const en: Strings = {
@@ -167,7 +166,6 @@ const en: Strings = {
   vRequired: "This one is needed",
   vEmail: "Please check this email address",
   vYear: "Please enter a 4-digit year",
-  vShort: "A little more detail helps",
 };
 
 const es: Strings = {
@@ -261,7 +259,6 @@ const es: Strings = {
   vRequired: "Este campo es necesario",
   vEmail: "Revise este correo electrónico",
   vYear: "Ingrese un año de 4 dígitos",
-  vShort: "Un poco más de detalle ayuda",
 };
 
 export const COPY: Record<Locale, Strings> = { en, es };

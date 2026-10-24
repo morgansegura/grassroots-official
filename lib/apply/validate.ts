@@ -30,7 +30,7 @@ export function validate(v: ApplicationInput, t: ApplyStrings): Errors {
   if (!v.householdSize.trim()) e.householdSize = t.vRequired;
   if (!v.incomeBracket) e.incomeBracket = t.vRequired;
   if (v.costs.length === 0) e.costs = t.vRequired;
-  if (v.needDescription.trim().length < 20) e.needDescription = t.vShort;
+  if (!v.needDescription.trim()) e.needDescription = t.vRequired;
 
   if (!v.consentVerify) e.consentVerify = t.vRequired;
   if (!v.attestation) e.attestation = t.vRequired;
