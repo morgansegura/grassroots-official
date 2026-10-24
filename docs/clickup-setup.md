@@ -10,7 +10,7 @@ Last updated: October 24, 2026
 ## Structure
 
 Grassroots Foundation workspace → space **Space** → folder **Scholarships** →
-four lists.
+five lists.
 
 | List                 | Holds                                                                       |
 | -------------------- | --------------------------------------------------------------------------- |
@@ -18,6 +18,7 @@ four lists.
 | Rounds               | One task per round. This is R1 + R2.                                        |
 | Reviewer Disclosures | One task per reviewer per round. This is V1.                                |
 | Clubs                | One task per club, with who to contact and how.                             |
+| Coaches              | One task per coach, linked to their club.                                   |
 
 Keep all three **private**. Access is granted per round and removed at round
 close, per P3 §5.
@@ -32,19 +33,29 @@ they wrote about their need. Don't edit the description: it is the record of
 what the family sent. The task's **Email** and **Phone** fields are filled
 from the same answers, so they are clickable and show as columns.
 
-## Clubs
+## Clubs and coaches
 
-One task per club, named for the club. Fields: Contact Name, Contact Role,
-Email, Phone, Website, City, and Club Aid (what the club's own assistance
-covers, so we fund alongside it, not instead of it). Fill these in when a club
-is first contacted to confirm a family's enrollment and cost.
+We contact a family's club on their behalf, with their consent, to confirm
+enrollment and cost. **Clubs** holds every San Diego County club, one task per
+club, named for the club:
 
-The site needs two environment variables, in `.env.local` and in Vercel:
+| Field                                         | What goes in it                                                                      |
+| --------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Outreach                                      | Not contacted, Contacted, In conversation, Partner, Declined.                        |
+| Director Name, Director Email, Director Phone | The club's executive director or director of coaching.                               |
+| Contact Name, Contact Role, Email, Phone      | Whoever handles financial aid or registration. This is who confirms a family's cost. |
+| Website, City, League, Ages                   | Where the club plays and who it serves.                                              |
+| Club Aid                                      | What the club's own assistance covers, so we fund alongside it, not instead of it.   |
 
-| Variable                       | What it is                                                                                |
-| ------------------------------ | ----------------------------------------------------------------------------------------- |
-| `CLICKUP_API_TOKEN`            | A personal API token from the Grassroots workspace: avatar → Settings → Apps → API Token. |
-| `CLICKUP_APPLICATIONS_LIST_ID` | The Applications list's id, the number after `/li/` in its URL.                           |
+Club details came from public sources (club websites and league directories)
+on October 24, 2026. Anything not published was left empty to fill in by hand.
+
+**Coaches** holds one task per coach, with Role, Email, Phone, Teams, and a
+**Club** field linking to the club's task, so a club's coaches show on it.
+
+------------------------------ | ----------------------------------------------------------------------------------------- |
+| `CLICKUP_API_TOKEN` | A personal API token from the Grassroots workspace: avatar → Settings → Apps → API Token. |
+| `CLICKUP_APPLICATIONS_LIST_ID` | The Applications list's id, the number after `/li/` in its URL. |
 
 If either is missing, or ClickUp refuses the task, the family sees "That did
 not send" with a way to email us, and Vercel's logs say why (search for
