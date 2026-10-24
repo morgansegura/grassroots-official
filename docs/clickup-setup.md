@@ -10,7 +10,7 @@ Last updated: October 24, 2026
 ## Structure
 
 Grassroots Foundation workspace → space **Space** → folder **Scholarships** →
-five lists.
+four lists.
 
 | List                 | Holds                                                                       |
 | -------------------- | --------------------------------------------------------------------------- |
@@ -18,7 +18,6 @@ five lists.
 | Rounds               | One task per round. This is R1 + R2.                                        |
 | Reviewer Disclosures | One task per reviewer per round. This is V1.                                |
 | Clubs                | One task per club, with who to contact and how.                             |
-| Coaches              | One task per coach, linked to their club.                                   |
 
 Keep all three **private**. Access is granted per round and removed at round
 close, per P3 §5.
@@ -33,7 +32,7 @@ they wrote about their need. Don't edit the description: it is the record of
 what the family sent. The task's **Email** and **Phone** fields are filled
 from the same answers, so they are clickable and show as columns.
 
-## Clubs and coaches
+## Clubs
 
 We contact a family's club on their behalf, with their consent, to confirm
 enrollment and cost. **Clubs** holds every San Diego County club, one task per
@@ -49,9 +48,6 @@ club, named for the club:
 
 Club details came from public sources (club websites and league directories)
 on October 24, 2026. Anything not published was left empty to fill in by hand.
-
-**Coaches** holds one task per coach, with Role, Email, Phone, Teams, and a
-**Club** field linking to the club's task, so a club's coaches show on it.
 
 ------------------------------ | ----------------------------------------------------------------------------------------- |
 | `CLICKUP_API_TOKEN` | A personal API token from the Grassroots workspace: avatar → Settings → Apps → API Token. |
