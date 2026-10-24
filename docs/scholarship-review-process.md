@@ -65,7 +65,7 @@ excludes part of the population GRF is chartered to serve.
 
 ## 4. Review
 
-Applications move through a Monday board with these stages:
+Applications move through the Scholarships → Applications list in ClickUp, one task per application, with these stages as its statuses:
 
 | Stage                      | What happens                                                                                                                                                                          |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

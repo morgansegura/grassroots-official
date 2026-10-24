@@ -1,7 +1,7 @@
 "use server";
 
 import { logError } from "@/lib/logger";
-import { createApplication, mondayConfigured } from "@/lib/monday";
+import { clickupConfigured, createApplication } from "@/lib/clickup";
 
 import { COPY } from "./copy";
 import {
@@ -77,10 +77,10 @@ export async function submitApplication(
   if (Object.keys(errors).length > 0)
     return { ok: false, reason: "validation" };
 
-  if (!mondayConfigured) {
+  if (!clickupConfigured) {
     // Nothing to write to. Fail loudly to the caller rather than silently
     // swallowing a family's application.
-    logError("apply", "Monday is not configured");
+    logError("apply", "ClickUp is not configured");
     return { ok: false, reason: "transport" };
   }
 
@@ -91,26 +91,25 @@ export async function submitApplication(
   try {
     await createApplication({
       playerName: `${input.playerFirstName} ${input.playerLastName}`.trim(),
-      values: {
-        Status: "New",
-        "Applicant Name": input.applicantName,
-        Relationship: t.relationshipOptions[input.relationship] ?? "",
-        Email: input.email,
-        Phone: input.phone,
-        "Player Birth Year": input.playerBirthYear,
-        Club: input.club,
-        "Household Size": input.householdSize,
-        "Income Bracket": t.incomeOptions[input.incomeBracket] ?? "",
-        Assistance: label(t.assistanceOptions, input.assistance),
-        "Costs Requested": label(t.costsOptions, input.costs),
-        "Described Need": input.needDescription,
-        Language: locale === "es" ? "Español" : "English",
-      },
+      answers: [
+        ["Applicant", input.applicantName],
+        ["Relationship", t.relationshipOptions[input.relationship] ?? ""],
+        ["Email", input.email],
+        ["Phone", input.phone],
+        ["Player birth year", input.playerBirthYear],
+        ["Club", input.club],
+        ["Household size", input.householdSize],
+        ["Income", t.incomeOptions[input.incomeBracket] ?? ""],
+        ["Assistance", label(t.assistanceOptions, input.assistance)],
+        ["Costs requested", label(t.costsOptions, input.costs)],
+        ["Language", locale === "es" ? "Español" : "English"],
+      ],
+      need: input.needDescription,
     });
     return { ok: true };
   } catch (error) {
-    logError("apply", "Monday rejected the application", error);
-    // Board/column/network failure. The caller shows the family a retry path
+    logError("apply", "ClickUp rejected the application", error);
+    // ClickUp or network failure. The caller shows the family a retry path
     // and an email address rather than a dead end.
     return { ok: false, reason: "transport" };
   }
