@@ -10,7 +10,9 @@ import "server-only";
 
 const API = "https://api.clickup.com/api/v2";
 
-export const APPLICATIONS_LIST = process.env.CLICKUP_APPLICATIONS_LIST_ID ?? "";
+/** Scholarships → Applications in the Grassroots Foundation workspace. */
+export const APPLICATIONS_LIST =
+  process.env.CLICKUP_APPLICATIONS_LIST_ID || "901422605467";
 
 export type ApplicationRow = {
   playerName: string;
