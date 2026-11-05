@@ -6,11 +6,18 @@ import {
   ConsentDefaults,
   GoogleTagManager,
   InteractionTracker,
+  MicrosoftClarity,
 } from "@/components/analytics";
 import { CookieConsentProvider } from "@/components/cookie-consent";
 import { OrganizationSchema, WebsiteSchema } from "@/components/seo";
 
 import "./wrapper-screen.css";
+
+// Production only, like GTM, so preview deploys don't record into the real project.
+const CLARITY_ID =
+  process.env.VERCEL_ENV === "production"
+    ? process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID
+    : undefined;
 
 type WrapperScreenProps = {
   children?: React.ReactNode;
@@ -33,6 +40,7 @@ export function WrapperScreen({ children }: WrapperScreenProps) {
         <OrganizationSchema />
         <WebsiteSchema />
         <CookieConsentProvider>
+          <MicrosoftClarity projectId={CLARITY_ID} />
           <Header />
           {children}
           <Footer />
