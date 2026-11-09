@@ -1,7 +1,7 @@
 """Giving Tuesday (December 1) and year-end giving, 2026, for Google Ads Editor.
 
-Lands on /donate. Bids Maximize clicks like campaign 03, until donations are
-tracked. Run from this folder: python3 build-giving-campaign.py
+Lands on /donate. Bids Maximize conversions, like campaigns 02–04 since
+November 9, so the Ad Grant's $2 cap doesn't apply. Run from this folder: python3 build-giving-campaign.py
 """
 
 from campaign_csv import two_ads, write
@@ -43,4 +43,4 @@ GROUPS = [
 ]
 
 write("2026-11-09-giving-tuesday-and-year-end.csv", NAME, BUDGET, NEG, GROUPS,
-      bid="Maximize clicks", languages="en;es")
+      bid="Maximize conversions", languages="en;es")

@@ -51,14 +51,40 @@ File: `2026-11-09-giving-tuesday-and-year-end.csv`, built by
 `build-giving-campaign.py` (shared checks in `campaign_csv.py`).
 
 **What it adds.** **05 – Giving Tuesday & Year-End 2026**, imported **paused**:
-$40/day, Maximize clicks like campaign 03, English and Spanish, landing on
+$40/day, Maximize conversions, English and Spanish, landing on
 `/donate`. Ad groups 5A Giving Tuesday, 5B Year-end giving, 5C Local giving;
 18 phrase keywords, 2 ads each, 14 negatives.
 
 **How to apply (Google Ads Editor).** Import the file, then on the campaign:
 start November 17, end December 31, location San Diego County with
-**presence only**, max CPC limit $2.00 (Ad Grant rule for Maximize clicks).
-Post, then enable.
+**presence only**. Post, then enable.
 
-**Blocker.** On November 9 the account had 0 impressions for 30 days across
-campaigns 02, 03 and 04. Find out why before relying on this campaign.
+## 2026-11-09 — Why nothing served, and the fix
+
+**Evidence.** 0 impressions for 30 days across 02, 03 and 04. 03 and 04 bid
+Maximize clicks, which the Ad Grant caps at $2 a click: too low to win any
+auction, even for "grassroots foundation". 02 bid Maximize conversions but its
+only conversion, GA4 `donate_open`, never recorded, so it had nothing to bid on.
+
+**Changed.**
+
+- The scholarship form now pushes `application_submitted` (site commit
+  c537927).
+- Google Ads conversions **Scholarship application** (Sign-ups) and
+  **Donation** (Purchases, now an account default goal), conversion ID
+  18368679896. Enhanced conversions left off: it would send hashed applicant
+  and donor details to Google.
+- GTM version 11 (`gtm-conversions.json`, imported with Merge): GA4
+  `application_submitted`, both Google Ads conversion tags, and a Conversion
+  Linker.
+- Campaigns 03 and 04 switched to Maximize conversions; all three now bid
+  without the $2 cap.
+
+**Measure.** Impressions in the week after November 9; the first Scholarship
+application and Donation conversions.
+
+**Open.**
+
+- Star `application_submitted` as a key event in GA4 once it first arrives.
+- Keyword research: replace low-volume brand and cost keywords with terms
+  people search.
