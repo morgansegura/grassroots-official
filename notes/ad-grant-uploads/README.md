@@ -44,3 +44,21 @@ and campaign 04's ad groups had one ad each where the plan calls for two.
 **Next.** Create a Google Ads conversion action for the `donation_complete`
 event the site already sends from `/thank-you`, then switch campaign 03 to
 Maximize conversions once it records one.
+
+## 2026-11-09 — Giving Tuesday and year-end (campaign 05)
+
+File: `2026-11-09-giving-tuesday-and-year-end.csv`, built by
+`build-giving-campaign.py` (shared checks in `campaign_csv.py`).
+
+**What it adds.** **05 – Giving Tuesday & Year-End 2026**, imported **paused**:
+$40/day, Maximize clicks like campaign 03, English and Spanish, landing on
+`/donate`. Ad groups 5A Giving Tuesday, 5B Year-end giving, 5C Local giving;
+18 phrase keywords, 2 ads each, 14 negatives.
+
+**How to apply (Google Ads Editor).** Import the file, then on the campaign:
+start November 17, end December 31, location San Diego County with
+**presence only**, max CPC limit $2.00 (Ad Grant rule for Maximize clicks).
+Post, then enable.
+
+**Blocker.** On November 9 the account had 0 impressions for 30 days across
+campaigns 02, 03 and 04. Find out why before relying on this campaign.
