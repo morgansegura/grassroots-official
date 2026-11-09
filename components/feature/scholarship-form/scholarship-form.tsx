@@ -23,6 +23,7 @@ import {
   type ApplicationInput,
   type Locale,
 } from "@/lib/apply/fields";
+import { trackEvent } from "@/lib/analytics";
 import { submitApplication } from "@/lib/apply/submit";
 import { errorsForStep, validate, type Errors } from "@/lib/apply/validate";
 
@@ -125,6 +126,8 @@ export function ScholarshipForm() {
 
     const result = await submitApplication(fd);
     setStatus(result.ok ? "success" : "error");
+    // The foundation's main conversion: a family applied. No personal details.
+    if (result.ok) trackEvent("application_submitted", { locale });
     focusHeading();
   };
 
