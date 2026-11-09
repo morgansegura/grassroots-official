@@ -47,17 +47,22 @@ Maximize conversions once it records one.
 
 ## 2026-11-09 — Giving Tuesday and year-end (campaign 05)
 
-File: `2026-11-09-giving-tuesday-and-year-end.csv`, built by
-`build-giving-campaign.py` (shared checks in `campaign_csv.py`).
+Built on the Google Ads website on November 9 and published. It shows
+**Pending** until it starts November 17.
 
-**What it adds.** **05 – Giving Tuesday & Year-End 2026**, imported **paused**:
-$40/day, Maximize conversions, English and Spanish, landing on
-`/donate`. Ad groups 5A Giving Tuesday, 5B Year-end giving, 5C Local giving;
-18 phrase keywords, 2 ads each, 14 negatives.
+**What it is.** **05 – Giving Tuesday & Year-End 2026**: $40/day, Maximize
+conversions, Search only, San Diego County with **presence only**, November 17
+to December 31, AI Max off, landing on `/donate`. Ad groups 5A Giving Tuesday,
+5B Year-end giving, 5C Local giving, 2 ads each, all reviewed with no policy
+issues; 14 campaign-level phrase negatives.
 
-**How to apply (Google Ads Editor).** Import the file, then on the campaign:
-start November 17, end December 31, location San Diego County with
-**presence only**. Post, then enable.
+**When editing it on the website,** press **Clear prefills** on every new ad:
+Google fills the form with AI-written copy and suggested keywords that are not
+ours.
+
+`2026-11-09-giving-tuesday-and-year-end.csv` (from `build-giving-campaign.py`)
+holds the same copy as an Ads Editor import. It was not imported; keep it as
+the source for next year's run.
 
 ## 2026-11-09 — Why nothing served, and the fix
 
